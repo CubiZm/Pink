@@ -1,0 +1,29 @@
+{
+  "name": "81563-pink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Обучающий проект «Пинк» от HTML Academy",
+  "author": "Lena Karyakina",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up-htmlacademy/81563-pink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/up-htmlacademy/81563-pink/issues"
+  },
+  "homepage": "https://github.com/up-htmlacademy/81563-pink",
+  "dependencies": {
+    "eclint": "1.1.x",
+    "fs-extra": "0.26.x",
+    "gulp": "3.9.x",
+    "gulp-plumber": "1.0.x"
+  },
+  "scripts": {
+    "pregosha": "npm install > /dev/null",
+    "gosha": "gulp gosha",
+    "test": "gulp lint"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
