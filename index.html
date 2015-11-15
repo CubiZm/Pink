@@ -7,12 +7,16 @@
   <body>
 		<header>
 			<div class="top-menu">
-				<div><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
+				<div class="logo"><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
 				<nav>
-					<li>Информация</li>
-					<li>Возможности</li>
-					<li>Отзывы</li>
-					<li>Стоимость</li>
+					<ul>
+						<li>Информация</li>
+						<li>Блог</li>
+						<li>Отзывы</li>
+						<li>Конкурс</li>
+					</ul>
+          <div class="top-menu-btn-open"></div>
+          <div class="top-menu-btn-close"></div>
 				</nav>
 			</div>
 		</header>
@@ -56,11 +60,15 @@
 				<div><img src="http://lorempixel.com/output/nature-h-g-157-320-4.jpg" alt=""></div>
 				<ul>
 					<li>
-						<div class="slide-1">
+						<div class="slide">
 
-							<blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-								<span>Николай Петров</span>
-								<span>25 лет, водитель трамвая</span>
+							<blockquote>
+								<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+								<footer>
+									<cite>Николай Петров<br>
+										25 лет, водитель трамвая</cite>
+								</footer>
+							</blockquote>
 						</div>
 					</li>
 				</ul>
@@ -69,28 +77,53 @@
 		</section>
 
 		<section class="prices">
-			<table border="1" cellpadding="0" cellspacing="0">
-			    <tr>
-			        <td>Стандарт 3,99 USD</td>
-			    </tr>
-			    <tr>
-			        <td>Розовый фильтр</td>
-			        <td>&#10004;</td>
-			    </tr>
-			    <tr>
-			        <td>Смайлики</td>
-			        <td>&#10004;</td>
-			    </tr>
-			    <tr>
-			        <td>Комментарии</td>
-			        <td>&#10006;</td>
-			    </tr>
-			</table>
+
+            <div class="column"></div>
+
+            <div class="column-group">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
+            <header>
+                <ul>
+                    <li></li>
+                    <li>База 3,99 USD</li>
+                    <li>Стандарт</li>
+                    <li>Анлим</li>
+                </ul>
+            </header>
+            <section class="content">
+                <ul>
+                    <li>Розовый фильтр</li>
+                    <li>&#10004;</li>
+                    <li>&#10004;</li>
+                    <li>&#10004;</li>
+                </ul>
+            </section>
+            <section class="content content-important">
+                <ul>
+                    <li>Смайлики</li>
+                    <li>&#10006;</li>
+                    <li>&#10006;</li>
+                    <li>&#10004;</li>
+                </ul>
+            </section>
+            <footer>
+                <ul>
+                    <li>Комментарии</li>
+                    <li>&#10006;</li>
+                    <li>&#10006;</li>
+                    <li>&#10006;</li>
+                </ul>
+            </footer>
+
 		</section>
 
 		<section class="contacts">
-			<h2>Остались вопросы?</h2>
-			<h2>Свяжитесь с нами!</h2>
+			<h2>Остались вопросы?<br>
+				Свяжитесь с нами!</h2>
 			<div class="contacts-phone">
 				<p>Звоните:</p>
 				<p><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
@@ -120,7 +153,8 @@
 			<div class="copyright">
 				<p>Разработано</p>
 				<a href="https://htmlacademy.ru/">HTML Academy</a>
-			</div
+			</div>
 		</footer>
+
   </body>
 </html>
