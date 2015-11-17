@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Пинк</title>
+	</head>
+	<body>
+		<header>
+			<div class="top-menu">
+				<div class="logo"><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
+				<nav>
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="form.html">Конкурс</a></li>
+					</ul>
+					<div class="top-menu-btn-open"></div>
+					<div class="top-menu-btn-close"></div>
+				</nav>
+			</div>
+				<h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+		</header>
+
+		<div class="page-form">
+			<div class="page-descr">
+				<p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+				<p>Пожалуйста, заполните форму ниже:</p>
+			</div>
+
+			<form class="contest-form">
+
+				<fieldset class="contact-info">
+
+						<label for="first-name" class="input-text">Имя: *</label>
+							<input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
+
+						<label for="last-name" class="input-text">Фамилия: *</label>
+							<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
+
+						<label for="middle-name" class="input-text">Отчество:</label>
+							<input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+
+				</fieldset>
+
+				<fieldset class="voyage">
+
+						<legend class="input-text">С каким приложением путешествовали?</legend>
+
+						<input type="radio" id="ios" name="os" checked>
+							<label for="ios" class="check-text" checked>Pink для iOS</label>
+
+						<input type="radio" id="android" name="os">
+							<label for="android" class="check-text">Pink на Android</label>
+
+						<input type="radio" id="windows" name="os">
+							<label for="windows" class="check-text">Windows Phone</label>
+
+				</fieldset>
+
+				<fieldset class="dates-voyage">
+						<legend class="input-text">Когда вы путешествовали? *</legend>
+
+						<label for="departure-date" class="input-text">Дата выезда</label>
+						<input type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
+
+							<div class="date-wrap">
+									<label for="duration" class="input-text">Продолжительность</label>
+										<div class="btn-numeral">
+												<button type="button" class="btn-minus">&mdash;</button>
+													<input type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
+												<button type="button" class="btn-plus">+</button>
+										</div>
+							</div>
+
+							<div class="date-wrap">
+											<label for="return-date" class="input-text">Дата возвращения</label>
+											<input type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
+							</div>
+
+				</fieldset>
+
+				<fieldset class="companions">
+							<div class="companions-input">
+									<label for="number-of-companions" class="input-text">Количество попутчиков *</label>
+										<button type="button" class="btn-minus">-</button>
+											<input type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
+										<button type="button" class="btn-plus">+</button>
+							</div>
+
+							<div class="prices">
+
+								<div class="column"></div>
+
+								<div class="column-group">
+										<div class="column"></div>
+										<div class="column"></div>
+										<div class="column"></div>
+								</div>
+
+								<div class="content">
+										<ol>
+											<li>
+												<label for="name-1" class="input-text">Имя: *</label>
+												<input type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+											</li>
+											<li>
+												<label for="nickname-1" class="input-text">Прозвище:</label>
+													<input type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+											</li>
+											<li><label for="name-1" class="input-text">Имя: *</label>
+														<input type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+											</li>
+											<li>
+												<label for="nickname-1" class="input-text">Прозвище:</label>
+													<input type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+											</li>
+										</ol>
+								</div>
+							</div>
+
+					</fieldset>
+
+				<fieldset class="progress">
+					<div class="progress-wrap">
+
+						<legend class="input-text">Ваши безбашенные достижения в путешествии</legend>
+
+						<input type="checkbox" id="selfie-shark" name="selfie-shark" checked>
+							<label class="check-text" for="selfie-shark">Сделал селфи с акулой</label>
+
+						<input type="checkbox" id="sunburn" name="sunburn" checked>
+							<label class="check-text" for="sunburn">Обгорел на пляже</label>
+
+						<input type="checkbox" id="chuck-norris" name="chuck-norris">
+							<label class="check-text" for="chuck-norris">Видел Чака Норриса</label>
+
+						<input type="checkbox" id="souvenirs" name="souvenirs">
+							<label class="check-text" for="souvenirs">Накупил сувениров</label>
+
+						<input type="checkbox" id="leaning-tower" name="leaning-tower" checked>
+							<label class="check-text" for="leaning-tower">Удержал башню</label>
+
+						<input type="checkbox" id="ruined-hotel" name="ruined-hotel">
+							<label class="check-text" for="ruined-hotel">Разгромил отель</label>
+
+					</div>
+				</fieldset>
+
+
+				<fieldset class="export-photo">
+						<legend class="input-text">Ваши фотографии из поездки</legend>
+						<div>
+							<input type="file" id="upload-images-btn" name="upload-images-btn" multiple>
+							 <button class="btn-photo">Загрузить фото</button>
+						</div>
+				</fieldset>
+
+				<button>Отправить форму</button>
+				<p class="form-text">* - обязательные поля</p>
+		</div>
+		</form>
+
+		<footer>
+			<div class="logo"><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
+
+			<div class="social-btn">
+				<a href="#">Twitter</a>
+				<a href="#">Facebook</a>
+				<a href="#">Youtube</a>
+			</div>
+
+			<div class="copyright">
+				<p>Разработано</p>
+				<a href="https://htmlacademy.ru/">HTML Academy</a>
+			</div>
+		</footer>
+
+	</body>
+</html>
