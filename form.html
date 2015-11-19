@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<header>
-			<div class="top-menu">
+			<div class="navigation">
 				<div class="logo"><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
 				<nav>
 					<ul>
@@ -15,30 +15,30 @@
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="form.html">Конкурс</a></li>
 					</ul>
-					<div class="top-menu-btn-open"></div>
-					<div class="top-menu-btn-close"></div>
+					<div class="navigation__btn--open"></div>
+					<div class="navigation__btn--close"></div>
 				</nav>
 			</div>
 				<h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
 		</header>
 
 		<div class="page-form">
-			<div class="page-descr">
+			<div class="page-form__descr">
 				<p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
 				<p>Пожалуйста, заполните форму ниже:</p>
 			</div>
 
 			<form class="contest-form">
 
-				<fieldset class="contact-info">
+				<fieldset class="contest-form__contact-info">
 
-						<label for="first-name" class="input-text">Имя: *</label>
+						<label for="first-name" class="contest-form__input-text">Имя: *</label>
 							<input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
 
-						<label for="last-name" class="input-text">Фамилия: *</label>
+						<label for="last-name" class="contest-form__input-text">Фамилия: *</label>
 							<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
 
-						<label for="middle-name" class="input-text">Отчество:</label>
+						<label for="middle-name" class="contest-form__input-text">Отчество:</label>
 							<input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 
 				</fieldset>
@@ -67,9 +67,9 @@
 							<div class="date-wrap">
 									<label for="duration" class="input-text">Продолжительность</label>
 										<div class="btn-numeral">
-												<button type="button" class="btn-minus">&mdash;</button>
+												<button type="button" class="btn--minus">&mdash;</button>
 													<input type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
-												<button type="button" class="btn-plus">+</button>
+												<button type="button" class="btn--plus">+</button>
 										</div>
 							</div>
 
