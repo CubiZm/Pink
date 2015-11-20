@@ -33,13 +33,13 @@
 				<fieldset class="form-box__info">
 
 						<label for="first-name" class="form-box__input-text">Имя: *</label>
-							<input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
+							<input class="form-box__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
 
 						<label for="last-name" class="form-box__input-text">Фамилия: *</label>
-							<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
+							<input class="form-box__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
 
 						<label for="middle-name" class="form-box__input-text">Отчество:</label>
-							<input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+							<input class="form-box__input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 
 				</fieldset>
 
@@ -47,13 +47,13 @@
 
 						<legend class="form-box__input-text">С каким приложением путешествовали?</legend>
 
-						<input type="radio" id="ios" name="os" checked>
+						<input class="form-box__input" type="radio" id="ios" name="os" checked>
 							<label for="ios" class="form-box__check-text" checked>Pink для iOS</label>
 
-						<input type="radio" id="android" name="os">
+						<input class="form-box__input" type="radio" id="android" name="os">
 							<label for="android" class="form-box__check-text">Pink на Android</label>
 
-						<input type="radio" id="windows" name="os">
+						<input class="form-box__input" type="radio" id="windows" name="os">
 							<label for="windows" class="form-box__check-text">Windows Phone</label>
 
 				</fieldset>
@@ -62,20 +62,20 @@
 						<legend class="form-box__input-text">Когда вы путешествовали? *</legend>
 
 						<label for="departure-date" class="form-box__input-text">Дата выезда</label>
-						<input type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
+						<input class="form-box__input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
 
 							<div class="form-box__info">
-									<label for="duration" class="form-box__input-text">Продолжительность</label>
-										<div class="form-box__btn-numeral">
-												<button type="button" class="form-box__btn--minus">&mdash;</button>
-													<input type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
-												<button type="button" class="form-box__btn--plus">+</button>
-										</div>
+								<label for="duration" class="form-box__input-text">Продолжительность</label>
+									<div class="form-box__btn-numeral">
+											<button class="form-box__btn--minus" type="button" >&mdash;</button>
+												<input class="form-box__input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
+											<button class="form-box__btn--plus" type="button" >+</button>
+									</div>
 							</div>
 
 							<div class="form-box">
-											<label for="return-date" class="form-box__input-text">Дата возвращения</label>
-											<input type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
+								<label for="return-date" class="form-box__input-text">Дата возвращения</label>
+								<input class="form-box__input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
 							</div>
 
 				</fieldset>
@@ -83,9 +83,9 @@
 				<fieldset class="form-box__info">
 							<div class=".form__box form__box--bg_gray">
 									<label for="number-of-companions" class="form-box__input-text">Количество попутчиков *</label>
-										<button type="button" class="form-box__btn--minus">-</button>
-											<input type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
-										<button type="button" class="form-box__btn--plus">+</button>
+										<button class="form-box__btn--minus" type="button" >-</button>
+											<input class="form-box__input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
+										<button class="form-box__btn--plus" type="button">+</button>
 							</div>
 
 							<div class="prices">
@@ -102,18 +102,18 @@
 										<ol class="form-box__list">
 											<li>
 												<label for="name-1" class="form-box__input-text">Имя: *</label>
-												<input type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+												<input class="form-box__input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 											</li>
 											<li>
 												<label for="nickname-1" class="form-box__input-text">Прозвище:</label>
-													<input type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+													<input class="form-box__input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 											</li>
 											<li><label for="name-1" class="form-box__input-text">Имя: *</label>
-														<input type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+														<input class="form-box__input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 											</li>
 											<li class="form-box__item">
 												<label for="nickname-1" class="form-box__input-text">Прозвище:</label>
-													<input type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+													<input class="form-box__input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 											</li>
 										</ol>
 								</div>
@@ -126,42 +126,43 @@
 
 						<legend class="form-box__input-text">Ваши безбашенные достижения в путешествии</legend>
 
-						<input type="checkbox" id="selfie-shark" name="selfie-shark" checked>
+						<input class="form-box__input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
 							<label class="form-box__input-text--red" for="selfie-shark">Сделал селфи с акулой</label>
 
-						<input type="checkbox" id="sunburn" name="sunburn" checked>
+						<input class="form-box__input" type="checkbox" id="sunburn" name="sunburn" checked>
 							<label class="form-box__check-text" for="sunburn">Обгорел на пляже</label>
 
-						<input type="checkbox" id="chuck-norris" name="chuck-norris">
+						<input class="form-box__input" type="checkbox" id="chuck-norris" name="chuck-norris">
 							<label class="form-box__check-text" for="chuck-norris">Видел Чака Норриса</label>
 
-						<input type="checkbox" id="souvenirs" name="souvenirs">
+						<input class="form-box__input" type="checkbox" id="souvenirs" name="souvenirs">
 							<label class="form-box__check-text" for="souvenirs">Накупил сувениров</label>
 
-						<input type="checkbox" id="leaning-tower" name="leaning-tower" checked>
+						<input class="form-box__input" type="checkbox" id="leaning-tower" name="leaning-tower" checked>
 							<label class="form-box__check-text" for="leaning-tower">Удержал башню</label>
 
-						<input type="checkbox" id="ruined-hotel" name="ruined-hotel">
+						<input class="form-box__input" type="checkbox" id="ruined-hotel" name="ruined-hotel">
 							<label class="form-box__check-text" for="ruined-hotel">Разгромил отель</label>
 
 					</div>
 				</fieldset>
 
 
-				<fieldset class="form-box__info">
+				<fieldset class="form-box__info form__box--bg_gray">
 						<legend class="form-box__input-text">Ваши фотографии из поездки</legend>
-						<div>
-							<input type="file" id="upload-images-btn" name="upload-images-btn" multiple>
-							 <button class="form-box__btn--photo">Загрузить фото</button>
+						<div class="photo-action">
+							<input class="form-box__input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
+							 <button class="photo-action__btn--photo">Загрузить фото</button>
+							 <div class="photo-action__photo-prev"></div>
 						</div>
 				</fieldset>
 
-				<button>Отправить форму</button>
+				<button class="form-box__btn">Отправить форму</button>
 				<p class="page-descr--p">* - обязательные поля</p>
 		</div>
 		</form>
 
-		<footer class="footer">
+		<footer class="main-footer">
 			<div class="logo"><a href="/index.html"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
 
 			<div class="social-btn">
