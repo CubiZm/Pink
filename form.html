@@ -4,177 +4,140 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Пинк</title>
 	</head>
-	<body>
-		<header>
-			<div class="navigation">
-				<div class="logo"><a href="/index.html"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
-				<nav>
-					<ul class="navigation__list">
-						<li class="navigation__item"><a href="#" class="navigation__link">Информация</a></li>
-						<li class="navigation__item"><a href="#" class="navigation__link">Блог</a></li>
-						<li class="navigation__item"><a href="#" class="navigation__link">Отзывы</a></li>
-						<li class="navigation__item"><a href="form.html" class="navigation__link">Конкурс</a></li>
+	<body class="page page-form">
+		<header class="main-header">
+			<div class="main-header__section">
+				<div class="main-header__logo logo"><a href="/index.html"><img class="main-header__logo" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
+				<nav class="main-menu">
+					<ul class="main-menu__list">
+						<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
 					</ul>
-					<div class="navigation navigation__btn--open"></div>
-					<div class="navigation navigation__btn--close"></div>
+					<div class="main-menu main-menu__btn--open"></div>
+					<div class="main-menu main-menu__btn--close"></div>
 				</nav>
 			</div>
-				<h1 class="navigation navigation__title--h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+				<h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 		</header>
 
 		<div class="page-form">
-			<div class="page-form__descr">
-				<p class="page-descr--p">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-				<p class="page-descr--p">Пожалуйста, заполните форму ниже:</p>
-			</div>
+				<p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
 
-			<form class="form-box">
+			<form class="form">
 
 				<fieldset class="form-box__info">
-
-						<label for="first-name" class="form-box__input-text">Имя: *</label>
-							<input class="form-box__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
-
-						<label for="last-name" class="form-box__input-text">Фамилия: *</label>
-							<input class="form-box__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
-
-						<label for="middle-name" class="form-box__input-text">Отчество:</label>
-							<input class="form-box__input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
-
+						<label for="first-name" class="label">Имя: *</label>
+						<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
+						<label for="last-name" class="label">Фамилия: *</label>
+						<input class="input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
+						<label for="middle-name" class="label">Отчество:</label>
+						<input class="input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 				</fieldset>
 
-				<fieldset class="form-box__info form__box--bg_gray">
-
-						<legend class="form-box__input-text">С каким приложением путешествовали?</legend>
-
-						<input class="form-box__input" type="radio" id="ios" name="os" checked>
-							<label for="ios" class="form-box__check-text" checked>Pink для iOS</label>
-
-						<input class="form-box__input" type="radio" id="android" name="os">
-							<label for="android" class="form-box__check-text">Pink на Android</label>
-
-						<input class="form-box__input" type="radio" id="windows" name="os">
-							<label for="windows" class="form-box__check-text">Windows Phone</label>
-
+				<fieldset class="form-box__info form-box__info--bg-grey">
+						<legend class="legend">С каким приложением путешествовали?</legend>
+						<input class="input" type="radio" id="ios" name="os" checked>
+						<label for="ios" class="label" checked>Pink для iOS</label>
+						<input class="input" type="radio" id="android" name="os">
+						<label for="android" class="label">Pink на Android</label>
+						<input class="input" type="radio" id="windows" name="os">
+						<label for="windows" class="label">Windows Phone</label>
 				</fieldset>
 
 				<fieldset class="form-box__info">
-						<legend class="form-box__input-text">Когда вы путешествовали? *</legend>
-
-						<label for="departure-date" class="form-box__input-text">Дата выезда</label>
-						<input class="form-box__input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
-
+						<legend class="form-box__title">Когда вы путешествовали? *</legend>
+						<label class="label" for="departure-date">Дата выезда</label>
+						<input class="input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
 							<div class="form-box__info">
-								<label for="duration" class="form-box__input-text">Продолжительность</label>
-									<div class="form-box__btn-numeral">
-											<button class="form-box__btn--minus" type="button" >&mdash;</button>
-												<input class="form-box__input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
-											<button class="form-box__btn--plus" type="button" >+</button>
+								<label for="duration" class="label">Продолжительность</label>
+									<div class="plus-minus">
+										<button class="plus-minus__btn" type="button" >-</button>
+										<input class="input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
+										<button class="plus-minus__btn" type="button" >+</button>
 									</div>
 							</div>
-
-							<div class="form-box">
-								<label for="return-date" class="form-box__input-text">Дата возвращения</label>
-								<input class="form-box__input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
-							</div>
-
+								<label for="return-date" class="label">Дата возвращения</label>
+								<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
 				</fieldset>
 
-				<fieldset class="form-box__info">
-							<div class=".form__box form__box--bg_gray">
-									<label for="number-of-companions" class="form-box__input-text">Количество попутчиков *</label>
-										<button class="form-box__btn--minus" type="button" >-</button>
-											<input class="form-box__input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
-										<button class="form-box__btn--plus" type="button">+</button>
-							</div>
+				<fieldset class="form-box__info form-box__info--bg-grey">
+					<label for="number-of-companions" class="label">Количество попутчиков *</label>
+					<button class="plus-minus__btn" type="button" >-</button>
+					<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
+					<button class="plus-minus__btn" type="button">+</button>
 
-							<div class="prices">
-
-								<div class="column"></div>
-
-								<div class="column-group">
-										<div class="column"></div>
-										<div class="column"></div>
-										<div class="column"></div>
-								</div>
-
-								<div class="form-box">
-										<ol class="form-box__list">
-											<li>
-												<label for="name-1" class="form-box__input-text">Имя: *</label>
-												<input class="form-box__input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
-											</li>
-											<li>
-												<label for="nickname-1" class="form-box__input-text">Прозвище:</label>
-													<input class="form-box__input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
-											</li>
-											<li><label for="name-1" class="form-box__input-text">Имя: *</label>
-														<input class="form-box__input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
-											</li>
-											<li class="form-box__item">
-												<label for="nickname-1" class="form-box__input-text">Прозвище:</label>
-													<input class="form-box__input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
-											</li>
-										</ol>
-								</div>
-							</div>
-
+						<div class="form-box__info">
+								<ol class="form-box__list">
+									<li class="form-box__item">
+										<label for="name-1" class="label">Имя: *</label>
+										<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+									</li>
+									<li class="form-box__item">
+										<label for="nickname-1" class="label">Прозвище:</label>
+										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+									</li>
+									<li class="form-box__item"><label for="name-1" class="label">Имя: *</label>
+												<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+									</li>
+									<li class="form-box__item">
+										<label for="nickname-1" class="label">Прозвище:</label>
+										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+									</li>
+								</ol>
+						</div>
 					</fieldset>
 
-				<fieldset class="form-box__info">
-					<div class="form-box form-box--wrap">
+					<fieldset class="form-box__info">
+							<legend class="legend">Ваши безбашенные достижения в путешествии</legend>
+							<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
+							<label class="label" for="selfie-shark">Сделал селфи с акулой</label>
+							<input class="input" type="checkbox" id="sunburn" name="sunburn" checked>
+							<label class="label" for="sunburn">Обгорел на пляже</label>
+							<input class="input" type="checkbox" id="chuck-norris" name="chuck-norris">
+							<label class="label" for="chuck-norris">Видел Чака Норриса</label>
+							<input class="input" type="checkbox" id="souvenirs" name="souvenirs">
+							<label class="label" for="souvenirs">Накупил сувениров</label>
+							<input class="input" type="checkbox" id="leaning-tower" name="leaning-tower" checked>
+							<label class="label" for="leaning-tower">Удержал башню</label>
+							<input class="input" type="checkbox" id="ruined-hotel" name="ruined-hotel">
+							<label class="label" for="ruined-hotel">Разгромил отель</label>
+					</fieldset>
 
-						<legend class="form-box__input-text">Ваши безбашенные достижения в путешествии</legend>
-
-						<input class="form-box__input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
-							<label class="form-box__check-text" for="selfie-shark">Сделал селфи с акулой</label>
-
-						<input class="form-box__input" type="checkbox" id="sunburn" name="sunburn" checked>
-							<label class="form-box__check-text" for="sunburn">Обгорел на пляже</label>
-
-						<input class="form-box__input" type="checkbox" id="chuck-norris" name="chuck-norris">
-							<label class="form-box__check-text" for="chuck-norris">Видел Чака Норриса</label>
-
-						<input class="form-box__input" type="checkbox" id="souvenirs" name="souvenirs">
-							<label class="form-box__check-text" for="souvenirs">Накупил сувениров</label>
-
-						<input class="form-box__input" type="checkbox" id="leaning-tower" name="leaning-tower" checked>
-							<label class="form-box__check-text" for="leaning-tower">Удержал башню</label>
-
-						<input class="form-box__input" type="checkbox" id="ruined-hotel" name="ruined-hotel">
-							<label class="form-box__check-text" for="ruined-hotel">Разгромил отель</label>
-
-					</div>
-				</fieldset>
-
-
-				<fieldset class="form-box__info form__box--bg_gray">
-						<legend class="form-box__input-text">Ваши фотографии из поездки</legend>
+					<fieldset class="form-box__info form-box__info--bg-grey">
+						<legend class="legend">Ваши фотографии из поездки</legend>
 						<div class="photo-action">
-							<input class="form-box__input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
-							 <button class="photo-action__btn--photo">Загрузить фото</button>
-							 <div class="photo-action__photo-prev"></div>
+							<input class="input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
+							<button class="photo-action__btn">Загрузить фото</button>
+							<div class="photo-action__photo-prev">
+								<img class="photo-action__img" src="#" alt="">
+								<img class="photo-action__img" src="#" alt="">
+								<img class="photo-action__img" src="#" alt="">
+							</div>
 						</div>
-				</fieldset>
+					</fieldset>
 
-				<button class="form-box form-box--btn">Отправить форму</button>
-				<p class="form-box page-descr--p">* - обязательные поля</p>
-		</div>
+				<button class="form__btn">Отправить форму</button>
+				<p class="form__desription">* - обязательные поля</p>
 		</form>
+		</div>
 
 		<footer class="main-footer">
-			<div class="logo"><a href="/index.html"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
-
-			<div class="social-btn">
-				<a href="#">Twitter</a>
-				<a href="#">Facebook</a>
-				<a href="#">Youtube</a>
+			<div class="main-footer__logo logo">
+				<a class="main-footer__link" href="/index.html">
+					<img class="main-footer__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt="">
+				</a>
 			</div>
 
-			<div class="copyright">
-				<p>Разработано</p>
-				<a href="https://htmlacademy.ru/">HTML Academy</a>
+			<div class="social">
+				<a class="social__link" href="#">Twitter</a>
+				<a class="social__link" href="#">Facebook</a>
+				<a class="social__link" href="#">Youtube</a>
 			</div>
+
+			<p class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+
 		</footer>
 
 	</body>
