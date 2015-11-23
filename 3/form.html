@@ -5,10 +5,10 @@
 		<title>HTML Academy: Пинк</title>
 	  <base href="https://up-htmlacademy.github.io/81563-pink/3/">
 </head>
-	<body class="page page-form">
+	<body class="page page--form">
 		<header class="main-header">
-			<div class="main-header__section">
-				<div class="main-header__logo logo"><a href="/index.html"><img class="main-header__logo" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
+			<div class="main-header__section main-menu">
+				<div class="main-header__logo logo"><a class="main-header__link" href="/index.html"><img class="main-header__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
 				<nav class="main-menu">
 					<ul class="main-menu__list">
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
@@ -16,8 +16,8 @@
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
 						<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
 					</ul>
-					<div class="main-menu main-menu__btn--open"></div>
-					<div class="main-menu main-menu__btn--close"></div>
+					<div class="main-menu__btn main-menu__btn--open"></div>
+					<div class="main-menu__btn main-menu__btn--close"></div>
 				</nav>
 			</div>
 				<h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -28,61 +28,59 @@
 
 			<form class="form">
 
-				<fieldset class="form-box__info">
-						<label for="first-name" class="label">Имя: *</label>
+				<fieldset class="form__info">
+						<label class="label" for="first-name" >Имя: *</label>
 						<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
-						<label for="last-name" class="label">Фамилия: *</label>
+						<label class="label" for="last-name" >Фамилия: *</label>
 						<input class="input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
-						<label for="middle-name" class="label">Отчество:</label>
+						<label class="label" for="middle-name" >Отчество:</label>
 						<input class="input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 				</fieldset>
 
-				<fieldset class="form-box__info form-box__info--bg-grey">
+				<fieldset class="form__info form__info--bg-grey">
 						<legend class="legend">С каким приложением путешествовали?</legend>
 						<input class="input" type="radio" id="ios" name="os" checked>
-						<label for="ios" class="label" checked>Pink для iOS</label>
+						<label class="label" for="ios"  checked>Pink для iOS</label>
 						<input class="input" type="radio" id="android" name="os">
-						<label for="android" class="label">Pink на Android</label>
+						<label class="label" for="android">Pink на Android</label>
 						<input class="input" type="radio" id="windows" name="os">
-						<label for="windows" class="label">Windows Phone</label>
+						<label class="label" for="windows">Windows Phone</label>
 				</fieldset>
 
-				<fieldset class="form-box__info">
-						<legend class="form-box__title">Когда вы путешествовали? *</legend>
+				<fieldset class="form__info">
+						<legend class="legend">Когда вы путешествовали? *</legend>
 						<label class="label" for="departure-date">Дата выезда</label>
 						<input class="input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
-							<div class="form-box__info">
-								<label for="duration" class="label">Продолжительность</label>
-									<div class="plus-minus">
-										<button class="plus-minus__btn" type="button" >-</button>
-										<input class="input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
-										<button class="plus-minus__btn" type="button" >+</button>
-									</div>
+						<label for="duration" class="label">Продолжительность</label>
+							<div class="plus-minus">
+								<button class="plus-minus__btn" type="button" >-</button>
+								<input class="plus-minus__input input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
+								<button class="plus-minus__btn" type="button" >+</button>
 							</div>
-								<label for="return-date" class="label">Дата возвращения</label>
-								<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
+						<label for="return-date" class="label">Дата возвращения</label>
+						<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
 				</fieldset>
 
-				<fieldset class="form-box__info form-box__info--bg-grey">
+				<fieldset class="form__info form__info--bg-grey">
 					<label for="number-of-companions" class="label">Количество попутчиков *</label>
 					<button class="plus-minus__btn" type="button" >-</button>
 					<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
 					<button class="plus-minus__btn" type="button">+</button>
 
-						<div class="form-box__info">
-								<ol class="form-box__list">
-									<li class="form-box__item">
+						<div class="form__info">
+								<ol class="numeral-inputs">
+									<li class="numeral-inputs__item">
 										<label for="name-1" class="label">Имя: *</label>
 										<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 									</li>
-									<li class="form-box__item">
+									<li class="numeral-inputs__item">
 										<label for="nickname-1" class="label">Прозвище:</label>
 										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 									</li>
-									<li class="form-box__item"><label for="name-1" class="label">Имя: *</label>
+									<li class="numeral-inputs__item"><label for="name-1" class="label">Имя: *</label>
 												<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 									</li>
-									<li class="form-box__item">
+									<li class="numeral-inputs__item">
 										<label for="nickname-1" class="label">Прозвище:</label>
 										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 									</li>
@@ -90,7 +88,7 @@
 						</div>
 					</fieldset>
 
-					<fieldset class="form-box__info">
+					<fieldset class="form__info">
 							<legend class="legend">Ваши безбашенные достижения в путешествии</legend>
 							<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
 							<label class="label" for="selfie-shark">Сделал селфи с акулой</label>
@@ -106,12 +104,12 @@
 							<label class="label" for="ruined-hotel">Разгромил отель</label>
 					</fieldset>
 
-					<fieldset class="form-box__info form-box__info--bg-grey">
+					<fieldset class="form__info form__info--bg-grey">
 						<legend class="legend">Ваши фотографии из поездки</legend>
 						<div class="photo-action">
 							<input class="input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
 							<button class="photo-action__btn">Загрузить фото</button>
-							<div class="photo-action__photo-prev">
+							<div class="photo-action__photo-preview">
 								<img class="photo-action__img" src="#" alt="">
 								<img class="photo-action__img" src="#" alt="">
 								<img class="photo-action__img" src="#" alt="">
@@ -125,7 +123,7 @@
 		</div>
 
 		<footer class="main-footer">
-			<div class="main-footer__logo logo">
+			<div class="main-footer__logo">
 				<a class="main-footer__link" href="/index.html">
 					<img class="main-footer__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt="">
 				</a>
