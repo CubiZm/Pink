@@ -4,48 +4,52 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Пинк</title>
 	</head>
-	<body>
-		<header>
-			<div class="top-menu">
-				<div class="logo"><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
-				<nav>
-					<ul>
-						<li><a href="#">Информация</a></li>
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="form.html">Конкурс</a></li>
+	<body class="page">
+		<header class="main-header">
+			<div class="main-header__section">
+				<div class="main-header__logo logo">
+					<a class="logo__link" href="/index.html"><img class="logo__img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a>
+				</div>
+				<nav class="main-header__menu main-menu">
+					<ul class="main-menu__list">
+						<li class="main-menu__item"><a class="main-menu__link" href="#" >Информация</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#" >Блог</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#" >Отзывы</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="form.html" >Конкурс</a></li>
 					</ul>
-					<div class="top-menu-btn-open"></div>
-					<div class="top-menu-btn-close"></div>
+					<div class="main-menu__btn main-menu__btn--open"></div>
+					<div class="main-menu__btn main-menu__btn--close"></div>
 				</nav>
 			</div>
 		</header>
 
-		<div class="download">
-			<h2>Взгляните на жизнь иначе!</h2>
-			<a href="#" class="download-btn">Скачать приложение</a>
-			<div class="os-image">
-				<div><img src="http://lorempixel.com/output/nightlife-q-g-47-42-1.jpg" alt="apple"></div>
-				<div><img src="http://lorempixel.com/output/nightlife-q-g-47-42-1.jpg" alt="android"></div>
-				<div><img src="http://lorempixel.com/output/nightlife-q-g-47-42-1.jpg" alt="windows"></div>
+		<div class="intro">
+			<h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+			<a class="intro__main-link" href="#">Скачать приложение</a>
+			<div class="platform">
+				<div class="platform__icon"><img src="platform__img" src="http://lorempixel.com/output/nightlife-q-g-47-42-1.jpg" alt="apple"></div>
+				<div class="platform__icon"><img src="platform__img" src="http://lorempixel.com/output/nightlife-q-g-47-42-1.jpg" alt="android"></div>
+				<div class="platform__icon"><img src="platform__img" src="http://lorempixel.com/output/nightlife-q-g-47-42-1.jpg" alt="windows"></div>
 			</div>
-			<p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Wind</p>
+			<p class="intro__description">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Wind</p>
 		</div>
 
-		<div class="information">
-			<h2>Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-				<div class="inform-item">
-					<h3>Поднимает настроение</h3>
-					<p>Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!</p>
-				</div>
-				<div class="inform-item">
-					<h3>Меняет мир вокруг</h3>
-					<p>Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы усилить эффект</p>
-				</div>
-				<div class="inform-item">
-					<h3>Заводит новых друзей</h3>
-					<p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-				</div>
+		<div class="promo">
+			<div class="promo__item">
+				<h2 class="promo__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+			</div>
+			<div class="promo__item">
+				<h3 class="promo__subtitle">Поднимает настроение</h3>
+				<p class="promo__description">Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!</p>
+			</div>
+			<div class="promo__item">
+				<h3 class="promo__subtitle">Меняет мир вокруг</h3>
+				<p class="promo__description">Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы усилить эффект</p>
+			</div>
+			<div class="promo__item">
+				<h3 class="promo__subtitle">Заводит новых друзей</h3>
+				<p class="promo__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+			</div>
 		</div>
 
 		<div>
@@ -54,104 +58,97 @@
 			<p><a href="#">Узнать больше об исследовании</a></p>
 		</div>
 
-		<div class="reviews">
-			<div class="sliders">
-				<div><img src="http://lorempixel.com/output/nature-h-g-157-320-4.jpg" alt=""></div>
-							<div class="slide">
-								<blockquote>
-									<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-									<footer>
-										<p><cite>Николай Петров</cite><br>25 лет, водитель трамвая</p>
-									</footer>
-								</blockquote>
-							</div>
+		<div class="slider">
+			<div class="slider__promo-img">
+				<img class="slider__img" src="http://lorempixel.com/output/nature-h-g-157-320-4.jpg" alt="">
 			</div>
+				<blockquote class="quote">
+					<p class="quote__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+					<footer class="quote__footer">
+						<p class="quote__description"><cite class="author">Николай Петров</cite><br>25 лет, водитель трамвая</p>
+					</footer>
+				</blockquote>
 		</div>
 
-		<div class="prices">
-
-						<div class="column"></div>
-
-						<div class="column-group">
-								<div class="column"></div>
-								<div class="column"></div>
-								<div class="column"></div>
+		<div class="price-table">
+						<div class="price-table__column"></div>
+						<div class="price-table__column-group">
+								<div class="price-table__column"></div>
+								<div class="price-table__column"></div>
+								<div class="price-table__column"></div>
 						</div>
-
-						<header>
-								<ul>
-										<li></li>
-										<li>База 3,99 USD</li>
-										<li>Стандарт</li>
-										<li>Анлим</li>
-								</ul>
+						<header class="price-table__content">
+								<div class="price-table__list">
+										<div class="price-table__item"></div>
+										<div class="price-table__item">База 3,99 USD</div>
+										<div class="price-table__item">Стандарт</div>
+										<div class="price-table__item">Анлим</div>
+								</div>
 						</header>
-
-						<div class="content">
-								<ul>
-										<li>Розовый фильтр</li>
-										<li>&#10004;</li>
-										<li>&#10004;</li>
-										<li>&#10004;</li>
-								</ul>
+						<div class="price-table__content">
+								<div class="price-table__list">
+										<div class="price-table__item">Розовый фильтр</div>
+										<div class="price-table__item">&#10004;</div>
+										<div class="price-table__item">&#10004;</div>
+										<div class="price-table__item">&#10004;</div>
+								</div>
 						</div>
-
-						<div class="content content-important">
-								<ul>
-										<li>Смайлики</li>
-										<li>&#10006;</li>
-										<li>&#10006;</li>
-										<li>&#10004;</li>
-								</ul>
+						<div class="price-table__content">
+								<div class="price-table__list">
+										<div class="price-table__item">Смайлики</div>
+										<div class="price-table__item">&#10006;</div>
+										<div class="price-table__item">&#10006;</div>
+										<div class="price-table__item">&#10004;</div>
+								</div>
 						</div>
-
-						<footer>
-								<ul>
-										<li>Комментарии</li>
-										<li>&#10006;</li>
-										<li>&#10006;</li>
-										<li>&#10006;</li>
-								</ul>
+						<footer class="price-table__content">
+								<div class="price-table__list">
+										<div class="price-table__item">Комментарии</div>
+										<div class="price-table__item">&#10006;</div>
+										<div class="price-table__item">&#10006;</div>
+										<div class="price-table__item">&#10006;</div>
+								</div>
 						</footer>
-
 		</div>
 
 		<div class="contacts">
-			<h2>Остались вопросы?<br>
+			<h2 class="contacts__title">Остались вопросы?<br>
 				Свяжитесь с нами!</h2>
-			<div class="contacts-phone">
-				<p>Звоните:</p>
-				<p><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+			<div class="contacts__box">
+				<p class="contacts__descrip">Звоните:</p>
+				<p class="contacts__descrip"><a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
 			</div>
 
-			<div class="contacts-mail">
-				<p>Пишите:</p>
-				<p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+			<div class="contacts__box">
+				<p class="contacts__descrip">Пишите:</p>
+				<p class="contacts__descrip"><a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 			</div>
 
-			<div class="contacts-address">
-				<p>Приезжайте в гости:</p>
-				<p>ул. Большая Конюшенная, 19/8</p>
+			<div class="contacts__box">
+				<p class="contacts__descrip">Приезжайте в гости:</p>
+				<p class="contacts__descrip">ул. Большая Конюшенная, 19/8</p>
 			</div>
 
-			<div class="map">
-				<img src="img/map-2.gif" height="202" width="320" alt="">
+			<div class="contacts__map">
+				<img class="contacts__img" src="img/map-2.gif" height="202" width="320" alt="">
 			</div>
 		</div>
 
-		<footer>
-			<div class="logo"><a href="#"><img src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
-
-			<div class="social-btn">
-				<a href="#">Twitter</a>
-				<a href="#">Facebook</a>
-				<a href="#">Youtube</a>
+		<footer class="main-footer">
+			<div class="main-footer__logo logo">
+				<a class="main-footer__link" href="/index.html">
+					<img class="main-footer__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt="">
+				</a>
 			</div>
 
-			<div class="copyright">
-				<p>Разработано</p>
-				<a href="https://htmlacademy.ru/">HTML Academy</a>
+			<div class="social">
+				<a class="social__link" href="#">Twitter</a>
+				<a class="social__link" href="#">Facebook</a>
+				<a class="social__link" href="#">Youtube</a>
 			</div>
+
+			<p class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+
 		</footer>
 
 	</body>
