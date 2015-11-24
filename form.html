@@ -7,7 +7,9 @@
 	<body class="page page--form">
 		<header class="main-header">
 			<div class="main-header__section main-menu">
-				<div class="main-header__logo logo"><a class="main-header__link" href="/index.html"><img class="main-header__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a></div>
+				<div class="main-header__logo">
+					<a class="main-header__link" href="/index.html"><img class="main-header__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a>
+				</div>
 				<nav class="main-menu">
 					<ul class="main-menu__list">
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
@@ -23,7 +25,7 @@
 		</header>
 
 		<div class="page-form">
-				<p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+			<p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
 
 			<form class="form">
 
@@ -50,37 +52,39 @@
 						<legend class="legend">Когда вы путешествовали? *</legend>
 						<label class="label" for="departure-date">Дата выезда</label>
 						<input class="input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
-						<label for="duration" class="label">Продолжительность</label>
+						<label class="label" for="duration" >Продолжительность</label>
 							<div class="plus-minus">
 								<button class="plus-minus__btn" type="button" >-</button>
 								<input class="plus-minus__input input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
 								<button class="plus-minus__btn" type="button" >+</button>
 							</div>
-						<label for="return-date" class="label">Дата возвращения</label>
+						<label class="label" for="return-date" >Дата возвращения</label>
 						<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
-					<label for="number-of-companions" class="label">Количество попутчиков *</label>
-					<button class="plus-minus__btn" type="button" >-</button>
-					<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
-					<button class="plus-minus__btn" type="button">+</button>
+					<label class="label" for="number-of-companions" >Количество попутчиков *</label>
+						<div class="plus-minus">
+							<button class="plus-minus__btn" type="button" >-</button>
+							<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
+							<button class="plus-minus__btn" type="button">+</button>
+						</div>
 
 						<div class="form__info">
 								<ol class="numeral-inputs">
 									<li class="numeral-inputs__item">
-										<label for="name-1" class="label">Имя: *</label>
+										<label class="label" for="name-1" >Имя: *</label>
 										<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 									</li>
 									<li class="numeral-inputs__item">
-										<label for="nickname-1" class="label">Прозвище:</label>
+										<label class="label" for="nickname-1">Прозвище:</label>
 										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 									</li>
 									<li class="numeral-inputs__item"><label for="name-1" class="label">Имя: *</label>
-												<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+										<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 									</li>
 									<li class="numeral-inputs__item">
-										<label for="nickname-1" class="label">Прозвище:</label>
+										<label class="label" for="nickname-1" >Прозвище:</label>
 										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 									</li>
 								</ol>
