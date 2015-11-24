@@ -6,11 +6,11 @@
 	</head>
 	<body class="page page--form">
 		<header class="main-header">
-			<div class="main-header__section main-menu">
-				<div class="main-header__logo">
-					<a class="main-header__link" href="/index.html"><img class="main-header__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a>
+			<div class="main-header__section">
+				<div class="main-header__logo logo">
+					<a class="logo__link" href="/index.html"><img class="logo__img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a>
 				</div>
-				<nav class="main-menu">
+				<nav class="main-header__menu main-menu">
 					<ul class="main-menu__list">
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
@@ -66,29 +66,26 @@
 					<label class="label" for="number-of-companions" >Количество попутчиков *</label>
 						<div class="plus-minus">
 							<button class="plus-minus__btn" type="button" >-</button>
-							<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholder="0">
+							<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholdergit="0">
 							<button class="plus-minus__btn" type="button">+</button>
 						</div>
-
-						<div class="form__info">
-								<ol class="numeral-inputs">
-									<li class="numeral-inputs__item">
-										<label class="label" for="name-1" >Имя: *</label>
-										<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
-									</li>
-									<li class="numeral-inputs__item">
-										<label class="label" for="nickname-1">Прозвище:</label>
-										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
-									</li>
-									<li class="numeral-inputs__item"><label for="name-1" class="label">Имя: *</label>
-										<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
-									</li>
-									<li class="numeral-inputs__item">
-										<label class="label" for="nickname-1" >Прозвище:</label>
-										<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
-									</li>
-								</ol>
-						</div>
+						<ol class="numeral-inputs">
+							<li class="numeral-inputs__item">
+								<label class="label" for="name-1" >Имя: *</label>
+								<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+							</li>
+							<li class="numeral-inputs__item">
+								<label class="label" for="nickname-1">Прозвище:</label>
+								<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+							</li>
+							<li class="numeral-inputs__item"><label for="name-1" class="label">Имя: *</label>
+								<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+							</li>
+							<li class="numeral-inputs__item">
+								<label class="label" for="nickname-1" >Прозвище:</label>
+								<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+							</li>
+						</ol>
 					</fieldset>
 
 					<fieldset class="form__info">
