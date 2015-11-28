@@ -5,7 +5,7 @@
 $white: #fff;
 $menu-color: #1d2631;
 $color: #2b3a49;
-$font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+$font-family: 'Open Sans', sans-serif;
 $font-size: 20px;
 
 
@@ -55,13 +55,16 @@ body {
 /*header*/
 .main-header {
 	background: $menu-color;
+	width: 100%;
 	min-height: 66px;
 	@media screen and (min-width:320px) and (max-width: 700px) {
 		min-width: 320px;
 }
-
-	position: absolute;
-	top: 0;
+}
+.main-header {
+	background: $menu-color;
+	   	position: absolute;
+	   	top: 0;
 
 	&__menu {
 		color: $white;
@@ -69,7 +72,7 @@ body {
 		&__logo {
 
 			&__section {
-				    min-width: 320px;
+
 			}
 
 		}
@@ -84,8 +87,6 @@ body {
 	  	font-weight: bold;
   		text-transform: uppercase;
   		background: #283645;
-  		padding: 0;
-  		margin: 0;
   		//display: none;
 
   		@media screen and (min-width:320px) and (max-width: 700px) {
@@ -96,7 +97,6 @@ body {
 	  &__item {
 	  	list-style-type: none;
 	  	min-height: 64px;
-	  	border-bottom: 1px solid #000;
 	  }
 
 	  &__link {
