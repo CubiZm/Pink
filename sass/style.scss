@@ -5,7 +5,7 @@
 $white: #fff;
 $menu-color: #1d2631;
 $color: #2b3a49;
-$font-family: 'Open Sans', sans-serif;
+$font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 $font-size: 20px;
 
 
@@ -35,7 +35,8 @@ $font-size: 20px;
 
 }
 
-
+.active {display: block;}
+.passive {display: none;}
 
 html {
 	box-sizing: border-box;
@@ -44,6 +45,9 @@ html {
 body {
 	font-family: $font-family;
 }
+
+.passive {display: none;}
+.active {display: block;}
 
 .page {
 	background: $white;
@@ -87,7 +91,9 @@ body {
 	  	font-weight: bold;
   		text-transform: uppercase;
   		background: #283645;
-  		//display: none;
+  		margin: 0;
+  		padding: 0;
+  		display: none;
 
   		@media screen and (min-width:320px) and (max-width: 700px) {
 
@@ -103,6 +109,7 @@ body {
 	  	@include link-decoration;
 	  	display: block;
     	padding: 20px 0;
+    	border-bottom: 1px solid #000;
 	  }
 
 	  &__btn {
@@ -149,5 +156,10 @@ body {
 		padding-top: 84px;
 		@include text-decoration;
 
+	}
+
+	&__description {
+		@include text-decoration;
+		font-size: 14px;
 	}
 }
