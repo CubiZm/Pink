@@ -4,11 +4,17 @@
 
 $white: #fff;
 $menu-color: #1d2631;
-$color: #2b3a49;
+$blue: #2b3a49;
+
+/*Typography*/
 $font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-$font-size: 20px;
+$font-size-base: 14px;
+$font-size-title: 24px;
+
+/**/
 
 
+/*Mixins*/
 @mixin link-decoration {
 	text-decoration: none;
 	color: $white;
@@ -24,7 +30,7 @@ $font-size: 20px;
 }
 }
 
-@mixin container {
+@mixin wrapper {
 	padding: 0 20px;
 }
 
@@ -35,8 +41,7 @@ $font-size: 20px;
 
 }
 
-.active {display: block;}
-.passive {display: none;}
+/**/
 
 html {
 	box-sizing: border-box;
@@ -46,24 +51,22 @@ body {
 	font-family: $font-family;
 }
 
-.passive {display: none;}
-.active {display: block;}
-
 .page {
 	background: $white;
+	position: relative;
 
-	@media screen and (min-width:320px) and (max-width: 700px) {
-		background: $white;
-}
+// 	@media screen and (min-width:320px) and (max-width: 700px) {
+// 		background: $white;
+// }
 }
 /*header*/
 .main-header {
 	background: $menu-color;
 	width: 100%;
 	min-height: 66px;
-	@media screen and (min-width:320px) and (max-width: 700px) {
-		min-width: 320px;
-}
+// 	@media screen and (min-width:320px) and (max-width: 700px) {
+// 		min-width: 320px;
+// }
 }
 .main-header {
 	background: $menu-color;
@@ -121,7 +124,7 @@ body {
 	  	background: url(../img/open-menu-btn.png) no-repeat;
 	  	width: 27px;
 	  	height: 27px;
-	  	@include container;
+	  	@include wrapper;
 	  	position: absolute;
 	  	right: 0px;
 	  	top: 22px;
@@ -146,20 +149,44 @@ body {
 .intro {
 	background: url(../img/bg-intro.png) no-repeat;
 	bacground-size: cover;
-	width: 100%;
+	width: 320px;
 	height: 458px;
 	margin-top: -20px;
 
 	&__title {
-		font-size: 24px;
 		text-align: center;
 		padding-top: 84px;
 		@include text-decoration;
+		font-size: 14px;
+		font-weight: 300;
 
 	}
 
 	&__description {
 		@include text-decoration;
-		font-size: 14px;
+		font-size: $font-size-base;
 	}
+
+	&__main-link {
+		@include link-decoration
+		border: 2px solid $white;
+		border-radius: 5px;
+		padding: 16px 37px;
+	}
+}
+
+.platform {
+	min-height: 271px;
+	background: $blue;
+	width: 320px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+
+	&__icon {
+
+	}
+
+
 }
