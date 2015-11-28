@@ -1,11 +1,13 @@
 @import "./blocks/mixins.scss";
 @import "./blocks/header.scss";
 @import "./blocks/intro.scss";
+@import "./blocks/promo.scss";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
 $white: #fff;
 
 $blue: #2b3a49;
+$bg-blue: #1d2631;
 $screen-mobile: 320px;
 
 
@@ -16,7 +18,6 @@ $font-size-base: 14px;
 $font-size-title: 24px;
 
 /**/
-
 
 
 html {

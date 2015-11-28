@@ -3,6 +3,9 @@
 $font-family: 'Open Sans',Arial,Helvetica,sans-serif;
 $font-size-base: 14px;
 $font-size-title: 24px;
+$blue: #2b3a49;
+$bg-blue: #1d2631;
+$screen-mobile: 320px;
   @mixin link-decoration {
     text-decoration: none;
     color: $white;
@@ -43,51 +46,57 @@ $font-size-title: 24px;
 	background-size: cover;
 	width: 100%;
 	min-height: 458px;
+	overflow: hidden;
+
 	&__title {
 		text-align: center;
 		padding-top: 84px;
 		@include text-decoration;
-		font-size: 14px;
-		font-weight: 300;
 	}
 }
 
-// 	.btn-intro__description {
-// 		@include text-decoration;
-// 		font-size: $font-size-base;
-// 	&__main-link {
-// 		@include link-decoration border: 2px solid $white;
-// 		border-radius: 30px;
-// 		padding: 16px 37px;
-// 		margin: 0 auto;
-// 	}
-// }
+.btn-info {
+	text-align: center;
+	padding: 45px 0;
 
-// .platform {
-// 	min-height: 271px;
-// 	background: $blue;
-// 	width: $screen-mobile;
-// 	display: flex;
-// 	justify-content: space-around;
-// 	align-items: baseline;
-// 	&__icon {}
-// 	&__description {
-// 		@include text-decoration;
-// 		font-size: $font-size-base;
-// 	}
-// }
+	&__description {
+		@include text-decoration;
+		font-size: $font-size-base;
+}
+	&__main-link {
 
-// .promo {
-// 	width: $screen-mobile;
-// 	&__item {}
-// 	&__title {
-// 		@include text-decoration;
-// 		color: #454036;
-// 		text-align: center;
-// 		font-weight: 300;
-// 		line-height: 1.2;
-// 	}
-// 	&__subtitle {
-// 		text-align: center;
-// 	}
-// }
+		@include link-decoration;
+		border: 2px solid $white;
+		border-radius: 30px;
+		padding: 16px 37px;
+		font-weight: bold;
+
+	}
+}
+
+.platform-info {
+	min-height: 271px;
+	background: $bg-blue;
+
+ 	&__description {
+ 		font-size: $font-size-base;
+ 		font-weight: 500;
+ 		text-align: center;
+ 		color: $white;
+ 		@include wrapper;
+	}
+}
+
+.platform {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+
+	&__icon {}
+
+	&__description {
+		@include text-decoration;
+		font-size: $font-size-base;
+
+	}
+}
