@@ -1,232 +1,37 @@
-//@import "./header.scss";
-//@import "mixins.sass";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
+@import "./blocks/mixins.scss";
+@import "./blocks/header.scss";
+@import "./blocks/intro.scss";
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
 $white: #fff;
-$menu-color: #1d2631;
+
 $blue: #2b3a49;
-$bg-grey: #f2f2f2;
-$grey-text: #454036;
 $screen-mobile: 320px;
 
+
 /*Typography*/
-$font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+$font-family: 'Open Sans',Arial,Helvetica,sans-serif;
 $font-size-base: 14px;
 $font-size-title: 24px;
 
 /**/
 
 
-/*Mixins*/
-@mixin link-decoration {
-	text-decoration: none;
-	color: $white;
-}
-
-@mixin text-decoration {
-	color: $white;
-	font {
-		family: $font-family;
-		size: 24px;
-		weight: 300;
-
-}
-}
-
-@mixin wrapper {
-	padding: 0 20px;
-}
-
-@mixin clearfix() {
-  display: table;
-  content: '';
-  clear: both;
-
-}
-
-/**/
 
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: $font-family;
+    font-family: $font-family;
 }
 
 .page {
-	background: $white;
-	position: relative;
-
-// 	@media screen and (min-width:320px) and (max-width: 700px) {
-// 		background: $white;
-// }
-}
-/*header*/
-.main-header {
-	background: $menu-color;
-	width: 100%;
-	min-height: 66px;
-// 	@media screen and (min-width:320px) and (max-width: 700px) {
-// 		min-width: 320px;
-// }
-}
-.main-header {
-	background: $menu-color;
-	   	position: absolute;
-	   	top: 0;
-
-	&__menu {
-		color: $white;
-
-		&__logo {
-
-			&__section {
-
-			}
-
-		}
-	}
-}
-
-   .main-menu {
-
-
-	  &__list {
-	  	text-align: center;
-	  	font-weight: bold;
-  		text-transform: uppercase;
-  		background: #283645;
-  		margin: 0;
-  		padding: 0;
-  		display: none;
-
-  		@media screen and (min-width:320px) and (max-width: 700px) {
-
-}
-	  }
-
-	  &__item {
-	  	list-style-type: none;
-	  	min-height: 64px;
-	  }
-
-	  &__link {
-	  	@include link-decoration;
-	  	display: block;
-    	padding: 20px 0;
-    	border-bottom: 1px solid #000;
-	  }
-
-	  &__btn {
-			display: block;
-			position: relative;
-	  }
-
-	  &__btn--open {
-	  	background: url(../img/open-menu-btn.png) no-repeat;
-	  	width: 27px;
-	  	height: 27px;
-	  	@include wrapper;
-	  	position: absolute;
-	  	right: 0px;
-	  	top: 22px;
-	  	cursor: pointer;
-	  }
-
-	  &__btn--close {}
-}
-
-.logo {
-
-	&__link
-
-&__img {
-	margin: 21px 0 21px 19px
-}
+    background: $white;
+    // 	@media screen and (min-width:320px) and (max-width: 700px) {
+    // 		background: $white;
+    // }
 }
 
 
-/*Intro*/
-
-.intro {
-	background: url(../img/bg-intro.png) no-repeat top, url(../img/iphone-in-the-hand.png) no-repeat left 173px;
-	background-size: cover;
-	width: $screen-mobile;
-	height: 458px;
-
-	&__title {
-		text-align: center;
-		padding-top: 84px;
-		@include text-decoration;
-		font-size: 14px;
-		font-weight: 300;
-
-	}
-
-	&__description {
-		@include text-decoration;
-		font-size: $font-size-base;
-	}
-
-	&__main-link {
-		@include link-decoration
-		border: 2px solid $white;
-		border-radius: 30px;
-		padding: 16px 37px;
-		margin: 0 auto;
-	}
-}
-
-.platform {
-	min-height: 271px;
-	background: $blue;
-	width: $screen-mobile;
-
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-
-	&__icon {
-
-	}
-
-	&__description {
-		@include text-decoration;
-		font-size: $font-size-base;
-		display: inline-block;
-	}
-
-}
-
-
-.promo {
-		width: $screen-mobile;
-	&__item {
-
-	}
-
-	&__item--bg-grey {
-		background: $bg-grey;
-		padding: 1px 30px 1px;
-	}
-
-	&__title {
-		@include text-decoration;
-		color: $grey-text;
-		text-align: center;
-		font-weight: 300;
-		line-height: 1.2;
-		margin-bottom: 40px;
-	}
-
-	&__subtitle {
-		text-align: center;
-		margrin-top: 40px;
-	}
-
-	&__description {
-		color: $grey-text;
-		text-align: center;
-	}
-}
