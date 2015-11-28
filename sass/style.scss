@@ -3,6 +3,9 @@
 @import "./blocks/intro.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/price.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
 $white: #fff;
@@ -10,6 +13,7 @@ $white: #fff;
 $blue: #2b3a49;
 $bg-blue: #1d2631;
 $text-grey: #283645;
+$pink: #d22856;
 $screen-mobile: 320px;
 
 

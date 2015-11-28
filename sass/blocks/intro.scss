@@ -42,7 +42,7 @@ $screen-mobile: 320px;
 
 
 .intro {
-	background: url(../img/bg-intro.png) no-repeat top, url(../img/iphone-in-the-hand.png) no-repeat left 173px;
+	background: url(../img/bg-intro.png) no-repeat top;
 	background-size: cover;
 	width: 100%;
 	min-height: 458px;
@@ -52,6 +52,15 @@ $screen-mobile: 320px;
 		text-align: center;
 		padding-top: 84px;
 		@include text-decoration;
+	}
+
+		&:after {
+		content: " ";
+		display: block;
+    margin: 0 auto;
+		background: url(../img/iphone-in-the-hand.png) no-repeat 0 35px;
+		height: 320px;
+    width: 313px;
 	}
 }
 
