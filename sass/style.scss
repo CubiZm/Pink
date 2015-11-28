@@ -5,6 +5,9 @@
 $white: #fff;
 $menu-color: #1d2631;
 $blue: #2b3a49;
+$bg-grey: #f2f2f2;
+$grey-text: #454036;
+$screen-mobile: 320px;
 
 /*Typography*/
 $font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -25,7 +28,7 @@ $font-size-title: 24px;
 	font {
 		family: $font-family;
 		size: 24px;
-		weight: normal;
+		weight: 300;
 
 }
 }
@@ -147,11 +150,10 @@ body {
 /*Intro*/
 
 .intro {
-	background: url(../img/bg-intro.png) no-repeat;
-	bacground-size: cover;
-	width: 320px;
+	background: url(../img/bg-intro.png) no-repeat top, url(../img/iphone-in-the-hand.png) no-repeat left 173px;
+	background-size: cover;
+	width: $screen-mobile;
 	height: 458px;
-	margin-top: -20px;
 
 	&__title {
 		text-align: center;
@@ -170,15 +172,16 @@ body {
 	&__main-link {
 		@include link-decoration
 		border: 2px solid $white;
-		border-radius: 5px;
+		border-radius: 30px;
 		padding: 16px 37px;
+		margin: 0 auto;
 	}
 }
 
 .platform {
 	min-height: 271px;
 	background: $blue;
-	width: 320px;
+	width: $screen-mobile;
 
 	display: flex;
 	justify-content: space-around;
@@ -188,5 +191,42 @@ body {
 
 	}
 
+	&__description {
+		@include text-decoration;
+		font-size: $font-size-base;
+		display: inline-block;
+	}
 
+}
+
+
+.promo {
+		width: $screen-mobile;
+	&__item {
+
+	}
+
+	&__item--bg-grey {
+		background: $bg-grey;
+		padding: 1px 30px 1px;
+	}
+
+	&__title {
+		@include text-decoration;
+		color: $grey-text;
+		text-align: center;
+		font-weight: 300;
+		line-height: 1.2;
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		text-align: center;
+		margrin-top: 40px;
+	}
+
+	&__description {
+		color: $grey-text;
+		text-align: center;
+	}
 }
