@@ -1,3 +1,5 @@
+$text-grey: #283645;
+
 .promo {
 
 	&__item {
@@ -28,6 +30,8 @@
 
 	&__description {
 		@include wrapper;
+		text-align: center;
+		color: $text-grey;
 	}
 
 	&__item {
