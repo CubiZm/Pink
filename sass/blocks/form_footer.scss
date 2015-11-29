@@ -1,21 +1,86 @@
 @media screen and (min-width:320px) and (max-width: 700px) {
 	.main-footer--form {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		min-height: 280px;
 		text-align: center;
 	}
 }
 
-.copyright {
-
+.main-footer__logo {
 
 	&__link {
+
+	}
+
+	&__logo-img {}
+}
+
+.social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0 0 0;
+	&__link {
+
+
+		text-indent: 100%;
+  	white-space: nowrap;
+  	overflow: hidden;
+
+  		&--twitter {
+			display: block;
+			background: url(../img/twitter-logo.png) no-repeat;
+			height: 25px;
+			width: 25px;
+		}
+
+		&--fb {
+			display: block;
+			background: url(../img/facebook-logo.png) no-repeat;
+			height: 25px;
+			width: 25px;
+			margin: 0 10px 0 10px;
+		}
+
+		&--youtube {
+			display: block;
+			background: url(../img/youtube-logo.png) no-repeat;
+			height: 25px;
+			width: 25px;
+		}
+
+	}
+
+
+
+}
+
+
+.copyright {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&__text {
+		@include text-decoration;
+		color: $text-grey;
+			}
+
+	&__link {
+		display: block;
+
 		text-indent: 100%;
   	white-space: nowrap;
   	overflow: hidden;
 
   	background: url(../img/htmlacademy-logo.png) no-repeat;
-  	height: 37px;
-  	width: 24px;
+  	height: 34px;
+  	width: 27px;
 	}
 }

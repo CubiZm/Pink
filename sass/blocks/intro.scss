@@ -1,45 +1,4 @@
 /*Intro*/
-/*Mixins*/
-$font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-$font-size-base: 14px;
-$font-size-title: 24px;
-$blue: #2b3a49;
-$bg-blue: #1d2631;
-$screen-mobile: 320px;
-  @mixin link-decoration {
-    text-decoration: none;
-    color: $white;
-}
-
-@mixin text-decoration($size: 24px, $weight:300) {
-    color: $white;
-    font: {
-        family: $font-family;
-        size: $size;
-        weight: $weight;
-
-    }
-}
-
-@mixin wrapper {
-    padding: 0 20px;
-}
-
-@mixin clearfix() {
-	&:after{
-    display: table;
-    content: '';
-    clear: both;
-  }
-}
-
-
-
-
-/**/
-
-
-
 
 .intro {
 	background: url(../img/bg-intro.png) no-repeat top;
