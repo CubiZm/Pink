@@ -1,6 +1,5 @@
 .page-form {
 
-
  &__desription {
 	text-align: center;
 	@include wrapper;
@@ -18,22 +17,70 @@
 
 }
 
+.page-form input[type="radio"] {
+		position: relative;
+    margin: 10px;
+    display: none;
+}
+
+.page-form input[type=radio]:checked + label:after {
+    // content: "\2022";
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 42px;
+    width: 15px;
+    height: 15px;
+    background-color: $pink;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.label {
+
+	color: $text-grey;
+	font-size: $font-size-base;
+	display: block;
+	position: relative;
+	padding-left: 50px;
+  padding-top: 30px;
+
+	&--pink {
+		color: $pink;
+		text-transform: uppercase;
+		text-align: center;
+
+		margin: 0 0 3px;
+	}
+}
 
 
-.form__info {
-	border: none;
-	@include wrapper;
+.label-radio {
+		line-height: 30px;
+	&:before
+ {
+		cursor: pointer;
+		content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #e6e6e6;
+    left:0;
+
+	}
 }
 
 
 .form__info {
-		min-height: 340px;
 		@include wrapper;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
+		border: none;
+		min-height: 338px;
 
 	&--bg-grey {
 		background: $bg-grey;
@@ -44,17 +91,14 @@
 	color: $pink;
 	text-align: center;
 	text-transform: uppercase;
+	padding-top: 40px;
+
+}
+.input {
+	position: relative;font-size: 18px;
+	@include wrapper;
+
 }
 
-.label {
-
-	&--pink {
-		color: $pink;
-		text-transform: uppercase;
-		text-align: center;
-
-		margin: 0 0 3px;
-	}
-}
 
 
