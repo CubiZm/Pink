@@ -1,0 +1,60 @@
+.page-form {
+
+
+ &__desription {
+	text-align: center;
+	@include wrapper;
+	color: $text-grey;
+	line-height: 30px;
+	}
+}
+
+.page-form input[type=text] {
+	@include wrapper;
+	color: #000;
+	margin: 0 auto;
+  padding: 17px 20px 13px;
+  width: 276px;
+
+}
+
+
+
+.form__info {
+	border: none;
+	@include wrapper;
+}
+
+
+.form__info {
+		min-height: 340px;
+		@include wrapper;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+
+	&--bg-grey {
+		background: $bg-grey;
+	}
+}
+
+.legend {
+	color: $pink;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.label {
+
+	&--pink {
+		color: $pink;
+		text-transform: uppercase;
+		text-align: center;
+
+		margin: 0 0 3px;
+	}
+}
+
+
