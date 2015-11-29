@@ -1,0 +1,230 @@
+/*Mixins*/
+/**/
+/*header*/
+/*Mixins*/
+/**/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
+.main-header {
+  background: #1d2631;
+  width: 100%;
+  min-height: 66px; }
+
+.main-header {
+  background: #1d2631;
+  position: absolute;
+  top: 0; }
+  .main-header__menu {
+    color: #fff; }
+
+.main-menu__list {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #283645;
+  margin: 0;
+  padding: 0;
+  display: none; }
+
+.main-menu__item {
+  list-style-type: none;
+  min-height: 64px; }
+
+.main-menu__link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #000; }
+
+.main-menu__btn {
+  display: block;
+  position: relative;
+  background: url(../img/open-menu-btn.png) no-repeat;
+  width: 27px;
+  height: 27px;
+  padding: 0 20px;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  cursor: pointer;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.logo__img {
+  margin: 21px 0 21px 19px; }
+
+/*Intro*/
+/*Mixins*/
+/**/
+.intro {
+  background: url(../img/bg-intro.png) no-repeat top;
+  background-size: cover;
+  width: 100%;
+  min-height: 458px;
+  overflow: hidden; }
+  .intro__title {
+    text-align: center;
+    padding-top: 84px;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300; }
+  .intro:after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    background: url(../img/iphone-in-the-hand.png) no-repeat 0 35px;
+    height: 320px;
+    width: 313px; }
+
+.btn-info {
+  text-align: center;
+  padding: 45px 0; }
+  .btn-info__description {
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-size: 14px; }
+  .btn-info__main-link {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 16px 37px;
+    font-weight: bold; }
+
+.platform-info {
+  min-height: 271px;
+  background: #1d2631; }
+  .platform-info__description {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px; }
+
+.platform {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .platform__description {
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-size: 14px; }
+
+.promo__item {
+  overflow: hidden; }
+
+.promo__title {
+  color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 20px;
+  color: #454036;
+  text-align: center;
+  font-weight: 300; }
+
+.promo-box {
+  background: #f2f2f2;
+  width: 100%;
+  padding-top: 55px; }
+  .promo-box__subtitle {
+    text-align: center;
+    padding: 0 20px; }
+  .promo-box__description {
+    padding: 0 20px;
+    text-align: center;
+    color: #283645; }
+  .promo-box:after {
+    content: " ";
+    display: block;
+    background: url(../img/promo-img.png) no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    margin: 0 auto 45px;
+    width: 157px;
+    height: 278px; }
+
+.quote__text {
+  color: #283645;
+  line-height: 28px; }
+
+.quote__footer {
+  text-align: center; }
+
+.author {
+  color: #283645;
+  font-weight: 800;
+  font-style: normal; }
+
+.price-table {
+  background: #f2f2f2; }
+  .price-table__header {
+    padding: 20px;
+    text-transform: uppercase;
+    background: #283645;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300; }
+  .price-table__title {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700; }
+
+__sale {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 300; }
+
+.contacts__title {
+  color: #283645;
+  font-weight: normal;
+  text-align: center; }
+
+.contacts__descrip {
+  font-weight: bold;
+  text-align: center; }
+
+.contacts__text {
+  text-align: center;
+  color: #d22856;
+  font-size: 24px;
+  font-weight: 300; }
+
+.contacts__link {
+  text-decoration: none;
+  color: #fff;
+  color: #d22856;
+  font-size: 24px;
+  font-weight: 300; }
+
+.contacts__img {
+  width: 100%; }
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .main-footer {
+    height: 0;
+    overflow: hidden; } }
+
+/*Typography*/
+/**/
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+
+.page {
+  background: #fff; }
