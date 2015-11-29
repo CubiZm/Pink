@@ -1,0 +1,21 @@
+@media screen and (min-width:320px) and (max-width: 700px) {
+	.main-footer--form {
+		display: block;
+		min-height: 280px;
+		text-align: center;
+	}
+}
+
+.copyright {
+
+
+	&__link {
+		text-indent: 100%;
+  	white-space: nowrap;
+  	overflow: hidden;
+
+  	background: url(../img/htmlacademy-logo.png) no-repeat;
+  	height: 37px;
+  	width: 24px;
+	}
+}
