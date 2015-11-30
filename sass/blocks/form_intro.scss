@@ -1,0 +1,12 @@
+.intro-form {
+	background: url(../img/bg-intro.png) no-repeat top;
+	background-size: cover;
+	min-height: 237px;
+
+	&__title {
+		@include text-decoration;
+		@include wrapper;
+		text-align: center;
+		padding-top: 84px;
+	}
+}

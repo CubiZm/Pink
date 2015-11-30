@@ -1,0 +1,70 @@
+
+
+.intro {
+	background: url(../img/bg-intro.png) no-repeat top;
+	background-size: cover;
+	width: 100%;
+	min-height: 458px;
+	overflow: hidden;
+
+	&__title {
+		text-align: center;
+		padding-top: 84px;
+		@include text-decoration;
+	}
+
+		&:after {
+		content: " ";
+		display: block;
+    margin: 0 auto;
+		background: url(../img/iphone-in-the-hand.png) no-repeat 0 35px;
+		height: 320px;
+    width: 313px;
+	}
+}
+
+.btn-info {
+	text-align: center;
+	padding: 45px 0;
+
+	&__description {
+		@include text-decoration;
+		font-size: $font-size-base;
+}
+	&__main-link {
+
+		@include link-decoration;
+		border: 2px solid $white;
+		border-radius: 30px;
+		padding: 16px 37px;
+		font-weight: bold;
+
+	}
+}
+
+.platform-info {
+	min-height: 271px;
+	background: $bg-blue;
+
+ 	&__description {
+ 		font-size: $font-size-base;
+ 		font-weight: 500;
+ 		text-align: center;
+ 		color: $white;
+ 		@include wrapper;
+	}
+}
+
+.platform {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+
+	&__icon {}
+
+	&__description {
+		@include text-decoration;
+		font-size: $font-size-base;
+
+	}
+}
