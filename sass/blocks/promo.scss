@@ -12,39 +12,5 @@
 		text-align: center;
 		font-weight: 300;
 	}
-
-
-
-
 }
-	.promo-box {
-		background: #f2f2f2;
-		width: 100%;
-		padding-top: 55px;
 
-		&__subtitle {
-		text-align: center;
-		@include wrapper;
-	}
-
-	&__description {
-		@include wrapper;
-		text-align: center;
-		color: $text-grey;
-	}
-
-	&__item {
-
-	}
-
-	&:after{
-		content: " ";
-    display: block;
-    background: url(../img/promo-img.png) no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    margin: 0 auto 45px;
-    width: 157px;
-    height: 278px;
-	}
-}

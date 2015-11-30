@@ -1,0 +1,16 @@
+html {
+		box-sizing: border-box;
+}
+
+body {
+		font-family: $font-family;
+}
+
+.page {
+		background: $white;
+		// 	@media screen and ($mobile) {
+		// 		background: $white;
+		// }
+}
+
+
