@@ -1,9 +1,16 @@
+/*Typography*/
+/**/
 /*Mixins*/
 /**/
-/*header*/
-/*Mixins*/
-/**/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+
+.page {
+  background: #fff; }
+
 .main-header {
   background: #1d2631;
   width: 100%;
@@ -32,6 +39,7 @@
 .main-menu__link {
   text-decoration: none;
   color: #fff;
+  weight: 300;
   display: block;
   padding: 20px 0;
   border-bottom: 1px solid #000; }
@@ -54,9 +62,6 @@
 .logo__img {
   margin: 21px 0 21px 19px; }
 
-/*Intro*/
-/*Mixins*/
-/**/
 .intro {
   background: url(../img/bg-intro.png) no-repeat top;
   background-size: cover;
@@ -70,40 +75,10 @@
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 300; }
-  .intro:after {
-    content: " ";
+  .intro__img {
     display: block;
-    margin: 0 auto;
-    background: url(../img/iphone-in-the-hand.png) no-repeat 0 35px;
-    height: 320px;
-    width: 313px; }
-
-.btn-info {
-  text-align: center;
-  padding: 45px 0; }
-  .btn-info__description {
-    color: #fff;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    font-size: 14px; }
-  .btn-info__main-link {
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    padding: 16px 37px;
-    font-weight: bold; }
-
-.platform-info {
-  min-height: 271px;
-  background: #1d2631; }
-  .platform-info__description {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px; }
+    margin: 0px auto;
+    padding-top: 0px; }
 
 .platform {
   display: -webkit-flex;
@@ -122,6 +97,35 @@
     font-weight: 300;
     font-size: 14px; }
 
+.platform-info {
+  min-height: 271px;
+  background: #1d2631; }
+  .platform-info__description {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px; }
+
+.btn-info {
+  text-align: center;
+  padding: 30px 0; }
+  .btn-info__description {
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-size: 14px; }
+  .btn-info__main-link {
+    text-decoration: none;
+    color: #fff;
+    weight: 300;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 16px 37px;
+    font-weight: bold;
+    display: inline-block; }
+
 .promo__item {
   overflow: hidden; }
 
@@ -132,8 +136,7 @@
   font-weight: 300;
   padding: 0 20px;
   color: #454036;
-  text-align: center;
-  font-weight: 300; }
+  text-align: center; }
 
 .promo-box {
   background: #f2f2f2;
@@ -146,19 +149,38 @@
     padding: 0 20px;
     text-align: center;
     color: #283645; }
-  .promo-box:after {
-    content: " ";
-    display: block;
-    background: url(../img/promo-img.png) no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    margin: 0 auto 45px;
-    width: 157px;
-    height: 278px; }
+  .promo-box__img {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../img/promo-img.png) no-repeat center top;
+    height: 280px;
+    margin: 0 auto;
+    display: block; }
+
+.price-table {
+  display: table; }
+  .price-table__content {
+    width: 100%; }
+  .price-table__list {
+    display: table-row; }
+  .price-table__header {
+    display: table-cell;
+    width: 100%; }
+  .price-table__header--title {
+    display: table-cell;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 150px; }
+  .price-table__cell {
+    display: table-cell;
+    width: 33.33333333333%;
+    padding: 0 0 0 70px; }
 
 .quote__text {
   color: #283645;
-  line-height: 28px; }
+  line-height: 2; }
 
 .quote__footer {
   text-align: center; }
@@ -185,7 +207,7 @@
 
 __sale {
   font-size: 24px;
-  line-height: 35px;
+  line-height: 0.68;
   font-weight: 300; }
 
 .contacts__title {
@@ -198,33 +220,23 @@ __sale {
   text-align: center; }
 
 .contacts__text {
-  text-align: center;
-  color: #d22856;
+  color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center;
+  color: #d22856; }
 
 .contacts__link {
   text-decoration: none;
   color: #fff;
-  color: #d22856;
-  font-size: 24px;
-  font-weight: 300; }
+  weight: 300;
+  color: #d22856; }
 
 .contacts__img {
   width: 100%; }
 
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .main-footer {
     height: 0;
     overflow: hidden; } }
-
-/*Typography*/
-/**/
-html {
-  box-sizing: border-box; }
-
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
-
-.page {
-  background: #fff; }
