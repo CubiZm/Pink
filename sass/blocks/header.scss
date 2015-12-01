@@ -1,9 +1,8 @@
-
 .main-header {
 	background: $menu-color;
 	width: 100%;
 	min-height: 66px;
-	// 	@media screen and (min-width:320px) and (max-width: 700px) {
+	// 	@media screen and ($mobile) {
 	// 		min-width: 320px;
 	// }
 }
@@ -20,51 +19,4 @@
 			&__section {
 
 			}
-		}
-
-.main-menu {
-	&__list {
-		text-align: center;
-		font-weight: bold;
-		text-transform: uppercase;
-		background: #283645;
-		margin: 0;
-		padding: 0;
-		display: none;
-		@media screen and (min-width: 320px) and (max-width: 700px) {}
-	}
-	&__item {
-		list-style-type: none;
-		min-height: 64px;
-	}
-	&__link {
-		@include link-decoration;
-		display: block;
-		padding: 20px 0;
-		border-bottom: 1px solid #000;
-	}
-	&__btn {
-		display: block;
-		position: relative;
-
-		background: url(../img/open-menu-btn.png) no-repeat;
-		width: 27px;
-		height: 27px;
-		@include wrapper;
-		position: absolute;
-		right: 0px;
-		top: 22px;
-		cursor: pointer;
-
-		text-indent: 100%;
-  	white-space: nowrap;
-  	overflow: hidden;
-	}
-}
-
-.logo {
-
-	&__img {
-		margin: 21px 0 21px 19px
-	}
 }

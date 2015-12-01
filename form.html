@@ -2,16 +2,17 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HTML Academy: Пинк</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
 	</head>
 	<body class="page page--form">
 		<header class="main-header">
 			<div class="main-header__section">
 				<div class="main-header__logo logo">
-					<a class="logo__link" href="/index.html"><img class="logo__img" src="img/logo-header.png" height="23" width="74" alt=""></a>
+					<a class="logo__link" href="/index.html"><img class="logo__img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a>
 				</div>
 				<nav class="main-header__menu main-menu">
 					<ul class="main-menu__list">
@@ -20,15 +21,12 @@
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
 						<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
 					</ul>
-					<div class="main-menu__btn">Открыть</div>
+					<div class="main-menu__btn main-menu__btn--open"></div>
+					<div class="main-menu__btn main-menu__btn--close"></div>
 				</nav>
 			</div>
-
+				<h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 		</header>
-
-		<div class="intro-form">
-			<h1 class="intro-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-		</div>
 
 		<div class="page-form">
 			<p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
@@ -36,26 +34,26 @@
 			<form class="form">
 
 				<fieldset class="form__info">
-						<label class="label label--pink" for="first-name" >Имя: *</label>
+						<label class="label" for="first-name" >Имя: *</label>
 						<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
-						<label class="label label--pink" for="last-name" >Фамилия: *</label>
+						<label class="label" for="last-name" >Фамилия: *</label>
 						<input class="input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
-						<label class="label label--pink" for="middle-name" >Отчество:</label>
+						<label class="label" for="middle-name" >Отчество:</label>
 						<input class="input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
-						<div class="legend">С каким приложением путешествовали?</div>
+						<legend class="legend">С каким приложением путешествовали?</legend>
 						<input class="input" type="radio" id="ios" name="os" checked>
-						<label class="label label-radio" for="ios"  checked>Pink для iOS</label>
+						<label class="label" for="ios"  checked>Pink для iOS</label>
 						<input class="input" type="radio" id="android" name="os">
-						<label class="label label-radio" for="android">Pink на Android</label>
+						<label class="label" for="android">Pink на Android</label>
 						<input class="input" type="radio" id="windows" name="os">
-						<label class="label label-radio" for="windows">Windows Phone</label>
+						<label class="label" for="windows">Windows Phone</label>
 				</fieldset>
 
 				<fieldset class="form__info">
-						<div class="legend">Когда вы путешествовали? *</div>
+						<legend class="legend">Когда вы путешествовали? *</legend>
 						<label class="label" for="departure-date">Дата выезда</label>
 						<input class="input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
 						<label class="label" for="duration" >Продолжительность</label>
@@ -69,7 +67,7 @@
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
-					<label class="label legend" for="number-of-companions" >Количество попутчиков *</label>
+					<label class="label" for="number-of-companions" >Количество попутчиков *</label>
 						<div class="plus-minus">
 							<button class="plus-minus__btn" type="button" >-</button>
 							<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholdergit="0">
@@ -95,7 +93,7 @@
 					</fieldset>
 
 					<fieldset class="form__info">
-							<div class="legend">Ваши безбашенные достижения в путешествии</div>
+							<legend class="legend">Ваши безбашенные достижения в путешествии</legend>
 							<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
 							<label class="label" for="selfie-shark">Сделал селфи с акулой</label>
 							<input class="input" type="checkbox" id="sunburn" name="sunburn" checked>
@@ -111,7 +109,7 @@
 					</fieldset>
 
 					<fieldset class="form__info form__info--bg-grey">
-						<div class="legend">Ваши фотографии из поездки</div>
+						<legend class="legend">Ваши фотографии из поездки</legend>
 						<div class="photo-action">
 							<input class="input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
 							<button class="photo-action__btn">Загрузить фото</button>
@@ -128,23 +126,21 @@
 		</form>
 		</div>
 
-		<footer class="main-footer main-footer--form">
+		<footer class="main-footer">
 			<div class="main-footer__logo">
 				<a class="main-footer__link" href="/index.html">
-					<img class="main-footer__logo-img" src="img/logo-pink-glasses.png" height="40" width="145" alt="">
+					<img class="main-footer__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt="">
 				</a>
 			</div>
 
 			<div class="social">
-				<a class="social__link social__link--twitter" href="#">Twitter</a>
-				<a class="social__link social__link--fb" href="#">Facebook</a>
-				<a class="social__link social__link--youtube" href="#">Youtube</a>
+				<a class="social__link" href="#">Twitter</a>
+				<a class="social__link" href="#">Facebook</a>
+				<a class="social__link" href="#">Youtube</a>
 			</div>
 
-			<div class="copyright">
-				<p class="copyright__text">Разработано</p>
-				<a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
-			</div>
+			<p class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+
 		</footer>
 
 	</body>

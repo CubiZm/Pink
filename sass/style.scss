@@ -1,35 +1,18 @@
-@import "./_variables.scss";
-@import "./_mixins.scss";
+@import "./general/_variables.scss";
+@import "./general/_mixins.scss";
+@import "./general/media.scss";
+@import "./general/base.scss";
 @import "./blocks/header.scss";
+@import "./blocks/main-menu.scss";
+@import "./blocks/logo.scss";
 @import "./blocks/intro.scss";
+@import "./blocks/platform.scss";
+@import "./blocks/platform-info.scss";
+@import "./blocks/btn-info.scss";
 @import "./blocks/promo.scss";
+@import "./blocks/promo-box.scss";
+@import "./blocks/price-table.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/price.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
-
-@import "./blocks/form_intro.scss";
-@import "./blocks/form_info.scss";
-
-@import "./blocks/form_footer.scss";
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
-
-
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $font-family;
-}
-
-.page {
-    background: $white;
-    // 	@media screen and (min-width:320px) and (max-width: 700px) {
-    // 		background: $white;
-    // }
-}
-
-
