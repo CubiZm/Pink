@@ -9,7 +9,7 @@ var autoprefixer = require("autoprefixer");
 gulp.task("style", function() {
   return gulp.src("sass/style.{sass,scss}")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass()).on('error', sass.logError)
     .pipe(postcss([
       autoprefixer({browsers: "last 2 versions"})
     ]))

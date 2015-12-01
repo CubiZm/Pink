@@ -1,0 +1,28 @@
+.quote {
+
+	&__text {
+		color: $text-grey;
+		line-height: 2;
+	}
+
+	&__footer {
+		text-align: center;
+	}
+
+	&__description {
+
+}
+
+}
+
+.author {
+
+	 // @media screen and ($mobile) {
+	//    .author_info {
+	//    	opacity: 0;
+	//    }
+	 // }
+		color: $text-grey;
+		font-weight: 800;
+		font-style: normal;
+}

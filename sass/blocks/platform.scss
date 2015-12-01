@@ -1,0 +1,13 @@
+.platform {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+
+	&__icon {}
+
+	&__description {
+		@include text-decoration;
+		font-size: $font-size-base;
+
+	}
+}

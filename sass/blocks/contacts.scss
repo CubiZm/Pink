@@ -1,0 +1,34 @@
+.contacts {
+
+&__title {
+	color: $text-grey;
+	font-weight: normal;
+	text-align: center;
+}s
+
+&__box {}
+
+&__descrip {
+	font-weight: bold;
+	text-align: center;
+
+}
+
+&__text {
+		@include text-decoration;
+		text-align: center;
+		color: $pink;
+}
+
+&__link {
+		@include link-decoration;
+		color: $pink;
+}
+
+&__map {}
+
+&__img {
+	width: 100%;
+}
+
+}

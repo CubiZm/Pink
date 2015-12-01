@@ -1,0 +1,29 @@
+	.promo-box {
+		background: #f2f2f2;
+		width: 100%;
+		padding-top: 55px;
+
+		&__subtitle {
+		text-align: center;
+		@include wrapper;
+	}
+
+	&__description {
+		@include wrapper;
+		text-align: center;
+		color: $text-grey;
+	}
+
+	&__item {
+
+	}
+
+	&__img {
+		@include text-null;
+		background: url(../img/promo-img.png) no-repeat center top;
+		height: 280px;
+		margin: 0 auto;
+		display: block;
+	}
+
+}
