@@ -1,0 +1,15 @@
+
+.promo {
+
+	&__item {
+		overflow: hidden;
+	}
+
+	&__title {
+		@include text-decoration;
+		@include wrapper;
+		color: #454036;
+		text-align: center;
+	}
+}
+

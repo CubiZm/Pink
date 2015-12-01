@@ -1,0 +1,23 @@
+
+.intro {
+	background: url(../img/bg-intro.png) no-repeat top;
+	background-size: cover;
+	width: 100%;
+	min-height: 458px;
+	overflow: hidden;
+
+	&__title {
+		text-align: center;
+		padding-top: 84px;
+		@include text-decoration;
+	}
+
+		&__img {
+		display: block;
+		margin: 0px auto;
+		padding-top: 0px;
+	}
+}
+
+
+

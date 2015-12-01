@@ -1,0 +1,22 @@
+.main-header {
+	background: $menu-color;
+	width: 100%;
+	min-height: 66px;
+	// 	@media screen and ($mobile) {
+	// 		min-width: 320px;
+	// }
+}
+
+.main-header {
+	background: $menu-color;
+	position: absolute;
+	top: 0;
+	&__menu {
+		color: $white;
+	}
+		&__logo {
+		}
+			&__section {
+
+			}
+}
