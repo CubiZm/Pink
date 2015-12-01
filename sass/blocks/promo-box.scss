@@ -18,14 +18,12 @@
 
 	}
 
-	&:after{
-		content: " ";
+	&__img {
+		@include text-null;
+		background: url(../img/promo-img.png) no-repeat center top;
+		height: 280px;
+		margin: 0 auto;
 		display: block;
-		background: url(../img/promo-img.png) no-repeat;
-		background-position: 50% 0;
-		background-size: cover;
-		margin: 0 auto 45px;
-		width: 157px;
-		height: 278px;
 	}
+
 }

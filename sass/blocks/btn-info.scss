@@ -1,6 +1,6 @@
 .btn-info {
 	text-align: center;
-	padding: 45px 0;
+	padding: 30px 0;
 
 	&__description {
 		@include text-decoration;
@@ -13,6 +13,7 @@
 		border-radius: 30px;
 		padding: 16px 37px;
 		font-weight: bold;
+		display: inline-block;
 
 	}
 }

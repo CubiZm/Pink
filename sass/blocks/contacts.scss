@@ -15,17 +15,14 @@
 }
 
 &__text {
+		@include text-decoration;
 		text-align: center;
 		color: $pink;
-		font-size: $font-size-title;
-		font-weight: 300;
 }
 
 &__link {
 		@include link-decoration;
 		color: $pink;
-		font-size: $font-size-title;
-		font-weight: 300;
 }
 
 &__map {}

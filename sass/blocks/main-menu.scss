@@ -32,8 +32,6 @@
 		top: 22px;
 		cursor: pointer;
 
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
+		@include text-null;
 	}
 }
