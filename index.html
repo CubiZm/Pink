@@ -2,10 +2,11 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HTML Academy: Пинк</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body class="page">
 		<header class="main-header">
@@ -20,7 +21,7 @@
 						<li class="main-menu__item"><a class="main-menu__link" href="#" >Отзывы</a></li>
 						<li class="main-menu__item"><a class="main-menu__link" href="form.html" >Конкурс</a></li>
 					</ul>
-					<div class="main-menu__btn">Открыть</div>
+					<div class="main-menu__btn">Закрыть</div>
 
 				</nav>
 			</div>
@@ -28,6 +29,7 @@
 
 			<div class="intro">
 				<h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+				<img class="intro__img" src="img/iphone-in-the-hand.png" height="313" width="320" alt="">
 			</div>
 
 			<div class="platform-info">
@@ -46,28 +48,30 @@
 			</div>
 
 
+			<div class="promo">
+				<div class="promo__item">
+					<h2 class="promo__title">Устали от серости мегаполиса?</h2>
+					<h2 class="promo__title"> Нам есть, что вам предложить!</h2>
+				</div>
+				<div class="promo-box">
+					<div class="promo-box__item">
+						<h3 class="promo-box__subtitle">Поднимает настроение</h3>
+						<p class="promo-box__description">Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!</p>
+					</div>
+					<div class="promo-box__item">
+						<h3 class="promo-box__subtitle">Меняет мир вокруг</h3>
+						<p class="promo-box__description">Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы усилить эффект</p>
+					</div>
+					<div class="promo-box__item">
+						<h3 class="promo-box__subtitle">Заводит новых друзей</h3>
+						<p class="promo-box__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+					</div>
+					<div class="promo-box__item">
+						<div class="promo-box__img">промо-картинка</div>
+					</div>
+				</div>
 
-		<div class="promo">
-			<div class="promo__item">
-				<h2 class="promo__title">Устали от серости мегаполиса?</h2>
-				<h2 class="promo__title"> Нам есть, что вам предложить!</h2>
 			</div>
-			<div class="promo-box">
-				<div class="promo-box__item">
-					<h3 class="promo-box__subtitle">Поднимает настроение</h3>
-					<p class="promo-box__description">Приложение позволит вам победить осеннюю хадру и депрессию буквально в несколько кликов!</p>
-				</div>
-				<div class="promo-box__item">
-					<h3 class="promo-box__subtitle">Меняет мир вокруг</h3>
-					<p class="promo-box__description">Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы усилить эффект</p>
-				</div>
-				<div class="promo-box__item">
-					<h3 class="promo-box__subtitle">Заводит новых друзей</h3>
-					<p class="promo-box__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-				</div>
-			</div>
-
-		</div>
 
 <!-- 		<div>
 			<h3>Эффект на 24 часа!</h3>
@@ -99,39 +103,39 @@
 										<div class="price-table__header">
 											<p class="price-table__title">База</p>
 											<p class="price-table__sale">1,99 USD</p>
-											</div>
+										</div>
 										<div class="price-table__header">
 											<p class="price-table__title">Стандарт</p>
 											<p class="price-table__sale">3,99 USD</p>
-											</div>
+										</div>
 										<div class="price-table__header">
 											<p class="price-table__title">Анлим</p>
 											<p class="price-table__sale">9,99 USD</p>
-											</div>
+										</div>
 								</div>
 						</header>
 						<div class="price-table__content">
 								<div class="price-table__list">
-										<div class="price-table__item">Розовый фильтр</div>
-										<div class="price-table__item">&#10004;</div>
-										<div class="price-table__item">&#10004;</div>
-										<div class="price-table__item">&#10004;</div>
+										<div class="price-table__header--title">Розовый фильтр</div>
+										<div class="price-table__cell">&#10004;</div>
+										<div class="price-table__cell">&#10004;</div>
+										<div class="price-table__cell">&#10004;</div>
 								</div>
 						</div>
 						<div class="price-table__content">
 								<div class="price-table__list">
-										<div class="price-table__item">Смайлики</div>
-										<div class="price-table__item">&#10006;</div>
-										<div class="price-table__item">&#10006;</div>
-										<div class="price-table__item">&#10004;</div>
+										<div class="price-table__header--title">Смайлики</div>
+										<div class="price-table__cell">&#10006;</div>
+										<div class="price-table__cell">&#10004;</div>
+										<div class="price-table__cell">&#10004;</div>
 								</div>
 						</div>
 						<footer class="price-table__content">
 								<div class="price-table__list">
-										<div class="price-table__item">Комментарии</div>
-										<div class="price-table__item">&#10006;</div>
-										<div class="price-table__item">&#10006;</div>
-										<div class="price-table__item">&#10006;</div>
+										<div class="price-table__header--title">Комментарии</div>
+										<div class="price-table__cell">&#10006;</div>
+										<div class="price-table__cell">&#10006;</div>
+										<div class="price-table__cell">&#10004;</div>
 								</div>
 						</footer>
 		</div>
