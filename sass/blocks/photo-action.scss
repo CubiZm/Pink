@@ -1,6 +1,7 @@
 .photo-action {
 
 &__btn {
+	cursor: pointer;
 	@include text-decoration;
 	color: $text-grey;
 	font-weight: 500;
@@ -24,13 +25,19 @@
 &__img {
 	margin: 0px 20px 45px 20px;
 	}
+&__img-wrap {
+	position: relative;
+}
 
-&__img:after {
+&__img-wrap:after {
 	content: "";
 	position: absolute;
-	width: 50px;
-	height: 50px;
-	background: #000;
+	z-index: 99999;
+	right: 10px;
+	top: -10px;
+	width: 34px;
+	height: 34px;
+	background: url(../img/delete-photo-btn.png) no-repeat;
 	}
 
 }

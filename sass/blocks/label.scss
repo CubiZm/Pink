@@ -1,0 +1,18 @@
+.label {
+
+	color: $text-grey;
+	display: block;
+	position: relative;
+
+
+	&--pink {
+		color: $pink;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 11px;
+		margin: 0 0 3px;
+	}
+	&:last-child {
+		padding-bottom: 45px;
+	}
+}
