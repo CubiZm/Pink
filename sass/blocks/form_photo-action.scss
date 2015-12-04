@@ -1,14 +1,24 @@
 .photo-action {
 
 &__btn {
-
+	@include text-decoration;
+	color: $text-grey;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	background: $white;
+	border: 2px solid #e6e6e6;
+	margin: 0 auto;
+	padding: 17px 0 12px;
+	text-align: center;
 	}
 
 &__photo-preview {
 	display: flex;
 	flex-direction: row;
-  flex-wrap: wrap;
-  @include wrapper;
+	flex-wrap: wrap;
+	@include wrapper;
+	padding-top: 30px;
 	}
 
 &__img {
@@ -16,4 +26,3 @@
 	}
 
 }
-

@@ -9,8 +9,15 @@
 
 }
 
-
-
+.page-form input[type=file] {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		opacity: 0;
+		z-index: 1000;
+		cursor: pointer;
+}
 
 
 .label {
@@ -55,6 +62,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 40px;
+	padding-bottom: 40px;
 
 }
 .input {
