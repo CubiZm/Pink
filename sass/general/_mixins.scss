@@ -27,6 +27,12 @@ clear: both;
 	}
 }
 
+@mixin social-icon {
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
 @mixin text-null {
 text-indent: 100%;
 white-space: nowrap;

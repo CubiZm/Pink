@@ -12,7 +12,7 @@
 		<header class="main-header">
 			<div class="main-header__section">
 				<div class="main-header__logo logo">
-					<a class="logo__link" href="/index.html"><img class="logo__img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt=""></a>
+					<a class="logo__link" href="/index.html"><img class="logo__img" src="img/logo-header.png" height="23" width="74" alt=""></a>
 				</div>
 				<nav class="main-header__menu main-menu">
 					<ul class="main-menu__list">
@@ -21,12 +21,14 @@
 						<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
 						<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
 					</ul>
-					<div class="main-menu__btn main-menu__btn--open"></div>
-					<div class="main-menu__btn main-menu__btn--close"></div>
+					<div class="main-menu__btn">Закрыть</div>
 				</nav>
 			</div>
-				<h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 		</header>
+
+		<div class="intro-form">
+			<h1 class="intro-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+		</div>
 
 		<div class="page-form">
 			<p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
@@ -34,40 +36,40 @@
 			<form class="form">
 
 				<fieldset class="form__info">
-						<label class="label" for="first-name" >Имя: *</label>
+						<label class="label label--pink" for="first-name" >Имя: *</label>
 						<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
-						<label class="label" for="last-name" >Фамилия: *</label>
+						<label class="label label--pink" for="last-name" >Фамилия: *</label>
 						<input class="input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
-						<label class="label" for="middle-name" >Отчество:</label>
+						<label class="label label--pink" for="middle-name" >Отчество:</label>
 						<input class="input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
-						<legend class="legend">С каким приложением путешествовали?</legend>
+						<div class="legend">С каким приложением путешествовали?</div>
 						<input class="input" type="radio" id="ios" name="os" checked>
-						<label class="label" for="ios"  checked>Pink для iOS</label>
+						<label class="label label-radio" for="ios"  checked>Pink для iOS</label>
 						<input class="input" type="radio" id="android" name="os">
-						<label class="label" for="android">Pink на Android</label>
+						<label class="label label-radio" for="android">Pink на Android</label>
 						<input class="input" type="radio" id="windows" name="os">
-						<label class="label" for="windows">Windows Phone</label>
+						<label class="label label-radio" for="windows">Windows Phone</label>
 				</fieldset>
 
 				<fieldset class="form__info">
-						<legend class="legend">Когда вы путешествовали? *</legend>
-						<label class="label" for="departure-date">Дата выезда</label>
+						<div class="legend">Когда вы путешествовали? *</div>
 						<input class="input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
-						<label class="label" for="duration" >Продолжительность</label>
+						<label class="label label--pink" for="departure-date">Дата выезда</label>
 							<div class="plus-minus">
 								<button class="plus-minus__btn" type="button" >-</button>
 								<input class="plus-minus__input input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
 								<button class="plus-minus__btn" type="button" >+</button>
 							</div>
-						<label class="label" for="return-date" >Дата возвращения</label>
+						<label class="label label--pink" for="duration" >Продолжительность</label>
 						<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
+						<label class="label label--pink" for="return-date" >Дата возвращения</label>
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
-					<label class="label" for="number-of-companions" >Количество попутчиков *</label>
+					<div class="label label--pink" for="number-of-companions" >Количество попутчиков *</div>
 						<div class="plus-minus">
 							<button class="plus-minus__btn" type="button" >-</button>
 							<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholdergit="0">
@@ -75,25 +77,26 @@
 						</div>
 						<ol class="numeral-inputs">
 							<li class="numeral-inputs__item">
-								<label class="label" for="name-1" >Имя: *</label>
+								<label class="label label--pink" for="name-1" >Имя: *</label>
 								<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 							</li>
 							<li class="numeral-inputs__item">
-								<label class="label" for="nickname-1">Прозвище:</label>
+								<label class="label label--pink" for="nickname-1">Прозвище:</label>
 								<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 							</li>
-							<li class="numeral-inputs__item"><label for="name-1" class="label">Имя: *</label>
+							<li class="numeral-inputs__item">
+								<label class="label label--pink" for="name-1" >Имя: *</label>
 								<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 							</li>
 							<li class="numeral-inputs__item">
-								<label class="label" for="nickname-1" >Прозвище:</label>
+								<label class="label label--pink" for="nickname-1 label--pink" >Прозвище:</label>
 								<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 							</li>
 						</ol>
 					</fieldset>
 
 					<fieldset class="form__info">
-							<legend class="legend">Ваши безбашенные достижения в путешествии</legend>
+							<div class="legend">Ваши безбашенные достижения в путешествии</div>
 							<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
 							<label class="label" for="selfie-shark">Сделал селфи с акулой</label>
 							<input class="input" type="checkbox" id="sunburn" name="sunburn" checked>
@@ -109,7 +112,7 @@
 					</fieldset>
 
 					<fieldset class="form__info form__info--bg-grey">
-						<legend class="legend">Ваши фотографии из поездки</legend>
+						<div class="legend">Ваши фотографии из поездки</div>
 						<div class="photo-action">
 							<input class="input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
 							<button class="photo-action__btn">Загрузить фото</button>
@@ -126,21 +129,23 @@
 		</form>
 		</div>
 
-		<footer class="main-footer">
+		<footer class="main-footer main-footer--form">
 			<div class="main-footer__logo">
 				<a class="main-footer__link" href="/index.html">
-					<img class="main-footer__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt="">
+					<img class="main-footer__logo-img" src="img/logo-pink-glasses.png" height="40" width="145" alt="">
 				</a>
 			</div>
 
 			<div class="social">
-				<a class="social__link" href="#">Twitter</a>
-				<a class="social__link" href="#">Facebook</a>
-				<a class="social__link" href="#">Youtube</a>
+				<a class="social__link social__link--twitter" href="#">Twitter</a>
+				<a class="social__link social__link--fb" href="#">Facebook</a>
+				<a class="social__link social__link--youtube" href="#">Youtube</a>
 			</div>
 
-			<p class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
-
+			<div class="copyright">
+				<p class="copyright__text">Разработано</p>
+				<a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+			</div>
 		</footer>
 
 	</body>

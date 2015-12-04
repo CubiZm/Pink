@@ -4,7 +4,7 @@
 	text-align: center;
 	@include wrapper;
 	color: $text-grey;
-	line-height: 2px;
+	line-height: 2;
 	}
 }
 
@@ -39,24 +39,27 @@
 .label {
 
 	color: $text-grey;
-	font-size: $font-size-base;
 	display: block;
 	position: relative;
-	padding-left: 50px;
-	padding-top: 30px;
+
 
 	&--pink {
 		color: $pink;
 		text-transform: uppercase;
 		text-align: center;
-
+		padding-top: 11px;
 		margin: 0 0 3px;
+	}
+	&:last-child {
+		padding-bottom: 45px;
 	}
 }
 
 
 .label-radio {
 		line-height: 30px;
+		padding-left: 50px;
+	padding-top: 30px;
 	&:before
  {
 		cursor: pointer;
@@ -95,7 +98,6 @@
 
 }
 .input {
-	position: relative;font-size: 18px;
+	position: relative;
 	@include wrapper;
-
 }
