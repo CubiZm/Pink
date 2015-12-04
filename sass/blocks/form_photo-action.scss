@@ -25,4 +25,12 @@
 	margin: 0px 20px 45px 20px;
 	}
 
+&__img:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	}
+
 }

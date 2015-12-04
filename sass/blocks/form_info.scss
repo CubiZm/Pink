@@ -55,7 +55,8 @@
 	&--bg-grey {
 		background: $bg-grey;
 	}
-}
+
+	}
 
 .legend {
 	color: $pink;
@@ -69,3 +70,17 @@
 	position: relative;
 	@include wrapper;
 }
+
+.form__btn {
+		display: block;
+		margin: 22px auto;
+    padding: 18px 0 15px;
+    width: 280px;
+    @include text-decoration;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #2aab6d;
+    border: none;
+    border-radius: 3px;
+	}
