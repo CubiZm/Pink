@@ -1,3 +1,21 @@
+.label-check {
+		line-height: 30px;
+		padding-left: 50px;
+	padding-top: 30px;
+	&:before
+ {
+		cursor: pointer;
+		content: "";
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		background-color: #fff;
+		border: 2px solid #e6e6e6;
+		left:0;
+
+	}
+}
+
 .page-form input[type=checkbox] {
 		position: relative;
 		margin: 10px;
@@ -5,14 +23,12 @@
 }
 
 .page-form input[type=checkbox]:checked + label:after {
-		// content: "\2022";
 		content: "";
 		position: absolute;
-		left: 12px;
+		left: 9px;
 		top: 42px;
-		width: 15px;
-		height: 15px;
-		background-color: $pink;
-		border-radius: 50%;
+		width: 28px;
+		height: 26px;
+		background: url(../img/checked-img.png) no-repeat;
 		z-index: 100;
 }

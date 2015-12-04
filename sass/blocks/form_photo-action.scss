@@ -1,0 +1,19 @@
+.photo-action {
+
+&__btn {
+
+	}
+
+&__photo-preview {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  @include wrapper;
+	}
+
+&__img {
+	margin: 0px 20px 45px 20px;
+	}
+
+}
+
