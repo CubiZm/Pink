@@ -1,0 +1,22 @@
+.plus-minus {
+
+display: flex;
+
+&__btn {
+
+	flex-shrink: 0;
+	padding: 16px 0;
+	width: 63px;
+	font-size: 27px;
+	font-weight: 700;
+	border: 2px solid #e5e5e5;
+	border-radius: 3px 0 0 3px;
+	background: $white;
+
+}
+&__input {
+
+}
+
+
+}

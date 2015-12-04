@@ -1,40 +1,17 @@
-.page-form {
 
- &__desription {
-	text-align: center;
-	@include wrapper;
-	color: $text-grey;
-	line-height: 2;
-	}
-}
 
 .page-form input[type=text] {
 	@include wrapper;
 	color: #000;
 	margin: 0 auto;
 	padding: 17px 20px 13px;
-	width: 276px;
+	width: calc(100% - 126px)
 
 }
 
-.page-form input[type="radio"] {
-		position: relative;
-		margin: 10px;
-		display: none;
-}
 
-.page-form input[type=radio]:checked + label:after {
-		// content: "\2022";
-		content: "";
-		position: absolute;
-		left: 12px;
-		top: 42px;
-		width: 15px;
-		height: 15px;
-		background-color: $pink;
-		border-radius: 50%;
-		z-index: 100;
-}
+
+
 
 .label {
 
@@ -56,28 +33,11 @@
 }
 
 
-.label-radio {
-		line-height: 30px;
-		padding-left: 50px;
-	padding-top: 30px;
-	&:before
- {
-		cursor: pointer;
-		content: "";
-		position: absolute;
-		width: 35px;
-		height: 35px;
-		background-color: #fff;
-		border-radius: 50%;
-		border: 2px solid #e6e6e6;
-		left:0;
 
-	}
-}
 
 
 .form__info {
-		@include wrapper;
+		// @include wrapper;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

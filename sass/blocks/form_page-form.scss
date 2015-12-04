@@ -1,0 +1,9 @@
+.page-form {
+
+ &__desription {
+	text-align: center;
+	@include wrapper;
+	color: $text-grey;
+	line-height: 2;
+	}
+}
