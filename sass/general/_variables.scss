@@ -3,17 +3,15 @@ $tablet: ('max-width: 1200px');
 $desktop: ('min-width: 1200px');
 
 
-$white: #fff;
-$pink: #d22856;
-$grey: #e5e5e5;
-$smoke: #f2f2f2;
+$color-white: #fff;
+$color-pink: #d22856;
+$color-grey: #e5e5e5;
+$color-smoke: #f2f2f2;
 $color-outer-space: #283645;
 
 
-$bg-blue: $color-outer-space;
 $menu-color: $color-outer-space;
-$text-blue: $color-outer-space;
-$bg-grey: $smoke;
+$text-content: $color-outer-space;
 
 
 /*Typography*/

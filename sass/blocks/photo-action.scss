@@ -3,12 +3,12 @@
 &__btn {
 	cursor: pointer;
 	@include text-style-base;
-	color: $text-blue;
+	color: text-content;
 	font-weight: 500;
 	$font-size-middle;
 	text-transform: uppercase;
-	background: $white;
-	border: 2px solid $smoke;
+	background: $color-white;
+	border: 2px solid $color-smoke;
 	margin: 0 auto;
 	padding: 17px 0 12px;
 	text-align: center;

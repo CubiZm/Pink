@@ -3,7 +3,7 @@
  &__desription {
 	text-align: center;
 	@include wrapper;
-	color: $text-blue;
+	color: text-content;
 	line-height: 2;
 	}
 }

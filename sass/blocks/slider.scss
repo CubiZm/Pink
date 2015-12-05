@@ -1,7 +1,7 @@
 .quote {
 
 	&__text {
-		color: $text-blue;
+		color: text-content;
 		line-height: 2;
 	}
 
@@ -22,7 +22,7 @@
 	//    	opacity: 0;
 	//    }
 	 // }
-		color: $text-blue;
+		color: text-content;
 		font-weight: 800;
 		font-style: normal;
 }

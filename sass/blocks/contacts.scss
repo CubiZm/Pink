@@ -1,7 +1,7 @@
 .contacts {
 
 &__title {
-	color: $text-blue;
+	color: text-content;
 	font-weight: normal;
 	text-align: center;
 }s
@@ -17,12 +17,12 @@
 &__text {
 		@include text-style-base;
 		text-align: center;
-		color: $pink;
+		color: $color-pink;
 }
 
 &__link {
 		@include link-decoration;
-		color: $pink;
+		color: $color-pink;
 }
 
 &__map {}

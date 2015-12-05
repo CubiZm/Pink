@@ -1,5 +1,5 @@
 	.promo-box {
-		background: $smoke;
+		background: $color-smoke;
 		width: 100%;
 		padding-top: 55px;
 
@@ -11,7 +11,7 @@
 	&__description {
 		@include wrapper;
 		text-align: center;
-		color: $text-blue;
+		color: text-content;
 	}
 
 	&__item {

@@ -1,12 +1,12 @@
 .label {
 
-	color: $text-blue;
+	color: text-content;
 	display: block;
 	position: relative;
 
 
 	&--pink {
-		color: $pink;
+		color: $color-pink;
 		text-transform: uppercase;
 		text-align: center;
 		padding-top: 18px;
@@ -15,7 +15,7 @@
 	}
 
 	&--pink-title {
-		color: $pink;
+		color: $color-pink;
 		text-transform: uppercase;
 		text-align: left;
 		padding-top: 18px;

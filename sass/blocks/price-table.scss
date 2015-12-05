@@ -1,7 +1,7 @@
 .wrapper {
 	overflow: hidden;
 	min-height: 476px;
-	background: $smoke;
+	background: $color-smoke;
 }
 
 .price-table {
@@ -12,20 +12,20 @@
 	// position: absolute;
 	&__col {}
 	&__title {
-		background: $text-blue;
+		background: text-content;
 		@include text-style-base;
 		text-align: center;
 		text-transform: uppercase;
 		min-height: 74px;
 		padding-top: 24px;
-		border: 1px solid $smoke
+		border: 1px solid $color-smoke
 	}
 	&__item {
 		min-height: 59px;
 		min-width: 277px;
 		position: relative;
-		background: $white;
-		border: 1px solid $smoke
+		background: $color-white;
+		border: 1px solid $color-smoke
 	}
 	&__text {
 		text-align: left;
@@ -33,7 +33,7 @@
 		padding-left: 22px;
 		@include text-style-base;
 		font-size: 14px;
-		color: $text-blue;
+		color: text-content;
 		text-transform: uppercase;
 		font-weight: 500;
 	}
@@ -65,7 +65,7 @@
 // 	}
 // 	&__title {
 // 		display: table-cell;
-// 		background: $text-blue;
+// 		background: text-content;
 // 		@include text-style-base;
 // 		text-align: center;
 // 		border-left: 1px solid #e6e6e6;

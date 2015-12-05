@@ -4,7 +4,7 @@
 	&__header {
 		padding: 20px;
 		text-transform: uppercase;
-		background: $text-blue;
+		background: text-content;
 
 		@include text-style-base;
 	}

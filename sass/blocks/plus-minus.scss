@@ -10,26 +10,26 @@ display: flex;
 	font-size: 27px;
 	font-weight: 700;
 	border-radius: 3px 0 0 3px;
-	background: $white;
+	background: $color-white;
 
 }
 &__input {
-	border: 2px solid $grey
+	border: 2px solid $color-grey
 }
 
 
 }
 
 .minus {
-	border-top: 2px solid $grey;
-	border-left: 2px solid $grey;
-	border-bottom: 2px solid $grey;
+	border-top: 2px solid $color-grey;
+	border-left: 2px solid $color-grey;
+	border-bottom: 2px solid $color-grey;
 	border-right: none;
 }
 
 .plus {
-	border-top: 2px solid $grey;
-	border-right: 2px solid $grey;
-	border-bottom: 2px solid $grey;
+	border-top: 2px solid $color-grey;
+	border-right: 2px solid $color-grey;
+	border-bottom: 2px solid $color-grey;
 	border-left: none;
 }
