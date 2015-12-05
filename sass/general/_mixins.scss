@@ -5,7 +5,7 @@ color: $white;
 weight: $weight;
 }
 
-@mixin text-decoration($size: 24px, $weight:300) {
+@mixin text-style-base($size: 24px, $weight:300) {
 color: $white;
 font: {
 family: $font-family;
@@ -37,5 +37,13 @@ clear: both;
 text-indent: 100%;
 white-space: nowrap;
 overflow: hidden;
+}
+
+@mixin glif {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	width: 26px;
+	height: 26px;
 }
 /**/

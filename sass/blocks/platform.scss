@@ -6,7 +6,7 @@
 	&__icon {}
 
 	&__description {
-		@include text-decoration;
+		@include text-style-base;
 		font-size: $font-size-base;
 
 	}

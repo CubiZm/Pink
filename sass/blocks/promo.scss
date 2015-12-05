@@ -6,7 +6,7 @@
 	}
 
 	&__title {
-		@include text-decoration;
+		@include text-style-base;
 		@include wrapper;
 		color: #454036;
 		text-align: center;

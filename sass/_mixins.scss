@@ -14,6 +14,8 @@
 	}
 }
 
+
+
 @mixin wrapper {
 	padding: 0 20px;
 }
@@ -24,14 +26,6 @@
 		content: '';
 		clear: both;
 	}
-}
-
-@mixin glif {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	width: 26px;
-	height: 26px;
 }
 
 @mixin social-icon {

@@ -16,8 +16,8 @@
 	}
 
 	__text {
-		@include text-decoration;
-		color: $text-grey;
+		@include text-style-base;
+		color: $text-blue;
 padding-right: 20px;
 	}
 }

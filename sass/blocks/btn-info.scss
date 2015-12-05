@@ -3,7 +3,7 @@
 	padding: 30px 0;
 
 	&__description {
-		@include text-decoration;
+		@include text-style-base;
 		font-size: $font-size-base;
 }
 	&__main-link {

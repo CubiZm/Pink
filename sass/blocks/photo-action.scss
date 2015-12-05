@@ -2,8 +2,8 @@
 
 &__btn {
 	cursor: pointer;
-	@include text-decoration;
-	color: $text-grey;
+	@include text-style-base;
+	color: $text-blue;
 	font-weight: 500;
 	font-size: 18px;
 	text-transform: uppercase;
