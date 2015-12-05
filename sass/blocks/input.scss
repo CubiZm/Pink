@@ -1,4 +1,6 @@
 .input {
 	position: relative;
 	@include wrapper;
+	display: block;
+	border: 2px solid $grey;
 }

@@ -6,6 +6,8 @@ body {
 		font-family: $font-family;
 }
 
+fieldset {border: none;}
+
 .page {
 		background: $white;
 		// 	@media screen and ($mobile) {

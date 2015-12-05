@@ -9,14 +9,27 @@ display: flex;
 	width: 63px;
 	font-size: 27px;
 	font-weight: 700;
-	border: 2px solid #e5e5e5;
 	border-radius: 3px 0 0 3px;
 	background: $white;
 
 }
 &__input {
-
+	border: 2px solid $grey
 }
 
 
+}
+
+.minus {
+	border-top: 2px solid $grey;
+	border-left: 2px solid $grey;
+	border-bottom: 2px solid $grey;
+	border-right: none;
+}
+
+.plus {
+	border-top: 2px solid $grey;
+	border-right: 2px solid $grey;
+	border-bottom: 2px solid $grey;
+	border-left: none;
 }
