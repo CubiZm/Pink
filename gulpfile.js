@@ -10,11 +10,14 @@ var browserSync = require('browser-sync').create();
 gulp.task("style", function() {
 	return gulp.src("sass/style.{sass,scss}")
 		.pipe(plumber())
-		.pipe(sass()).on('error', sass.logError)
+		.pipe(sass({
+			outputStyle: 'expanded'
+		})).on('error', sass.logError)
 		.pipe(postcss([
 			autoprefixer({browsers: "last 2 versions"})
 		]))
-		.pipe(gulp.dest("css"));
+		.pipe(gulp.dest("css"))
+		.pipe(browserSync.stream());
 });
 
 gulp.task("start", ["style"], function() {
@@ -22,23 +25,17 @@ gulp.task("start", ["style"], function() {
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['style'], function() {
 
 		browserSync.init({
-				server: "./app"
+				server: "./",
+				open: false
 		});
 
-		gulp.watch("app/scss/*.scss", ['sass']);
-		gulp.watch("app/*.html").on('change', browserSync.reload);
+		gulp.watch("sass/**/*.scss", ['style']);
+		gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-		return gulp.src("app/scss/*.scss")
-				.pipe(sass())
-				.pipe(gulp.dest("app/css"))
-				.pipe(browserSync.stream());
-});
 
 gulp.task('default', ['serve']);
 

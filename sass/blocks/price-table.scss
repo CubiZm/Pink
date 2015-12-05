@@ -1,84 +1,75 @@
 .wrapper {
-	position: relative;
-	min-height: 440px;
+	overflow: hidden;
+	min-height: 476px;
+	background: #f2f2f2;
 }
 
 .price-table {
 	display: inline-flex;
 	justify-content: space-around;
+	padding-top: 90px;
+
 	// position: absolute;
-
-
-	&__col {
-
-	}
-
+	&__col {}
 	&__title {
 		background: $text-grey;
 		@include text-decoration;
 		text-align: center;
 		min-height: 74px;
 		padding-top: 24px;
+		border: 1px solid #e5e5e5
 	}
 	&__item {
 		min-height: 59px;
 		min-width: 277px;
+		position: relative;
+		background: $white;
+		border: 1px solid #e5e5e5
 	}
-
 	&__text {
 		text-align: left;
 		display: inline-block;
 		padding-left: 22px;
+		@include text-decoration;
+		font-size: 14px;
+		color: $text-grey;
+		text-transform: uppercase;
+		font-weight: 500;
 	}
-
 	&__glifes {
-		text-align: right;
-		display: inline-block;
-		padding-left: 85px;
+		@include text-null;
+		display: inline-flex;
+	}
+	&__glifes--no {
+		background: url(/img/img-no.png) no-repeat;
+		position: absolute;
+		right: 20px;
+		top: 15px;
+		width: 26px;
+		height: 26px;
+	}
+	&__glifes--yes {
+		background: url(/img/img-yes.png) no-repeat;
+		position: absolute;
+		right: 20px;
+		top: 15px;
+		width: 26px;
+		height: 26px;
 	}
 }
-
-.base {
-	position: absolute;
-	right: 301px;
-
-}
-
-.standart {
-	position: absolute;
-	left: 20px;
-}
-
-.unlim {
-	position: absolute;
-	right: -255px;
-}
-
-
-
-
-
-
-
-
-
 
 // .price-table {
 // 	display: table;
 // 	border-collapse: collapse;
-
-
 // 	&__row {
 // 	display: table-row;
 // }
-
 // 	&__box {
 // 	display: table-cell;
 // 	text-align: left;
 // 	vertical-align: top;
 // 	border: 1px solid black;
 // 	}
-
 // 	&__title {
 // 		display: table-cell;
 // 		background: $text-grey;

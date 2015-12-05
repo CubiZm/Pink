@@ -1,9 +1,8 @@
 .label-check {
-		line-height: 30px;
-		padding-left: 50px;
+	line-height: 30px;
+	padding-left: 50px;
 	padding-top: 30px;
-	&:before
- {
+	&:before {
 		cursor: pointer;
 		content: "";
 		position: absolute;
@@ -11,24 +10,23 @@
 		height: 35px;
 		background-color: #fff;
 		border: 2px solid #e6e6e6;
-		left:0;
-
+		left: 0;
 	}
 }
 
 .page-form input[type=checkbox] {
-		position: relative;
-		margin: 10px;
-		display: none;
+	position: relative;
+	margin: 10px;
+	display: none;
 }
 
 .page-form input[type=checkbox]:checked + label:after {
-		content: "";
-		position: absolute;
-		left: 9px;
-		top: 42px;
-		width: 28px;
-		height: 26px;
-		background: url(../img/checked-img.png) no-repeat;
-		z-index: 100;
+	content: "";
+	position: absolute;
+	left: 9px;
+	top: 42px;
+	width: 28px;
+	height: 26px;
+	background: url(../img/checked-img.png) no-repeat;
+	z-index: 100;
 }
