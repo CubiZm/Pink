@@ -22,7 +22,7 @@
 		width: 280px;
 		@include text-style-base;
 		font-weight: 700;
-		font-size: 18px;
+		$font-size-middle;
 		color: #fff;
 		background-color: #2aab6d;
 		border: none;
