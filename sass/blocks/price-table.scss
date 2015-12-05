@@ -1,7 +1,7 @@
 .wrapper {
 	overflow: hidden;
 	min-height: 476px;
-	background: #f2f2f2;
+	background: $smoke;
 }
 
 .price-table {
@@ -18,14 +18,14 @@
 		text-transform: uppercase;
 		min-height: 74px;
 		padding-top: 24px;
-		border: 1px solid #e5e5e5
+		border: 1px solid $smoke
 	}
 	&__item {
 		min-height: 59px;
 		min-width: 277px;
 		position: relative;
 		background: $white;
-		border: 1px solid #e5e5e5
+		border: 1px solid $smoke
 	}
 	&__text {
 		text-align: left;

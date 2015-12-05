@@ -5,10 +5,10 @@
 	@include text-style-base;
 	color: $text-blue;
 	font-weight: 500;
-	font-size: 18px;
+	$font-size-middle;
 	text-transform: uppercase;
 	background: $white;
-	border: 2px solid #e6e6e6;
+	border: 2px solid $smoke;
 	margin: 0 auto;
 	padding: 17px 0 12px;
 	text-align: center;
