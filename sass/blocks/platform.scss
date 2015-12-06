@@ -2,12 +2,9 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
-
 	&__icon {}
-
 	&__description {
-		@include text-decoration;
+		@include text-style-base;
 		font-size: $font-size-base;
-
 	}
 }

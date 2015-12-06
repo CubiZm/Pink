@@ -1,6 +1,7 @@
+@import "../node_modules/normalize.css/normalize";
+
 @import "./general/_variables.scss";
 @import "./general/_mixins.scss";
-@import "./general/media.scss";
 @import "./general/base.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-menu.scss";
@@ -13,6 +14,21 @@
 @import "./blocks/promo-box.scss";
 @import "./blocks/price-table.scss";
 @import "./blocks/slider.scss";
-@import "./blocks/price.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
+
+@import "./blocks/legend.scss";
+@import "./blocks/label.scss";
+@import "./blocks/input.scss";
+
+@import "./blocks/page-form.scss";
+@import "./blocks/intro-form.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/info.scss";
+@import "./blocks/radio-btn.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/plus-minus.scss";
+@import "./blocks/photo-action.scss";
+

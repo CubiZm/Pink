@@ -1,0 +1,32 @@
+.label-check {
+	line-height: 30px;
+	padding-left: 50px;
+	padding-top: 30px;
+	&:before {
+		cursor: pointer;
+		content: "";
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		background-color: $color-white;
+		border: 2px solid $color-smoke;
+		left: 0;
+	}
+}
+
+.page-form input[type=checkbox] {
+	position: relative;
+	margin: 10px;
+	display: none;
+}
+
+.page-form input[type=checkbox]:checked + label:after {
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 40px;
+	width: 28px;
+	height: 26px;
+	background: url(../img/checked-img.png) no-repeat;
+	z-index: 100;
+}

@@ -1,55 +1,73 @@
+.wrapper {
+	overflow: hidden;
+	min-height: 476px;
+	background: $color-smoke;
+}
+
 .price-table {
-
-	display: table;
-
-&__column {
-
+	display: inline-flex;
+	justify-content: space-around;
+	padding-top: 90px;
+	&__col {}
+	&__title {
+		background: $text-color;
+		@include text-style-base;
+		text-align: center;
+		text-transform: uppercase;
+		min-height: 74px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		border: 1px solid $color-smoke;
+	}
+	&__item {
+		min-height: 59px;
+		min-width: 277px;
+		position: relative;
+		background: $color-white;
+		border: 1px solid $color-smoke;
+	}
+	&__text {
+		text-align: left;
+		display: inline-block;
+		padding-left: 22px;
+		@include text-style-base;
+		font-size: 14px;
+		color: $text-color;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	&__glifes {
+		@include text-null;
+		display: inline-flex;
+	}
+	&__glifes--no {
+		background: url(/img/img-no.png) no-repeat;
+		@include glif;
+	}
+	&__glifes--yes {
+		background: url(/img/img-yes.png) no-repeat;
+		@include glif;
+	}
 }
 
-&__column-group {
-
-}
-
-&__content {
-	width: 100%;
-}
-
-&__list {
-	display: table-row;
-
-}
-
-&__header {
-	display: table-cell;
-	width: 100%;
-}
-
-&__header--title {
-	display: table-cell;
-		font-family: $font-family;
-		font-size: 18px;
-		font-weight: 400;
-		width: 150px;
-
-}
-
-&__title {
-
-}
-
-
-&__sale {
-
-}
-
-&__cell {
-	display: table-cell;
-	width: 33.33333333333%;
-	padding: 0 0 0 70px;
-}
-
-&__cell {
-
-}
-
-}
+// .price-table {
+// 	display: table;
+// 	border-collapse: collapse;
+// 	&__row {
+// 	display: table-row;
+// }
+// 	&__box {
+// 	display: table-cell;
+// 	text-align: left;
+// 	vertical-align: top;
+// 	border: 1px solid black;
+// 	}
+// 	&__title {
+// 		display: table-cell;
+// 		background: text-content;
+// 		@include text-style-base;
+// 		text-align: center;
+// 		border-left: 1px solid #e6e6e6;
+// 		border-right: 1px solid #e6e6e6;
+// 	}
+// }

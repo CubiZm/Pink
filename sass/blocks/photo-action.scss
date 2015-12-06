@@ -1,0 +1,46 @@
+.photo-action {
+	position: relative;
+&__btn {
+	cursor: pointer;
+	@include text-style-base;
+	color: $text-color;
+	font-weight: 500;
+	font-size: $font-size-middle;
+	text-transform: uppercase;
+	background: $color-white;
+	border: 2px solid $color-smoke;
+	margin: 0 auto;
+	padding: 17px 0 12px;
+	text-align: center;
+	}
+
+&__photo-preview {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	@include wrapper;
+	padding-top: 30px;
+	padding-top: 30px;
+	align-content: stretch;
+	justify-content: space-around;
+	}
+
+&__img {
+	margin: 0 0 20px 0;
+	}
+&__img-wrap {
+	position: relative;
+}
+
+&__img-wrap:after {
+	content: "";
+	position: absolute;
+	z-index: 99999;
+	right: -12px;
+	top: -12px;
+	width: 34px;
+	height: 34px;
+	background: url(../img/delete-photo-btn.png) no-repeat;
+	}
+
+}

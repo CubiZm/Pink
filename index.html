@@ -6,10 +6,11 @@
 		<title>HTML Academy: Пинк</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic);
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body class="page">
 		<header class="main-header">
+			<div class="main-menu__btn">Закрыть</div>
 			<div class="main-header__section">
 				<div class="main-header__logo logo">
 					<a class="logo__link" href="/index.html"><img class="logo__img" src="img/logo-header.png" height="23" width="74" alt=""></a>
@@ -21,7 +22,7 @@
 						<li class="main-menu__item"><a class="main-menu__link" href="#" >Отзывы</a></li>
 						<li class="main-menu__item"><a class="main-menu__link" href="form.html" >Конкурс</a></li>
 					</ul>
-					<div class="main-menu__btn">Закрыть</div>
+
 
 				</nav>
 			</div>
@@ -79,66 +80,90 @@
 			<p><a href="#">Узнать больше об исследовании</a></p>
 		</div> -->
 
-		<div class="slider">
-				<blockquote class="quote">
+		<div class="slider js-flickity">
+				<blockquote class="quote gallery-cell">
 					<footer class="quote__footer">
 						<p class="quote__description">
-							<cite class="author">Николай Петров</cite><br>25 лет, водитель трамвая</p>
+							<cite class="author">Николай Петров</cite>
+						</p>
+						<p class="quote__author-info">25 лет, водитель трамвая</p>
 					</footer>
 					<p class="quote__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-
+				</blockquote>
+				<blockquote class="quote gallery-cell">
+					<footer class="quote__footer">
+						<p class="quote__description">
+							<cite class="author">Николай Петров</cite>
+						</p>
+						<p class="quote__author-info">25 лет, водитель трамвая</p>
+					</footer>
+					<p class="quote__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</blockquote>
+				<blockquote class="quote gallery-cell">
+					<footer class="quote__footer">
+						<p class="quote__description">
+							<cite class="author">Николай Петров</cite>
+						</p>
+						<p class="quote__author-info">25 лет, водитель трамвая</p>
+					</footer>
+					<p class="quote__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</blockquote>
 		</div>
 
-		<div class="price-table">
-						<div class="price-table__column"></div>
-						<div class="price-table__column-group">
-								<div class="price-table__column"></div>
-								<div class="price-table__column"></div>
-								<div class="price-table__column"></div>
-						</div>
-						<header class="price-table__content">
-								<div class="price-table__list">
-										<div class="price-table__header"></div>
-										<div class="price-table__header">
-											<p class="price-table__title">База</p>
-											<p class="price-table__sale">1,99 USD</p>
-										</div>
-										<div class="price-table__header">
-											<p class="price-table__title">Стандарт</p>
-											<p class="price-table__sale">3,99 USD</p>
-										</div>
-										<div class="price-table__header">
-											<p class="price-table__title">Анлим</p>
-											<p class="price-table__sale">9,99 USD</p>
-										</div>
-								</div>
-						</header>
-						<div class="price-table__content">
-								<div class="price-table__list">
-										<div class="price-table__header--title">Розовый фильтр</div>
-										<div class="price-table__cell">&#10004;</div>
-										<div class="price-table__cell">&#10004;</div>
-										<div class="price-table__cell">&#10004;</div>
-								</div>
-						</div>
-						<div class="price-table__content">
-								<div class="price-table__list">
-										<div class="price-table__header--title">Смайлики</div>
-										<div class="price-table__cell">&#10006;</div>
-										<div class="price-table__cell">&#10004;</div>
-										<div class="price-table__cell">&#10004;</div>
-								</div>
-						</div>
-						<footer class="price-table__content">
-								<div class="price-table__list">
-										<div class="price-table__header--title">Комментарии</div>
-										<div class="price-table__cell">&#10006;</div>
-										<div class="price-table__cell">&#10006;</div>
-										<div class="price-table__cell">&#10004;</div>
-								</div>
-						</footer>
+		<div class="wrapper gallery js-flickity">
+		<div class="price-table gallery-cell">
+				<div class="price-table__col">
+					<div class="price-table__title">База<br>1.99 USD</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Розовый фильтр</p>
+						<div class="price-table__glifes price-table__glifes--yes"> &#10004;</div>
+					</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Смайлики</p>
+						<div class="price-table__glifes price-table__glifes--no"> &#10004;</div>
+					</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Комментарии</p>
+						<div class="price-table__glifes price-table__glifes--no"> &#10006;</div>
+					</div>
+				</div>
+			</div>
+			<div class="price-table gallery-cell">
+				<div class="price-table__col">
+					<div class="price-table__title">Стандарт<br>3.99 USD</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Розовый фильтр</p>
+						<div class="price-table__glifes price-table__glifes--yes"> &#10004;</div>
+					</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Смайлики</p>
+						<div class="price-table__glifes price-table__glifes--yes"> &#10006;</div>
+					</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Комментарии</p>
+						<div class="price-table__glifes price-table__glifes--no"> &#10006;</div>
+					</div>
+				</div>
+			</div>
+			<div class="price-table gallery-cell">
+				<div class="price-table__col">
+					<div class="price-table__title">Анлим<br>4.99 USD</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Розовый фильтр</p>
+						<div class="price-table__glifes price-table__glifes--yes price-table__glifes--yes"> &#10004;</div>
+					</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Смайлики</p>
+						<div class="price-table__glifes price-table__glifes--yes price-table__glifes--yes"> &#10004;</div>
+					</div>
+					<div class="price-table__item">
+						<p class="price-table__text">Комментарии</p>
+						<div class="price-table__glifes price-table__glifes--yes price-table__glifes--yes"> &#10004;</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
 
 		<div class="contacts">
 			<h2 class="contacts__title">Остались вопросы?<br>
@@ -184,5 +209,7 @@
 
 		</footer>
 
+<link rel="stylesheet" href="css/flickity.css">
+<script src="js/flickity.pkgd.min.js"></script>
 	</body>
 </html>
