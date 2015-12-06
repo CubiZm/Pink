@@ -6,29 +6,23 @@
 }
 
 .main-footer {
-
-	&__link {
-
-	}
-
-	&__logo-img {
-		padding-top: 30px;
-	}
-
+	&__link {}
+	&__logo-img {}
 	__text {
 		@include text-style-base;
-		color: text-content;
+		color: $text-color;
 		padding-right: 20px;
 	}
 }
 
-@media screen and ($mobile){
-.main-footer--form {
+@media screen and ($mobile) {
+	.main-footer--form {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		min-height: 280px;
+		padding: 30px;
 		text-align: center;
 	}
 }

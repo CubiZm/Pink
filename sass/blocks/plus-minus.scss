@@ -1,23 +1,17 @@
 .plus-minus {
-
-display: flex;
-
-&__btn {
-
-	flex-shrink: 0;
-	padding: 16px 0;
-	width: 63px;
-	font-size: 27px;
-	font-weight: 700;
-	border-radius: 3px 0 0 3px;
-	background: $color-white;
-
-}
-&__input {
-	border: 2px solid $color-grey
-}
-
-
+	display: flex;
+	&__btn {
+		flex-shrink: 0;
+		padding: 16px 0;
+		width: 63px;
+		font-size: 27px;
+		font-weight: 700;
+		border-radius: 3px 0 0 3px;
+		background: $color-white;
+	}
+	&__input {
+		border: 2px solid $color-grey
+	}
 }
 
 .minus {

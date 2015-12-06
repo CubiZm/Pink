@@ -8,16 +8,15 @@
 	display: inline-flex;
 	justify-content: space-around;
 	padding-top: 90px;
-
-	// position: absolute;
 	&__col {}
 	&__title {
-		background: text-content;
+		background: $text-color;
 		@include text-style-base;
 		text-align: center;
 		text-transform: uppercase;
 		min-height: 74px;
-		padding-top: 24px;
+		padding-top: 12px;
+		padding-bottom: 12px;
 		border: 1px solid $color-smoke;
 	}
 	&__item {
@@ -33,7 +32,7 @@
 		padding-left: 22px;
 		@include text-style-base;
 		font-size: 14px;
-		color: text-content;
+		color: $text-color;
 		text-transform: uppercase;
 		font-weight: 500;
 	}

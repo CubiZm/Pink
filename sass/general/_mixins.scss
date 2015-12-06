@@ -1,12 +1,12 @@
 /*Mixins*/
-@mixin link-decoration ($color: $white, $weight:300) {
+@mixin link-decoration ($color: $color-white, $weight:300) {
 text-decoration: none;
-color: $white;
+color: $color-white;
 weight: $weight;
 }
 
 @mixin text-style-base($size: 24px, $weight:300) {
-color: $white;
+color: $color-white;
 font: {
 family: $font-family;
 size: $size;

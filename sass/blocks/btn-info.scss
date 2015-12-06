@@ -1,19 +1,16 @@
 .btn-info {
 	text-align: center;
 	padding: 30px 0;
-
 	&__description {
 		@include text-style-base;
 		font-size: $font-size-base;
-}
+	}
 	&__main-link {
-
 		@include link-decoration;
 		border: 2px solid $color-white;
 		border-radius: 30px;
 		padding: 16px 37px;
 		font-weight: bold;
 		display: inline-block;
-
 	}
 }

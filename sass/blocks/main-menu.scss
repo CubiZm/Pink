@@ -1,4 +1,5 @@
 .main-menu {
+	display: none;
 	&__list {
 		text-align: center;
 		font-weight: bold;
@@ -6,7 +7,6 @@
 		background: $color-outer-space;
 		margin: 0;
 		padding: 0;
-		display: none;
 		@media screen and ($mobile) {}
 	}
 	&__item {
@@ -21,17 +21,13 @@
 	}
 	&__btn {
 		display: block;
-		position: relative;
-
 		background: url(../img/open-menu-btn.png) no-repeat;
 		width: 27px;
 		height: 27px;
 		@include wrapper;
-		position: absolute;
-		right: 0px;
-		top: 22px;
 		cursor: pointer;
-
 		@include text-null;
+		float: right;
+		margin: 20px 20px;
 	}
 }

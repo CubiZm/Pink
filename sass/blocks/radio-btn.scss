@@ -1,9 +1,8 @@
 .label-radio {
-		line-height: 30px;
-		padding-left: 50px;
+	line-height: 30px;
+	padding-left: 50px;
 	padding-top: 30px;
-	&:before
- {
+	&:before {
 		cursor: pointer;
 		content: "";
 		position: absolute;
@@ -12,26 +11,25 @@
 		background-color: #fff;
 		border-radius: 50%;
 		border: 2px solid $color-smoke;
-		left:0;
-
+		left: 0;
 	}
 }
 
 .page-form input[type="radio"] {
-		position: relative;
-		margin: 10px;
-		display: none;
+	position: relative;
+	margin: 10px;
+	display: none;
 }
 
 .page-form input[type=radio]:checked + label:after {
-		// content: "\2022";
-		content: "";
-		position: absolute;
-		left: 12px;
-		top: 42px;
-		width: 15px;
-		height: 15px;
-		background-color: $color-pink;
-		border-radius: 50%;
-		z-index: 100;
+	// content: "\2022";
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	width: 15px;
+	height: 15px;
+	background-color: $color-pink;
+	border-radius: 50%;
+	z-index: 100;
 }

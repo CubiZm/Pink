@@ -1,13 +1,11 @@
 .page-form {
-
- &__desription {
-	text-align: center;
-	@include wrapper;
-	color: text-content;
-	line-height: 2;
+	&__desription {
+		text-align: center;
+		@include wrapper;
+		color: text-content;
+		line-height: 2;
 	}
 }
-
 
 .page-form input[type=text] {
 	@include wrapper;
@@ -15,15 +13,14 @@
 	margin: 0 auto;
 	padding: 17px 20px 13px;
 	width: calc(100% - 50px)
-
 }
 
 .page-form input[type=file] {
-		position: absolute;
-		left: 0;
-		top: 0;
-		display: block;
-		opacity: 0;
-		z-index: 1000;
-		cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	opacity: 0;
+	z-index: 1000;
+	cursor: pointer;
 }

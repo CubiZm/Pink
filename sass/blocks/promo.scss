@@ -1,10 +1,7 @@
-
 .promo {
-
 	&__item {
 		overflow: hidden;
 	}
-
 	&__title {
 		@include text-style-base;
 		@include wrapper;
@@ -12,4 +9,3 @@
 		text-align: center;
 	}
 }
-

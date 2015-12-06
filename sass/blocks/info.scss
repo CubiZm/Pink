@@ -1,5 +1,4 @@
 .form {
-
 	&__info {
 		@include wrapper;
 		display: flex;
@@ -8,13 +7,10 @@
 		align-content: center;
 		border: none;
 		min-height: 338px;
-
-	&--bg-grey {
-		background: $smoke;
+		&--bg-grey {
+			background: $color-smoke;
+		}
 	}
-
-	}
-
 	&__btn {
 		display: block;
 		margin: 22px auto;
@@ -22,13 +18,12 @@
 		width: 280px;
 		@include text-style-base;
 		font-weight: 700;
-		$font-size-middle;
+		font: $font-size-middle;
 		color: #fff;
 		background-color: #2aab6d;
 		border: none;
 		border-radius: 3px;
 	}
-
 	&__desription {
 		text-align: center;
 		text-transform: uppercase;

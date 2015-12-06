@@ -2,7 +2,6 @@
 	background: url(../img/bg-intro.png) no-repeat top;
 	background-size: cover;
 	min-height: 237px;
-
 	&__title {
 		@include text-style-base;
 		@include wrapper;
