@@ -1,10 +1,26 @@
 
 .intro {
-	background: url(../img/background-mobile@1x.jpg) no-repeat top;
+	background: url(../img/background-fullsize.jpg) no-repeat top;
 	background-size: cover;
 	width: 100%;
 	min-height: 442px;
 	overflow: hidden;
+
+	@media screen and ($mobile) {
+		background: url(../img/background-mobile@1x.jpg) no-repeat;
+		background-position: 50% 0;
+
+		}
+	@media screen and ($tablet) {
+		background: url(../img/background-tablet@1x.jpg) no-repeat;
+		background-position: 50% 0;
+
+		}
+	@media screen and ($desktop) {
+			background: url(../img/background-fullsize.jpg) no-repeat;
+			background-position: 50% 0;
+			;
+		}
 
 	&__title {
 		text-align: center;

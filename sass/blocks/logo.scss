@@ -1,5 +1,17 @@
 .logo {
 	&__img {
-		margin: 21px 0 21px 19px
+		margin: 21px 0 21px 19px;
+		@include text-null;
+
+		@media screen and ($mobile) {
+			background: url(../img/logotype-white-mobile.svg) no-repeat;
+
+		}
+		@media screen and ($tablet) {
+			background: url(../img/logotype-white-tablet.svg) no-repeat;
+			margin: 21px 0 21px 41px;
+			width: 147px;
+			height: 41px;
+		}
 	}
 }
