@@ -8,18 +8,20 @@
 		border: 3px solid #e9ebec;
 		border-radius: 50%;
 		@include text-null;
+		@include  social-icon;
+		margin-right:10px;
+
+		&:last-child{
+			margin-right:0;
+		}
 		&--twitter {
 			background: url(../img/twitter-logo.png) no-repeat 50%;
-			@include social-icon;
 		}
 		&--fb {
 			background: url(../img/facebook-logo.png) no-repeat 50%;
-			margin: 0 10px 0 10px;
-			@include social-icon;
 		}
 		&--youtube {
 			background: url(../img/youtube-logo.png) no-repeat 50%;
-			@include social-icon;
 		}
 	}
 }

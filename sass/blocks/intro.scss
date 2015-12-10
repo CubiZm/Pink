@@ -32,8 +32,24 @@
 		display: block;
 		margin: 0px auto;
 		padding-top: 0px;
+		@include text-null;
+		min-height: 285px;
+
+		@media screen and (max-width: 659px) and (min-resolution: 1dppx){
+			background: url(../img/iphone-hand-mobile.png) no-repeat center center;
+		}
+		@media screen and (max-width: 659px) and (min-resolution: 2dppx) {
+			background: url(../img/iphone-hand-mobile@2x.png) no-repeat center center;
+			background-size: contain;
+
+		@media screen and (min-width: 660px) and (min-resolution: 1dppx) {
+				background: url(../img/iphone-hand-tablet@1x.png) no-repeat center center;
+			}
+
+		@media screen and (min-width: 660px) and (min-resolution: 2dppx) {
+				background: url(../img/iphone-hand-tablet@2x.png) no-repeat center center;
+		}
+
+		}
 	}
 }
-
-
-
