@@ -2,21 +2,58 @@
 		background: $color-smoke;
 		width: 100%;
 		padding-top: 55px;
+
+		@media screen and ($tablet) {
+			min-height: 440px;
+			position: relative;
+
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			padding-top: 0;
+		}
 		&__subtitle {
 			text-align: center;
 			@include wrapper;
+			@media screen and ($tablet) {
+				text-align: left;
+			}
 		}
 		&__description {
 			@include wrapper;
 			text-align: center;
 			color: $text-color;
+			@media screen and ($tablet) {
+				text-align: left;
+			}
 		}
-		&__item {}
+		&__item {
+			@media screen and ($tablet) {
+				width: 330px;
+				float: right;
+				padding-right: 20px;
+			}
+		}
 		&__img {
 			@include text-null;
 			background: url(../img/iphone-screen-desktop-3@1x.png) no-repeat center top;
 			height: 280px;
 			margin: 0 auto;
 			display: block;
+
+			@media screen and ($tablet) {
+				background: url(../img/iphone-screen-tablet-3@2x.png) no-repeat center top;
+				width: 280px;
+				position: absolute;
+				bottom: 0px;
+				background-size: 270px 483px;
+				height: 484px;
+				left: 40px;
+			}
 		}
-	}
+
+			@media screen and ($desktop) {
+				display: none;
+			}
+		}
+
