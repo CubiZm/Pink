@@ -1,6 +1,12 @@
 .platform-info {
 	min-height: 271px;
 	background: $color-outer-space;
+	@media screen and ($tablet) {
+		background: transparent;
+		position: absolute;
+		width: 321px;
+		bottom: 365px;
+	}
 	&__description {
 		font-size: $font-size-base;
 		font-weight: 500;

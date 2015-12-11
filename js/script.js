@@ -1,4 +1,4 @@
-var parent = document.querySelector(".main-menu");
+var parent = document.querySelector(".main-header__section");
 var toggle = document.querySelector(".main-menu__btn");
 
 parent.classList.add('js-menu');

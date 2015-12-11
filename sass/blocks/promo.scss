@@ -7,5 +7,17 @@
 		@include wrapper;
 		color: #454036;
 		text-align: center;
+
+		@media screen and ($tablet) {
+			font-size: 40px;
+			line-height: 1.2;
+		}
+
+		&__title--full {
+			background: #000;
+			@media screen and ($tablet) {
+			width: 325px;
+		}
 	}
+}
 }
