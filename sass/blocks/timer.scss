@@ -37,14 +37,15 @@
 	&__wrap {
 		float: right;
 		width: 300px;
-		padding-top: 35px;
 	}
 	&__title {
-
+		font-size: 29px;
+		width: 180px;
+}
 	}
 
 	&__text {
-
+		color: $text-color;
 	}
 
 	&__link {
