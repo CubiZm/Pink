@@ -1,0 +1,54 @@
+.timer {
+	@media screen and ($mobile) {
+		display: none;
+	}
+
+	@media screen and ($tablet) {
+		@include wrapper;
+		position: relative;
+		min-height: 400px;
+		padding-top: 55px;
+	}
+
+	&__inner {
+		font-size: 85px;
+		font-weight: 800;
+		position: absolute;
+		top: 125px;
+		left: 74px;
+		color: $color-pink;
+		border: 11px solid;
+		border-radius: 50%;
+		padding: 35px;
+	}
+
+	&__iouter {
+		position: absolute;
+		top: 57px;
+		left: 40px;
+		background: url(../img/timer.svg) no-repeat;
+		background-size: 260px;
+		width: 300px;
+		height: 306px;
+
+
+	}
+
+	&__wrap {
+		float: right;
+		width: 300px;
+		padding-top: 35px;
+	}
+	&__title {
+
+	}
+
+	&__text {
+
+	}
+
+	&__link {
+		color: $color-pink;
+	}
+
+}
