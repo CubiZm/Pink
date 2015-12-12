@@ -1,8 +1,13 @@
 .contacts {
 	&__title {
-		color: text-content;
+		color: $color-outer-space;
 		font-weight: normal;
 		text-align: center;
+
+		@media screen and ($tablet) {
+			font-size: 40px;
+			line-height: 1.2;
+		}
 	}
 	&__box {}
 	&__descrip {

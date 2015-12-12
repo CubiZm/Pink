@@ -1,20 +1,55 @@
-	.promo-box {
+ .promo-box {
 		background: $color-smoke;
 		width: 100%;
-		padding-top: 55px;
+	 	padding-top: 55px;
 
-		@media screen and ($tablet) {
-			min-height: 440px;
-			position: relative;
+	 	display: flex;
+		flex-direction: column-reverse;
 
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-			padding-top: 0;
-		}
+		@media($tablet) {
+				flex-direction: row;
+				justify-content: space-around;
+				align-content: center;
+}
+
+		@media($desktop) {
+				flex-direction: column;
+	}
+
+
+&__row {
+
+	@include wrapper;
+
+	@media($tablet) {
+		width: 50%;
+	}
+
+	@media($desktop) {
+		width:100%;
+		display:flex;
+	}
+
+}
+
+&__item {
+	text-align: center;
+
+	@media screen and ($desktop) {
+		display:inline-flex;
+			justify-content: space-around;
+			width:33.333333%;
+	}
+}
+
+&__item--no-img {
+		display: none;
+}
+
 		&__subtitle {
 			text-align: center;
 			@include wrapper;
+
 			@media screen and ($tablet) {
 				text-align: left;
 			}
@@ -23,37 +58,10 @@
 			@include wrapper;
 			text-align: center;
 			color: $text-color;
+
 			@media screen and ($tablet) {
 				text-align: left;
 			}
 		}
-		&__item {
-			@media screen and ($tablet) {
-				width: 320px;
-				float: right;
-				padding-right: 20px;
-			}
-		}
-		&__img {
-			@include text-null;
-			background: url(../img/iphone-screen-desktop-3@1x.png) no-repeat center top;
-			height: 280px;
-			margin: 0 auto;
-			display: block;
-
-			@media screen and ($tablet) {
-				background: url(../img/iphone-screen-tablet-3@2x.png) no-repeat center top;
-				width: 280px;
-				position: absolute;
-				bottom: 0px;
-				background-size: 270px 483px;
-				height: 484px;
-				left: 40px;
-			}
-		}
-
-			@media screen and ($desktop) {
-				display: none;
-			}
-		}
+}
 

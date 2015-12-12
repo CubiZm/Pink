@@ -6,31 +6,31 @@
 
 			@media screen and (max-width: 659px) and (min-resolution: 1dppx){
 
-			background: url(../img/iphone-hand-mobile.png) no-repeat center bottom,
+			background: url(../img/iphone-hand-mobile.png) no-repeat center 165px,
 									url(../img/background-mobile@1x.jpg) no-repeat 50% 0;
-			background-size: 265px, cover;
+			background-size: 260px, cover;
 
-			min-height: 442px;
+			// min-height: 442px;
 		}
 		@media screen and (max-width: 659px) and (min-resolution: 2dppx) {
 			background: url(../img/iphone-hand-mobile@2x.png) no-repeat center bottom,
 									url(../img/background-mobile@2x.jpg) no-repeat 50% 0;
 			background-size: 265px, cover;
 
-			min-height: 442px;
+			// min-height: 442px;
 		}
 		@media screen and (min-width: 660px) and (min-resolution: 1dppx) {
-				background: url(../img/iphone-hand-tablet@1x.png) no-repeat right 220px,
+				background: url(../img/iphone-hand-tablet@1x.png) no-repeat right 146px,
 										url(../img/background-tablet@1x.jpg) no-repeat 50% 0;
 				background-size: contain, cover;
-				min-height: 730px;
+				min-height: 660px;
 			}
 
 		@media screen and (min-width: 660px) and (min-resolution: 2dppx) {
-				background: url(../img/iphone-hand-tablet@2x.png) no-repeat right 220px,
+				background: url(../img/iphone-hand-tablet@2x.png) no-repeat right 146px,
 										url(../img/background-tablet@2x.jpg) no-repeat;
 				background-size: contain, cover;
-				min-height: 730px;
+				min-height: 660px;
 		}
 
 
@@ -40,9 +40,13 @@
 		padding-top: 84px;
 		@include text-style-base;
 
+		@media screen and ($mobile) {
+			padding-bottom: 295px;
+		}
+
 		@media screen and ($tablet) {
 			float: left;
-			padding: 200px 60px;
+			padding: 115px 60px 0 70px;
 			width: 310px;
 			font-size: 40px
 		}
@@ -53,7 +57,7 @@
 		margin: 0px auto;
 		padding-top: 0px;
 		@include text-null;
-		min-height: 285px;
+		// min-height: 285px;
 
 
 	}
