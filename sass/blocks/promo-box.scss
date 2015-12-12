@@ -16,6 +16,15 @@
 				flex-direction: column;
 	}
 
+	&:before {
+		content: " ";
+		display: block;
+		width: 100%;
+		@media($tablet) {
+			background: url(../img/triangle-white.svg) no-repeat;
+		}
+	}
+
 
 &__row {
 
