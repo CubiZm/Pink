@@ -1,4 +1,8 @@
 .form {
+@media($tablet) {
+	@include wrapper;
+}
+
 
 	&__wrap {
 		@media($tablet) {
@@ -14,8 +18,16 @@
 		align-content: center;
 		border: none;
 		min-height: 338px;
+
+		@media($tablet) {
+			border: 2px solid $color-grey;
+			margin-bottom: 60px;
+		}
 		&--bg-grey {
+			@media($mobile) {
 			background: $color-smoke;
+			}
+
 		}
 		// @media($tablet) {
 		// 	border: 1px solid blue;
