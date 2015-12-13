@@ -53,8 +53,6 @@
 					<h2 class="promo__title promo__title--full"> Нам есть, что вам предложить!</h2>
 			</div>
 
-
-
 		<div class="promo-box">
 				<div class="promo-box__row list__row--img">
 					<div class="promo-box__item promo-box__item--no-img"><img src="img/screen-mobile-1.png" alt=""></div>
@@ -79,8 +77,11 @@
 	</div>
 
 		<div class="timer">
-				<div class="timer__iouter"></div>
-				<div class="timer__inner">24</div>
+				<div class="timer__wrap">
+					<div class="timer__outer">
+							<div class="timer__inner">24</div>
+					</div>
+				</div>
 				<div class="timer__wrap">
 						<h3 class="timer__title">Эффект на 24 часа!</h3>
 						<p class="timer__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -174,41 +175,53 @@
 		</div>
 		<div class="contacts">
 				<h2 class="contacts__title">Остались вопросы?<br>
-				Свяжитесь с нами!</h2>
-				<div class="contacts__box">
-						<p class="contacts__descrip">Звоните:</p>
-						<p class="contacts__descrip">
-								<a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-						</p>
+																		Свяжитесь с нами!</h2>
+				<div class="contacts__wrap">
+					<div class="contacts__box">
+							<p class="contacts__descrip">Звоните:</p>
+							<p class="contacts__descrip">
+									<a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+							</p>
+					</div>
+					<div class="contacts__box">
+							<p class="contacts__descrip">Пишите:</p>
+							<p class="contacts__descrip">
+									<a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+							</p>
+					</div>
+					<div class="contacts__box">
+							<p class="contacts__descrip">Приезжайте в гости:</p>
+							<p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+					</div>
 				</div>
-				<div class="contacts__box">
-						<p class="contacts__descrip">Пишите:</p>
-						<p class="contacts__descrip">
-								<a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-						</p>
-				</div>
-				<div class="contacts__box">
-						<p class="contacts__descrip">Приезжайте в гости:</p>
-						<p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
-				</div>
-				<div class="contacts__map">
-						<img class="contacts__img" src="img/map-2.gif" height="202" width="320" alt="">
-				</div>
-		</div>
+			</div>
+			<div class="map" id="map">
+				<img class="contacts__img" src="img/triangle-white-footer.svg" alt="">
+					<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			</div>
+
 		<footer class="main-footer">
 				<div class="main-footer__logo logo">
 						<a class="main-footer__link" href="/index.html">
-								<img class="main-footer__logo-img" src="http://lorempixel.com/output/abstract-q-g-74-24-4.jpg" alt="">
+						<picture class="logo__img">
+								<source media="(min-width: 700px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-tablet.svg">
+								<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-desktop.svg">
+								<img class="logo__img" src="img/logotype-blue-tablet.svg" alt="Pink">
+						</picture>
 						</a>
 				</div>
 				<div class="social">
-						<a class="social__link" href="#">Twitter</a>
-						<a class="social__link" href="#">Facebook</a>
-						<a class="social__link" href="#">Youtube</a>
+						<a class="social__link social__link--twitter" href="#">Twitter</a>
+						<a class="social__link social__link--fb" href="#">Facebook</a>
+						<a class="social__link social__link--youtube" href="#">Youtube</a>
 				</div>
-				<p class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+				<div class="copyright">
+					<p class="copyright__text">Разработано</p>
+					<a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+			</div>
 		</footer>
 		<link rel="stylesheet" href="css/flickity.css">
+		<script src="js/map.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/picturefill.js"></script>
 		<script src="js/flickity.pkgd.min.js"></script>

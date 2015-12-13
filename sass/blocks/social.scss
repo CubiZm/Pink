@@ -4,6 +4,10 @@
 	justify-content: center;
 	align-items: center;
 	padding: 40px 0 50px 0;
+	@media($tablet) {
+		padding-top: 30px;
+		padding-left: 30px;
+	}
 	&__link {
 		border: 3px solid #e9ebec;
 		border-radius: 50%;
@@ -15,13 +19,13 @@
 			margin-right:0;
 		}
 		&--twitter {
-			background: url(../img/twitter-logo.png) no-repeat 50%;
+			background: url(../img/twitter.svg) no-repeat 50%;
 		}
 		&--fb {
-			background: url(../img/facebook-logo.png) no-repeat 50%;
+			background: url(../img/facebook.svg) no-repeat 50%;
 		}
 		&--youtube {
-			background: url(../img/youtube-logo.png) no-repeat 50%;
+			background: url(../img/youtube.svg) no-repeat 50%;
 		}
 	}
 }
