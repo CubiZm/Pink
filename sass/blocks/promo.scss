@@ -1,7 +1,5 @@
 .promo {
-
-
-	&__item {
+&__item {
 		overflow: hidden;
 	}
 	&__title {
@@ -25,10 +23,5 @@
 			padding-top: 0px;
 		}
 	}
-}
 
-	.promo:after {
-		background: url(../img/triangle-white.svg) no-repeat;
-		display: block;
-		width: 100%;
-	}
+}

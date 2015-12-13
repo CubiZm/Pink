@@ -1,4 +1,5 @@
  .promo-box {
+		position: relative;
 		background: $color-smoke;
 		width: 100%;
 	 	padding-top: 55px;
@@ -16,16 +17,13 @@
 				flex-direction: column;
 	}
 
-	&:before {
-		background: url(../img/triangle-white.svg) no-repeat;
-	}
-
 &__row {
 
 	@include wrapper;
 
 	@media($tablet) {
 		width: 50%;
+		z-index: 9;
 	}
 
 	@media($desktop) {
@@ -42,15 +40,6 @@
 		display:inline-flex;
 			justify-content: space-around;
 			width:33.333333%;
-	}
-
-		&__item:after {
-		@media($tablet) {
-			background: url(../img/triangle-white.svg) no-repeat;
-			content: " ";
-			display: block;
-			width: 100%;
-		}
 	}
 }
 
@@ -75,5 +64,19 @@
 				text-align: left;
 			}
 		}
-}
 
+			&__img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+			&__item--main {
+				@media($tablet) {
+					height: 536px;
+					margin-top: -30px;
+				}
+
+		}
+
+}
