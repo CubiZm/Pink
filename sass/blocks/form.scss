@@ -1,4 +1,11 @@
 .form {
+
+	&__wrap {
+		@media($tablet) {
+		display: flex;
+		}
+	}
+
 	&__info {
 		@include wrapper;
 		display: flex;
@@ -10,6 +17,9 @@
 		&--bg-grey {
 			background: $color-smoke;
 		}
+		// @media($tablet) {
+		// 	border: 1px solid blue;
+		// }
 	}
 	&__btn {
 		display: block;
@@ -23,9 +33,18 @@
 		background-color: #2aab6d;
 		border: none;
 		border-radius: 3px;
+
+		@media($tablet) {
+			margin-left: 40px;
+		}
 	}
 	&__desription {
 		text-align: center;
 		text-transform: uppercase;
+
+		@media($tablet) {
+			padding-right: 40px;
+			padding-top: 30px;
+		}
 	}
 }

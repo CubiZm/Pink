@@ -23,10 +23,10 @@
 .page-form input[type=checkbox]:checked + label:after {
 	content: "";
 	position: absolute;
-	left: 7px;
-	top: 40px;
+	left: 3px;
+	top: 37px;
 	width: 28px;
 	height: 26px;
-	background: url(../img/checked-img.png) no-repeat;
+	background: url(../img/yes.svg) no-repeat;
 	z-index: 100;
 }

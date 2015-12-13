@@ -10,21 +10,24 @@
 	</head>
 	<body class="page page--form">
 		<header class="main-header">
-			<div class="main-menu__btn">Закрыть</div>
-			<div class="main-header__section">
 				<div class="main-header__logo logo">
-					<a class="logo__link" href="/index.html"><img class="logo__img" src="img/logo-header.png" height="23" width="74" alt=""></a>
+						<picture class="logo__img">
+								<source media="(max-width: 699px) and (min-resolution: 1dppx)" srcset="img/logotype-white-mobile.svg">
+								<source media="(min-width: 700px) and (min-resolution: 1dppx)" srcset="img/logotype-white-tablet.svg">
+								<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-white-desktop.svg">
+								<img class="logo__img" src="img/logotype-white-mobile.svg" alt="Pink">
+						</picture>
+						<a class="logo__link" href="/index.html"></a>
+						<div class="main-menu__btn">Закрыть</div>
 				</div>
-				<nav class="main-header__menu main-menu">
-					<ul class="main-menu__list">
-						<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
-						<li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
-						<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
-						<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
-					</ul>
-
-				</nav>
-			</div>
+				<div class="main-header__section">
+						<ul class="main-menu__list">
+								<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
+								<li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
+								<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
+								<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+						</ul>
+				</div>
 		</header>
 
 		<div class="intro-form">
@@ -129,16 +132,21 @@
 							</div>
 						</div>
 					</fieldset>
-
-				<button class="form__btn">Отправить форму</button>
-				<p class="form__desription">* - обязательные поля</p>
+				<div class="form__wrap">
+					<button class="form__btn">Отправить форму</button>
+					<p class="form__desription">* - обязательные поля</p>
+				</div>
 		</form>
 		</div>
 
 		<footer class="main-footer main-footer--form">
 			<div class="main-footer__logo">
 				<a class="main-footer__link" href="/index.html">
-					<img class="main-footer__logo-img" src="img/logo-pink-glasses.png" height="40" width="145" alt="">
+						<picture class="main-footer__logo-img">
+								<source media="(min-width: 700px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-tablet.svg">
+								<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-desktop.svg">
+								<img class="logo__img" src="img/logotype-blue-tablet.svg" alt="Pink">
+						</picture>
 				</a>
 			</div>
 

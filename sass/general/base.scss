@@ -13,7 +13,13 @@ body {
 }
 
 fieldset {
+	@media($mobile) {
 	border: none;
+	}
+	@media($tablet) {
+		border: 1px solid grey;
+	}
+
 }
 
 blockquote {
