@@ -17,7 +17,10 @@
 		justify-content: center;
 		align-content: center;
 		border: none;
-		min-height: 338px;
+
+		@media($mobile) {
+			margin-top: 40px;
+		}
 
 		@media($tablet) {
 			border: 2px solid $color-grey;
@@ -57,6 +60,12 @@
 		@media($tablet) {
 			padding-right: 40px;
 			padding-top: 30px;
+		}
+	}
+
+	&--no-border {
+		@media($tablet) {
+			border: none;
 		}
 	}
 }

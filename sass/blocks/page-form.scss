@@ -1,9 +1,24 @@
 .page-form {
+
 	&__desription {
 		text-align: center;
 		@include wrapper;
-		color: text-content;
+		color: $color-outer-space;
 		line-height: 2;
+
+		@media($tablet) {
+			padding-top: 100px;
+			font-size: $font-size-middle;
+			width: 635px;
+			padding-left: 60px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__description--please {
+		padding-top: 0;
+		margin-top: 0;
+		padding-bottom: 20px;
 	}
 }
 

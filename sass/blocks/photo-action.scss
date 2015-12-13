@@ -1,5 +1,9 @@
 .photo-action {
-	position: relative;
+	// position: relative;
+
+	@media($tablet) {
+		padding: 0px 60px;
+	}
 &__btn {
 	cursor: pointer;
 	@include text-style-base;
