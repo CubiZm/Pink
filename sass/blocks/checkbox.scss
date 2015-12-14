@@ -2,6 +2,11 @@
 	line-height: 30px;
 	padding-left: 50px;
 	padding-top: 30px;
+
+	@media($tablet) {
+		font-size: $font-size-middle;
+		padding-left: 65px;
+	}
 	&:before {
 		cursor: pointer;
 		content: "";

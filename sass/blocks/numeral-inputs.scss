@@ -3,7 +3,6 @@
 
 &__item{
 	list-style-type: none;
-	padding-left: 60px;
 	position: relative;
 
 	@media($tablet) {
@@ -15,7 +14,7 @@
 
 &__item:before{
 	counter-increment: list;
-  content: counter(list);
+	content: counter(list);
 	margin-left: -37px;
 	display:block;
 	width: 60px;
@@ -32,9 +31,13 @@
 &__item:after{
 	position: absolute;
 	content: '№';
-	left: 45px;
+	left: -14px;
 	top: 15px;
 	color: $color-pink;
+
+	@media($tablet) {
+		left: 45px;
+	}
 }
 
 &__item label{

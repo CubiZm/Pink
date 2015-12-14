@@ -20,6 +20,7 @@
 
 
 	&__info {
+		position: relative;
 		@include wrapper;
 		display: flex;
 		flex-direction: column;

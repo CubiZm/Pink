@@ -30,10 +30,17 @@
 
 &__img {
 	margin: 0 0 20px 0;
+
+		@media($tablet) {
+		width: 120px;
 	}
+
+}
+
 &__img-wrap {
 	position: relative;
 	margin-right: 25px;
+
 }
 
 &__img-wrap:after {

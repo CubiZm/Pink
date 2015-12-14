@@ -2,9 +2,12 @@
 	background: url(../img/bg-intro.png) no-repeat top;
 	background-size: cover;
 	min-height: 237px;
+	overflow: hidden;
 
 	@media($tablet) {
 		min-height: 440px;
+		width: 100%;
+
 	}
 
 	&__title {

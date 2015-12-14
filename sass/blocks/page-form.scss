@@ -36,10 +36,14 @@
 
 .page-form input[type=file] {
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 20px;
+	top: 98px;
 	display: block;
 	opacity: 0;
 	z-index: 1000;
 	cursor: pointer;
+
+	@media($tablet) {
+		top: 40px;
+	}
 }
