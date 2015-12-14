@@ -27,7 +27,11 @@
 	color: #000;
 	margin: 0 auto;
 	padding: 17px 20px 13px;
-	width: calc(100% - 50px)
+	box-sizing: border-box;
+
+	@media($mobile) {
+		width: calc(100% - 50px);
+	}
 }
 
 .page-form input[type=file] {

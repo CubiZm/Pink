@@ -10,6 +10,15 @@
 		}
 	}
 
+		&__container {
+		@media($tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+
 	&__info {
 		@include wrapper;
 		display: flex;
@@ -26,16 +35,20 @@
 			border: 2px solid $color-grey;
 			margin-bottom: 60px;
 		}
-		&--bg-grey {
+	}
+		&__info--bg-grey {
 			@media($mobile) {
 			background: $color-smoke;
 			}
 
 		}
-		// @media($tablet) {
-		// 	border: 1px solid blue;
-		// }
-	}
+
+		&--container {
+			@media($tablet) {
+				padding: 0 50px;
+			}
+		}
+
 	&__btn {
 		display: block;
 		margin: 22px auto;
@@ -53,6 +66,7 @@
 			margin-left: 40px;
 		}
 	}
+
 	&__desription {
 		text-align: center;
 		text-transform: uppercase;
@@ -67,5 +81,13 @@
 		@media($tablet) {
 			border: none;
 		}
+	}
+
+&__info-wrapper {
+	@media($tablet) {
+			width: 45%;
+	margin: 0 14px;
+
+	}
 	}
 }
