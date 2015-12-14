@@ -1,5 +1,10 @@
 .plus-minus {
 	display: flex;
+
+	@media($tablet) {
+		width: 40%;
+	}
+
 	&__btn {
 		flex-shrink: 0;
 		padding: 16px 0;
@@ -8,9 +13,19 @@
 		font-weight: 700;
 		border-radius: 3px 0 0 3px;
 		background: $color-white;
+
+		@media($tablet) {
+			height: 60px;
+			padding: 0;
+		}
 	}
 	&__input {
-		border: 2px solid $color-grey
+		border: 2px solid $color-grey;
+
+		@media($tablet) {
+			width: 120px;
+			height: 60px;
+		}
 	}
 }
 
@@ -19,6 +34,10 @@
 	border-left: 2px solid $color-grey;
 	border-bottom: 2px solid $color-grey;
 	border-right: none;
+
+		@media($tablet) {
+		border-right: 2px solid $color-grey;
+	}
 }
 
 .plus {
@@ -26,4 +45,8 @@
 	border-right: 2px solid $color-grey;
 	border-bottom: 2px solid $color-grey;
 	border-left: none;
+
+	@media($tablet) {
+		border-left: 2px solid $color-grey;
+	}
 }

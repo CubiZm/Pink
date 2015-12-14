@@ -2,6 +2,10 @@
 	line-height: 30px;
 	padding-left: 50px;
 	padding-top: 30px;
+
+		@media($tablet) {
+			padding-left: 90px;
+	}
 	&:before {
 		cursor: pointer;
 		content: "";
@@ -12,6 +16,10 @@
 		border-radius: 50%;
 		border: 2px solid $color-smoke;
 		left: 0;
+
+		@media($tablet) {
+			left: 40px;
+		}
 	}
 }
 
@@ -32,4 +40,8 @@
 	background-color: $color-pink;
 	border-radius: 50%;
 	z-index: 100;
+
+	@media($tablet) {
+		left: 50px;
+	}
 }

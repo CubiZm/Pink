@@ -1,3 +1,6 @@
+.main-footer {
+
+
 @media screen and ($mobile) {
 	.main-footer {
 		height: 0;
@@ -5,7 +8,11 @@
 	}
 }
 
-.main-footer {
+@media($tablet) {
+	display: flex;
+	justify-content: space-between;
+}
+
 	&__link {}
 	&__logo-img {}
 	__text {

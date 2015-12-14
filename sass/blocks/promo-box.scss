@@ -1,22 +1,82 @@
-	.promo-box {
+ .promo-box {
+		position: relative;
 		background: $color-smoke;
 		width: 100%;
-		padding-top: 55px;
+	 	padding-top: 55px;
+
+	 	display: flex;
+		flex-direction: column-reverse;
+
+		@media($tablet) {
+				flex-direction: row;
+				justify-content: space-around;
+				align-content: center;
+}
+
+		@media($desktop) {
+				flex-direction: column;
+	}
+
+&__row {
+
+	@include wrapper;
+
+	@media($tablet) {
+		width: 50%;
+		z-index: 9;
+	}
+
+	@media($desktop) {
+		width:100%;
+		display:flex;
+	}
+
+}
+
+&__item {
+	text-align: center;
+
+	@media screen and ($desktop) {
+		display:inline-flex;
+			justify-content: space-around;
+			width:33.333333%;
+	}
+}
+
+&__item--no-img {
+		display: none;
+}
+
 		&__subtitle {
 			text-align: center;
 			@include wrapper;
+
+			@media screen and ($tablet) {
+				text-align: left;
+			}
 		}
 		&__description {
 			@include wrapper;
 			text-align: center;
 			color: $text-color;
+
+			@media screen and ($tablet) {
+				text-align: left;
+			}
 		}
-		&__item {}
-		&__img {
-			@include text-null;
-			background: url(../img/promo-img.png) no-repeat center top;
-			height: 280px;
-			margin: 0 auto;
-			display: block;
+
+			&__img {
+			position: absolute;
+			width: 100%;
+			top: 0;
 		}
-	}
+
+			&__item--main {
+				@media($tablet) {
+					height: 536px;
+					margin-top: -30px;
+				}
+
+		}
+
+}

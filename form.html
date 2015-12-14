@@ -10,21 +10,24 @@
 	</head>
 	<body class="page page--form">
 		<header class="main-header">
-			<div class="main-menu__btn">Закрыть</div>
-			<div class="main-header__section">
 				<div class="main-header__logo logo">
-					<a class="logo__link" href="/index.html"><img class="logo__img" src="img/logo-header.png" height="23" width="74" alt=""></a>
+						<picture class="logo__img">
+								<source media="(max-width: 699px) and (min-resolution: 1dppx)" srcset="img/logotype-white-mobile.svg">
+								<source media="(min-width: 700px) and (min-resolution: 1dppx)" srcset="img/logotype-white-tablet.svg">
+								<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-white-desktop.svg">
+								<img class="logo__img" src="img/logotype-white-mobile.svg" alt="Pink">
+						</picture>
+						<a class="logo__link" href="/index.html"></a>
+						<div class="main-menu__btn">Закрыть</div>
 				</div>
-				<nav class="main-header__menu main-menu">
-					<ul class="main-menu__list">
-						<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
-						<li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
-						<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
-						<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
-					</ul>
-
-				</nav>
-			</div>
+				<div class="main-header__section">
+						<ul class="main-menu__list">
+								<li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
+								<li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
+								<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
+								<li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+						</ul>
+				</div>
 		</header>
 
 		<div class="intro-form">
@@ -33,10 +36,11 @@
 
 		<div class="page-form">
 			<p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+			<p class="page-form__desription page-form__description--please">Пожалуйста, заполните форму ниже:</p>
 
 			<form class="form">
 
-				<fieldset class="form__info">
+				<fieldset class="form__info form--no-border">
 						<label class="label label--pink-title" for="first-name" >Имя: *</label>
 						<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
 						<label class="label label--pink-title" for="last-name" >Фамилия: *</label>
@@ -57,46 +61,63 @@
 
 				<fieldset class="form__info">
 						<div class="legend">Когда вы путешествовали? *</div>
-						<input class="input" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
-						<label class="label label--pink" for="departure-date">Дата выезда</label>
-							<div class="plus-minus">
-								<button class="plus-minus__btn minus" type="button" >-</button>
-								<input class="input plus-minus__input " type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
-								<button class="plus-minus__btn plus" type="button" >+</button>
+						<div class="form__container">
+
+							<div class="form__info-wrapper">
+								<input class="input input--tablet" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
+								<label class="label label--pink" for="departure-date">Дата выезда</label>
 							</div>
-						<label class="label label--pink" for="duration" >Продолжительность</label>
-						<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
-						<label class="label label--pink" for="return-date" >Дата возвращения</label>
+
+							<div class="form__info-wrapper">
+								<div class="plus-minus">
+									<button class="plus-minus__btn minus" type="button" >—</button>
+									<input class="input plus-minus__input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
+									<button class="plus-minus__btn plus" type="button" >+</button>
+								</div>
+								<label class="label label--pink" for="duration" >Продолжительность</label>
+							</div>
+
+							<div class="form__info-wrapper">
+								<input class="input input--tablet" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
+								<label class="label label--pink" for="return-date" >Дата возвращения</label>
+							</div>
+
+						</div>
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
-					<div class="label label--pink" for="number-of-companions" >Количество попутчиков *</div>
+				<div class="form--container">
+					<div class="legend" for="number-of-companions" >Количество попутчиков *</div>
+
 						<div class="plus-minus">
-							<button class="plus-minus__btn minus" type="button" >-</button>
-							<input class="input" type="text" id="number-companions" name="input-number" data-min="0" placeholdergit="0">
+							<button class="plus-minus__btn minus" type="button" >—</button>
+							<input class="input input--voyager" type="text" id="number-companions" name="input-number" data-min="0" placeholder="2 чел" placeholdergit="0">
 							<button class="plus-minus__btn plus" type="button">+</button>
 						</div>
+
 						<ol class="numeral-inputs">
 							<li class="numeral-inputs__item">
 								<label class="label label--pink-title" for="name-1" >Имя: *</label>
-								<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+								<input class="input input--numeral" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 							</li>
 							<li class="numeral-inputs__item">
 								<label class="label label--pink-title" for="nickname-1">Прозвище:</label>
-								<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+								<input class="input input--numeral" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 							</li>
 							<li class="numeral-inputs__item">
 								<label class="label label--pink-title" for="name-1" >Имя: *</label>
-								<input class="input" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+								<input class="input input--numeral" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
 							</li>
 							<li class="numeral-inputs__item">
 								<label class="label label--pink-title" for="nickname-1 label--pink" >Прозвище:</label>
-								<input class="input" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+								<input class="input input--numeral" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 							</li>
 						</ol>
+					</div>
 					</fieldset>
 
 					<fieldset class="form__info">
+						<div class="form--container">
 							<div class="legend">Ваши безбашенные достижения в путешествии</div>
 							<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
 							<label class="label label-check" for="selfie-shark">Сделал селфи с акулой</label>
@@ -110,6 +131,7 @@
 							<label class="label label-check" for="leaning-tower">Удержал башню</label>
 							<input class="input" type="checkbox" id="ruined-hotel" name="ruined-hotel">
 							<label class="label label-check" for="ruined-hotel">Разгромил отель</label>
+						</div>
 					</fieldset>
 
 					<fieldset class="form__info form__info--bg-grey">
@@ -129,16 +151,21 @@
 							</div>
 						</div>
 					</fieldset>
-
-				<button class="form__btn">Отправить форму</button>
-				<p class="form__desription">* - обязательные поля</p>
+				<div class="form__wrap">
+					<button class="form__btn">Отправить форму</button>
+					<p class="form__desription">* - обязательные поля</p>
+				</div>
 		</form>
 		</div>
 
 		<footer class="main-footer main-footer--form">
 			<div class="main-footer__logo">
 				<a class="main-footer__link" href="/index.html">
-					<img class="main-footer__logo-img" src="img/logo-pink-glasses.png" height="40" width="145" alt="">
+						<picture class="main-footer__logo-img">
+								<source media="(min-width: 700px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-tablet.svg">
+								<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-desktop.svg">
+								<img class="logo__img" src="img/logotype-blue-tablet.svg" alt="Pink">
+						</picture>
 				</a>
 			</div>
 
@@ -153,6 +180,7 @@
 				<a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
 			</div>
 		</footer>
-
+	<script src="js/script.js"></script>
+	<script src="js/picturefill.js"></script>
 	</body>
 </html>

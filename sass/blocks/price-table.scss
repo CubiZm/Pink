@@ -41,11 +41,11 @@
 		display: inline-flex;
 	}
 	&__glifes--no {
-		background: url(/img/img-no.png) no-repeat;
+		background: url(/img/no.svg) no-repeat;
 		@include glif;
 	}
 	&__glifes--yes {
-		background: url(/img/img-yes.png) no-repeat;
+		background: url(/img/yes.svg) no-repeat;
 		@include glif;
 	}
 }
