@@ -5,7 +5,6 @@
 		height: 0;
 		overflow: hidden;
 	}
-}
 
 @media($tablet) {
 	display: flex;
@@ -13,8 +12,10 @@
 }
 
 	&__link {}
+
 	&__logo-img {}
-	__text {
+
+	&__text {
 		@include text-style-base;
 		color: $text-color;
 		padding-right: 20px;
@@ -29,5 +30,6 @@
 		min-height: 280px;
 		padding: 30px;
 		text-align: center;
+		}
 	}
 }

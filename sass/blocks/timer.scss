@@ -37,9 +37,21 @@
 	&__wrap {
 		width: 300px;
 	}
+
+	&__wrap--text {
+		@media($desktop) {
+			width: 620px;
+			padding: 0 45px;
+		}
+	}
+
 	&__title {
 		font-size: 29px;
 		width: 180px;
+
+		@media($desktop) {
+			width: 290px;
+		}
 }
 
 

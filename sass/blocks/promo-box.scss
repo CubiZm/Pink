@@ -37,14 +37,30 @@
 	text-align: center;
 
 	@media screen and ($desktop) {
-		display:inline-flex;
-			justify-content: space-around;
+		// display:inline-flex;
+		// 	justify-content: space-around;
 			width:33.333333%;
+			padding: 0px 25px;
 	}
 }
 
+	&__item--main {
+		@media($tablet) {
+			width: 280px;
+			margin-top: -30px;
+		}
+}
+
 &__item--no-img {
+	@media($mobile) {
 		display: none;
+	}
+		@media($tablet) {
+		display: none;
+	}
+	@media($desktop) {
+		display: block;
+	}
 }
 
 		&__subtitle {
@@ -53,6 +69,10 @@
 
 			@media screen and ($tablet) {
 				text-align: left;
+			}
+
+			@media($desktop) {
+				text-align: center;
 			}
 		}
 		&__description {
@@ -63,6 +83,10 @@
 			@media screen and ($tablet) {
 				text-align: left;
 			}
+
+			@media($desktop) {
+				text-align: center;
+			}
 		}
 
 			&__img {
@@ -71,12 +95,26 @@
 			top: 0;
 		}
 
-			&__item--main {
-				@media($tablet) {
-					height: 536px;
-					margin-top: -30px;
-				}
-
+		&__img-promo {
+			@media($desktop) {
+				margin-top: -60px;
+			}
 		}
 
+		&__img-promo--main {
+			@media($mobile) {
+				width: 157px;
+				height: 280px;
+			}
+			@media($tablet) {
+				width: 270px;
+				height: 536px;
+			}
+
+			@media($desktop) {
+				width: 158px;
+				height: 278px;
+				margin-top: -30px;
+			}
+		}
 }
