@@ -31,6 +31,9 @@ blockquote {
 
 .js-menu {
 	display: none;
+			@media($desktop) {
+			display: block;
+		}
 }
 
 .js-menu--open {
