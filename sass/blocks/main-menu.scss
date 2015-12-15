@@ -11,7 +11,7 @@
 		@media screen and ($desktop) {
 			background: transparent;
 			display: inline-flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			flex-wrap: wrap;
 			width: 550px;
 
@@ -34,6 +34,8 @@
 		border-bottom: 1px solid #000;
 		@media screen and ($desktop) {
 			border-bottom: none;
+			font-weight: 400;
+			text-transform: initial;
 		}
 	}
 

@@ -11,6 +11,10 @@
 	}
 	&__box {}
 
+	&__box:nth-child(2) {
+		order: 3;
+	}
+
 	&__descrip {
 		font-weight: bold;
 		text-align: center;
@@ -32,6 +36,10 @@
 	&__link {
 		@include link-decoration;
 		color: $color-pink;
+
+		@media($desktop) {
+			font-weight: 300;
+		}
 	}
 
 &__img {
