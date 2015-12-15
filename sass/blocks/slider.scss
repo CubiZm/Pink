@@ -1,9 +1,27 @@
 .slider {
+	position: relative;
 	@media screen and ($tablet) {
 	height: 280px;
 	}
-}
 
+	@media screen and ($desktop) {
+	height: 415px;
+	}
+
+	&:after {
+		@media($desktop){
+		content: " ";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 90px;
+		background: url(../img/triangle-white.svg) no-repeat;
+		bottom: -90px;
+		z-index: 99;
+		}
+
+	}
+}
 .quote {
 	@include wrapper;
 
@@ -11,6 +29,12 @@
 			width: 640px;
 
 		}
+
+	@media screen and ($desktop) {
+	width: 950px;
+	padding-top: 170px;
+
+}
 
 	&__text {
 		color: $text-color;
@@ -22,7 +46,27 @@
 			width: 590px;
 		}
 
+		@media screen and ($desktop) {
+		width: 910px;
+		padding: 0px 140px;
 	}
+
+
+
+	}
+
+		&__text:before {
+			@media($desktop) {
+				background: url(../img/quotes.svg) no-repeat;
+				position: absolute;
+				top: 70px;
+				left: 46%;
+				display: block;
+				width: 78px;
+				height: 65px;
+				content: " ";
+			}
+		}
 
 
 	&__footer {

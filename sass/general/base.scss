@@ -56,4 +56,20 @@ blockquote {
 		bottom: 30px;
 	}
 
+	@media screen and ($desktop) {
+		background: none;
+	}
+
 }
+
+.slider .flickity-page-dots .dot {
+		@media($desktop) {
+			display: none;
+	}
+}
+.flickity-prev-next-button {
+	@media($desktop) {
+		display: block;
+	}
+}
+
