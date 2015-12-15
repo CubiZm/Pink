@@ -1,14 +1,46 @@
 .intro-form {
-	background: url(../img/bg-intro.png) no-repeat top;
-	background-size: cover;
-	min-height: 237px;
 	overflow: hidden;
 
-	@media($tablet) {
-		min-height: 440px;
-		width: 100%;
+	@media($desktop) {
+		@include wrapper;
+	}
+
+			@media screen and (max-width: 659px) and (min-resolution: 1dppx){
+
+			background:	url(../img/background-mobile@1x.jpg) no-repeat 50% 0;
+			background-size: cover;
+
+			// min-height: 442px;
+		}
+		@media screen and (max-width: 659px) and (min-resolution: 2dppx) {
+			background:	url(../img/background-mobile@2x.jpg) no-repeat 50% 0;
+			background-size: cover;
+
+			// min-height: 442px;
+		}
+		@media screen and (min-width: 660px) and (min-resolution: 1dppx) {
+				background: url(../img/background-tablet@1x.jpg) no-repeat 50% 0;
+				background-size: cover;
+			}
+
+		@media screen and (min-width: 660px) and (min-resolution: 2dppx) {
+				background: url(../img/background-tablet@2x.jpg) no-repeat;
+				background-size: cover;
+		}
+
+		@media screen and (min-width: 960px) and (min-resolution: 1dppx) {
+		background: url(../img/background-fullsize.jpg) no-repeat 50% 0;
+		background-size: cover;
+		padding-bottom: 60px;
 
 	}
+
+		@media screen and (min-width: 960px) and (min-resolution: 2dppx) {
+		background: url(../img/background-fullsize.jpg) no-repeat;
+		background-size: cover;
+		padding-bottom: 60px;
+
+}
 
 	&__title {
 		@include text-style-base;

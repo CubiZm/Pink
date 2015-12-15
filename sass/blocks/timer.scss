@@ -35,11 +35,15 @@
 		background: url(../img/timer.svg) no-repeat;
 		background-size: 260px;
 		height: 345px;
-		padding: 66px 42px 0px 0px;
+		padding: 66px 52px 0px 0px;
+
+		@media($desktop) {
+			padding: 66px 128px 0px 0px;
+		}
 	}
 
 	&__wrap {
-		width: 300px;
+		width: 50%;
 	}
 
 	&__wrap--text {

@@ -13,7 +13,7 @@
 				<div class="main-header__logo logo">
 						<picture class="logo__img">
 								<source media="(max-width: 699px) and (min-resolution: 1dppx)" srcset="img/logotype-white-mobile.svg">
-								<source media="(min-width: 700px) and (min-resolution: 1dppx)" srcset="img/logotype-white-tablet.svg">
+								<source media="(max-width: 959px) and (min-resolution: 1dppx)" srcset="img/logotype-white-tablet.svg">
 								<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-white-desktop.svg">
 								<img class="logo__img" src="img/logotype-white-mobile.svg" alt="Pink">
 						</picture>
@@ -41,12 +41,14 @@
 			<form class="form">
 
 				<fieldset class="form__info form--no-border">
+					<div class="form__info-wrapper">
 						<label class="label label--pink-title" for="first-name" >Имя: *</label>
 						<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
 						<label class="label label--pink-title" for="last-name" >Фамилия: *</label>
 						<input class="input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
 						<label class="label label--pink-title" for="middle-name" >Отчество:</label>
 						<input class="input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+					</div>
 				</fieldset>
 
 				<fieldset class="form__info form__info--bg-grey">
