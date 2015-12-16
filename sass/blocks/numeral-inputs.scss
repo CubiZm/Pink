@@ -44,19 +44,19 @@
 	}
 }
 
-&__item label{
+&__item .label{
 	display:block;
 	line-height: 1.5em;
 	padding-left: 45px;
 }
 
-&__item input{
+&__item .input{
 	height: 60px;
 	line-height: 1em;
 	box-sizing: border-box;
 	}
 }
 
-&__item input[type="text"] {
+&__item .input[type="text"] {
 	width: 130px;
 }
