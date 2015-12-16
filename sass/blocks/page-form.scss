@@ -7,10 +7,9 @@
 		line-height: 2;
 
 		@media($tablet) {
-			padding-top: 100px;
+			padding: 100px 45px 30px;
 			font-size: $font-size-middle;
 			width: 635px;
-			padding-left: 60px;
 			margin-bottom: 0;
 		}
 
@@ -24,6 +23,12 @@
 		padding-top: 0;
 		margin-top: 0;
 		padding-bottom: 20px;
+		@media($mobile) {
+			display: none;
+		}
+		@media($desktop) {
+			padding-left: 5px;
+		}
 	}
 }
 

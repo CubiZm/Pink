@@ -35,3 +35,35 @@
 	background: url(../img/yes.svg) no-repeat;
 	z-index: 100;
 }
+
+.form__info input[type=checkbox] {
+	position: relative;
+	margin: 10px;
+	display: none;
+}
+
+input[type=file] {
+	position: absolute;
+	left: 0px;
+	top: 42px;
+	display: block;
+	opacity: 0;
+	z-index: 1000;
+	cursor: pointer;
+
+	@media($mobile) {
+		left: 19px;
+		top: 98px;
+	}
+}
+
+.form__info input[type=checkbox]:checked + label:after {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 37px;
+	width: 28px;
+	height: 26px;
+	background: url(../img/yes.svg) no-repeat;
+	z-index: 100;
+}
