@@ -127,4 +127,10 @@
 	width: 30%;
 		}
 	}
+
+	&__info-wrapper--numeral {
+		@media($desktop) {
+			width: 45%;
+		}
+	}
 }
