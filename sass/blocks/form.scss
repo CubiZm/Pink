@@ -24,10 +24,16 @@
 	}
 }
 
+		&--container {
+			@media($tablet) {
+				padding: 0 50px;
+			}
+		}
+
 
 	&__info {
 		position: relative;
-		@include wrapper;
+		// @include wrapper;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -49,12 +55,6 @@
 			background: $color-smoke;
 			}
 
-		}
-
-		&--container {
-			@media($tablet) {
-				padding: 0 50px;
-			}
 		}
 
 	&__btn {
@@ -118,7 +118,7 @@
 
 &__info-wrapper {
 	@media($tablet) {
-			width: 100%;
+	// width: 100%;
 	margin: 0 14px;
 
 	}
@@ -133,4 +133,6 @@
 			width: 45%;
 		}
 	}
+
 }
+

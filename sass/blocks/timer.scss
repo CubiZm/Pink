@@ -32,14 +32,26 @@
 	}
 
 	&__outer {
-		background: url(../img/timer.svg) no-repeat;
-		background-size: 260px;
-		height: 345px;
-		padding: 66px 52px 0px 0px;
 
-		@media($desktop) {
-			padding: 66px 128px 0px 0px;
-		}
+		background: url(../img/timer.svg) no-repeat center;
+		background-size: 260px;
+		height: 346px;
+		padding: 90px 45px;
+		width: 299px;
+		margin: 0 auto
+	}
+	&__inner {
+		font-size: 85px;
+		font-weight: 800;
+		height: 210px;
+		width: 189px;
+		margin: 0 auto;
+		text-align: center;
+		color: $color-pink;
+		border: 12px solid;
+		border-radius: 50%;
+		width: 210px;
+		line-height: 126px;
 	}
 
 	&__wrap {

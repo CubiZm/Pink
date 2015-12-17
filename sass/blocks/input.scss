@@ -6,26 +6,22 @@
 	width: 100%;
 
 
-	@media($mobile) {
-		width: 275px;
-	}
-
-	&--tablet {
-		@media($tablet) {
-			height: 60px;
-		}
-	}
+	// &--tablet {
+	// 	@media($tablet) {
+	// 		height: 60px;
+	// 		width: 263px;
+	// 	}
+	// }
 
 	&--numeral {
-		@media($tablet) {
-			width: 300px;
+		@media($mobile) {
+			width: 213px;
 		}
 	}
 
-	&--voyager {
-		@media($tablet) {
-			width: 130px;
-			border: 0;
-		}
-	}
+	// &--voyager {
+	// 	@media($mobile) {
+	// 		width: 213px;
+	// 	}
+	// }
 }

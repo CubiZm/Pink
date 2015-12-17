@@ -24,8 +24,8 @@ console.log(toggle);
 
 function initNumberField(parent) {
 	var input = parent.querySelector("input");
-	var minus = parent.querySelector(".minus");
-	var plus = parent.querySelector(".plus");
+	var minus = parent.querySelector(".js-minus");
+	var plus = parent.querySelector(".js-plus");
 
 	minus.addEventListener("click", function() {
 		changeNumber(false);
@@ -50,13 +50,29 @@ function changeNumber(operation) {
 }
 )();
 
-var elements = [1, 2, 3, 4, 5];
-	for (var i = 0; i < elements.length; i++) {
-	timeout(elements[i]);
+//
+
+var elem = document.querySelector('.wrapper');
+var flkty = document.querySelector('.price-table__col');
+function sliderOn(){
+	 flkty = new Flickity( elem, {
+			// options
+			cellAlign: 'left',
+			contain: true,
+			prevNextButtons: false,
+			cellSelector: '.col',
+			initialIndex: 2
+	});
+
 }
 
-function timeout(element) {
-	setTimeout(function() {
-	console.log(element);
-	}, 1000);
+function sliderOff(){
+
+	return flkty.destroy();
+}
+
+if (window.innerWidth < 659){
+	sliderOn();
+} else {
+	sliderOff();
 }
