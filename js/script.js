@@ -53,14 +53,14 @@ function changeNumber(operation) {
 //
 
 var elem = document.querySelector('.wrapper');
-var flkty = document.querySelector('.price-table');
+var flkty  new Flickity('.price-table');
 function sliderOn(){
 	 flkty = new Flickity( elem, {
 			// options
 			cellAlign: 'left',
 			contain: true,
 			prevNextButtons: false,
-			cellSelector: '.col',
+			cellSelector: '.price-table',
 			initialIndex: 2
 	});
 

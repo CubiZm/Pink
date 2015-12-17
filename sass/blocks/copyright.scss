@@ -26,4 +26,15 @@
 			margin-bottom: 18px;
 		}
 	}
+	&__link svg #htmlacademy {
+		fill: #D22856;
 }
+	&__link svg:hover #htmlacademy {
+		fill: #283645;
+}
+	&__link svg:active #htmlacademy {
+		fill: #bec2c7;
+	}
+}
+
+
