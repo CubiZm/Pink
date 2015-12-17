@@ -93,6 +93,9 @@
 			position: absolute;
 			width: 100%;
 			top: 0;
+			@media($mobile) {
+				height: 30px;
+			}
 		}
 
 		&__img-promo {

@@ -84,6 +84,17 @@
 		}
 	}
 
+	&__btn:hover {
+		background: #1c9b5e;
+	}
+	&__btn:focus {
+		color: #61b98f;
+	}
+
+	&__btn:disabled {
+		background: $color-grey;
+	}
+
 	&__desription {
 		text-align: center;
 		text-transform: uppercase;
@@ -138,13 +149,3 @@
 
 }
 
-.tablet {
-	@media(max-width: 660px) {
-	width: 45%;
-	}
-}
-.tablet input {
-	// @media($tablet) {
-	// 	width: 45%;
-	// }
-}

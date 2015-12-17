@@ -4,24 +4,15 @@
 	border: 2px solid $color-grey;
 	padding: 15px;
 	width: 100%;
-
-
-	// &--tablet {
-	// 	@media($tablet) {
-	// 		height: 60px;
-	// 		width: 263px;
-	// 	}
-	// }
-
 	&--numeral {
 		@media($mobile) {
 			width: 213px;
 		}
 	}
-
-	// &--voyager {
-	// 	@media($mobile) {
-	// 		width: 213px;
-	// 	}
-	// }
+	&:hover {
+		border: 2px solid $color-outer-space;
+	}
+	&:focus {
+		border: 2px solid $color-pink;
+	}
 }

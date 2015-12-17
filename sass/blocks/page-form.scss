@@ -46,4 +46,8 @@
 	@media($tablet) {
 		top: 40px;
 	}
+
+	@media($desktop) {
+		left: 0px;
+	}
 }

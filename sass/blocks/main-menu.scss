@@ -38,6 +38,37 @@
 			text-transform: initial;
 		}
 	}
+@media($mobile){
+	&__link:hover {
+		color: $color-pink;
+	}
+
+	&__link:focus {
+		opacity: 0.35;
+	}
+}
+
+@media(max-width: 959px){
+	&__link:hover {
+		color: $color-pink;
+	}
+
+	&__link:focus {
+		opacity: 0.35;
+	}
+}
+
+@media($desktop){
+	&__link:hover {
+		border-bottom: 2px solid $color-white;
+	}
+
+	&__link:focus {
+		color: darken(#fff, 30%);
+		border-bottom: none;
+	}
+}
+
 
 	&__btn {
 		display: block;

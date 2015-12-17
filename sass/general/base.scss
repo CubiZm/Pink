@@ -64,11 +64,30 @@ blockquote {
 
 }
 
-.slider .flickity-page-dots .dot {
-		@media($desktop) {
+.slider .flickity-page-dots .dot  {
+	background: $color-white;
+	border: 3px solid $color-outer-space;
+			@media($desktop) {
 			display: none;
 	}
 }
+
+.slider .flickity-page-dots .dot:hover {
+	background: lighten(#000, 60%);
+	border: 3px solid lighten(#000, 60%);
+			@media($desktop) {
+			display: none;
+	}
+}
+
+.slider .flickity-page-dots .dot:focus {
+	background: lighten(#000, 30%);
+	border: 3px solid lighten(#000, 30%);
+			@media($desktop) {
+			display: none;
+	}
+}
+
 .flickity-prev-next-button {
 	@media($desktop) {
 		display: block;
@@ -91,4 +110,16 @@ blockquote {
 		display: inline-block;
 		padding-left: 5px;
 	}
+}
+
+
+.tablet {
+	@media(min-width: 660px) and (max-width: 959px) {
+	width: 45%;
+	}
+}
+.tablet input {
+	// @media($tablet) {
+	// 	width: 45%;
+	// }
 }

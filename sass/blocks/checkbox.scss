@@ -17,6 +17,13 @@
 		border: 2px solid $color-smoke;
 		left: 0;
 	}
+
+	&:hover:before {
+		border: 2px solid $color-outer-space;
+	}
+	&:active:before {
+		border: 2px solid $color-pink;
+	}
 }
 
 .page-form input[type=checkbox] {

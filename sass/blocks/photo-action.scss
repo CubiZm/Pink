@@ -18,6 +18,14 @@
 	text-align: center;
 	}
 
+	&__btn:hover {
+		border: 2px solid $color-outer-space;
+	}
+
+	&__btn:active {
+		background: $color-outer-space;
+		color: $color-white;
+	}
 &__photo-preview {
 	display: flex;
 	flex-direction: row;

@@ -21,6 +21,12 @@
 			left: 40px;
 		}
 	}
+	&:hover:before {
+		border: 2px solid $color-outer-space;
+	}
+	&:active:before {
+		border: 2px solid $color-pink;
+	}
 }
 
 .page-form input[type="radio"] {

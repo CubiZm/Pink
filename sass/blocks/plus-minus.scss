@@ -20,6 +20,15 @@
 			padding: 0;
 		}
 	}
+
+	&__btn:hover {
+		border: 2px solid $color-outer-space;
+	}
+	&__btn:focus {
+		background: $color-outer-space;
+		color: $color-white;
+	}
+
 	&__input {
 		border:0;
 		height:63px;

@@ -18,6 +18,14 @@
 		&:last-child{
 			margin-right:0;
 		}
+
+		&:hover {
+			border: 3px solid $color-outer-space;
+		}
+		&:focus {
+			opacity: 0.1;
+		}
+
 		&--twitter {
 			background: url(../img/twitter.svg) no-repeat 50%;
 		}
