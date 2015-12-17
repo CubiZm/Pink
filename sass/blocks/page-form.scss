@@ -18,22 +18,6 @@
 			width: 100%;
 		}
 	}
-
-	&__description--please {
-		padding-top: 0;
-		margin-top: 0;
-		padding-bottom: 20px;
-		@media($mobile) {
-			display: none;
-		}
-		@media($tablet) {
-			// display: block;
-		}
-		@media($desktop) {
-			// display: inline-block;
-			padding-left: 5px;
-		}
-	}
 }
 
 .page-form input[type=text] {
@@ -55,6 +39,10 @@
 	z-index: 1000;
 	cursor: pointer;
 
+	@media($mobile) {
+		top: 56px;
+		left: 0;
+	}
 	@media($tablet) {
 		top: 40px;
 	}

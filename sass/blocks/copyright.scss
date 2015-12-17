@@ -5,10 +5,6 @@
 	align-items: center;
 	@include wrapper;
 
-	@media($tablet) {
-		padding-right: 40px;
-	}
-
 	&__text {
 		@include text-style-base;
 		color: $text-color;

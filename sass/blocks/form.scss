@@ -26,14 +26,14 @@
 
 		&--container {
 			@media($tablet) {
-				padding: 0 50px;
+				padding: 0 20px;
 			}
 		}
 
 
 	&__info {
 		position: relative;
-		// @include wrapper;
+		@include wrapper;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -71,7 +71,7 @@
 		border-radius: 3px;
 
 		@media($tablet) {
-			margin-left: 40px;
+			margin-left: 0px;
 		}
 
 		@media($desktop) {
@@ -85,7 +85,6 @@
 		text-transform: uppercase;
 
 		@media($tablet) {
-			padding-right: 40px;
 			padding-top: 30px;
 		}
 
@@ -118,7 +117,7 @@
 
 &__info-wrapper {
 	@media($tablet) {
-	// width: 100%;
+	width: 100%;
 	margin: 0 14px;
 
 	}
@@ -136,3 +135,13 @@
 
 }
 
+.tablet {
+		@media($tablet) {
+		width: 45%;
+	}
+}
+.tablet input {
+	// @media($tablet) {
+	// 	width: 45%;
+	// }
+}

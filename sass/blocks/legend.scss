@@ -5,6 +5,10 @@
 	// padding-top: 40px;
 	padding-bottom: 35px;
 
+	@media($mobile) {
+		padding-top: 40px;
+	}
+
 	@media ($tablet) {
 		margin-top: -0.5em;
 		background: $color-white;

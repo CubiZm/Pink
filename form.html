@@ -39,7 +39,7 @@
 <p class="page-form__desription">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!<span class="wtf">Пожалуйста, заполните форму ниже:</span></p>
 <form class="form">
 		<fieldset class="form__info form--no-border">
-				<div class="form__container form--container">
+				<div class="form__container">
 						<div class="form__info-wrapper">
 								<label class="label label--pink-title" for="first-name">Имя: *</label>
 								<input class="input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
@@ -55,7 +55,7 @@
 				</div>
 		</fieldset>
 		<fieldset class="form__info form__info--bg-grey">
-				<div class="legend">С каким приложением путешествовали?</div>
+				<div class="legend">С каким приложением путешествовали?*</div>
 				<div class="form__container">
 						<div class="form__info-wrapper">
 								<input class="input" type="radio" id="ios" name="os" checked>
@@ -74,11 +74,11 @@
 		<fieldset class="form__info">
 				<div class="legend">Когда вы путешествовали? *</div>
 				<div class="form__container">
-						<div class="form__info-wrapper">
-								<input class="input input--tablet" type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
+						<div class="form__info-wrapper tablet">
+								<input class="input " type="text" id="departure-date" name="departure-date" placeholder="1 апреля 2015">
 								<label class="label label--pink" for="departure-date">Дата выезда</label>
 						</div>
-						<div class="form__info-wrapper">
+						<div class="form__info-wrapper tablet">
 								<div class="plus-minus">
 										<button class="plus-minus__btn js-minus" type="button">—</button>
 										<input class="input plus-minus__input" type="text" id="input-number" name="input-number" data-min="1" placeholder="1">
@@ -86,8 +86,8 @@
 								</div>
 								<label class="label label--pink" for="duration">Продолжительность</label>
 						</div>
-						<div class="form__info-wrapper">
-								<input class="input input--tablet" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
+						<div class="form__info-wrapper tablet">
+								<input class="input" type="text" id="return-date" name="return-date" placeholder="15 апреля 2015" disabled>
 								<label class="label label--pink" for="return-date">Дата возвращения</label>
 						</div>
 				</div>
@@ -132,36 +132,38 @@
 						</ol>
 		</fieldset>
 		<fieldset class="form__info">
-				<div class="legend">Ваши безбашенные достижения в путешествии</div>
-				<div class="form__container">
-						<div class="form__info-wrapper">
-								<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
-								<label class="label label-check" for="selfie-shark">Сделал селфи с акулой</label>
-						</div>
-						<div class="form__info-wrapper">
-								<input class="input" type="checkbox" id="sunburn" name="sunburn" checked>
-								<label class="label label-check" for="sunburn">Обгорел на пляже</label>
-						</div>
-						<div class="form__info-wrapper">
-								<input class="input" type="checkbox" id="chuck-norris" name="chuck-norris">
-								<label class="label label-check" for="chuck-norris">Видел Чака Норриса</label>
-						</div>
-						<div class="form__info-wrapper">
-								<input class="input" type="checkbox" id="souvenirs" name="souvenirs">
-								<label class="label label-check" for="souvenirs">Накупил сувениров</label>
-						</div>
-						<div class="form__info-wrapper">
-								<input class="input" type="checkbox" id="leaning-tower" name="leaning-tower" checked>
-								<label class="label label-check" for="leaning-tower">Удержал башню</label>
-						</div>
-						<div class="form__info-wrapper">
-								<input class="input" type="checkbox" id="ruined-hotel" name="ruined-hotel">
-								<label class="label label-check" for="ruined-hotel">Разгромил отель</label>
-						</div>
+				 <div class="form form--container">
+					<div class="legend">Ваши безбашенные достижения в путешествии</div>
+					<div class="form__container">
+							<div class="form__info-wrapper">
+									<input class="input" type="checkbox" id="selfie-shark" name="selfie-shark" checked>
+									<label class="label label-check" for="selfie-shark">Сделал селфи с акулой</label>
+							</div>
+							<div class="form__info-wrapper">
+									<input class="input" type="checkbox" id="sunburn" name="sunburn" checked>
+									<label class="label label-check" for="sunburn">Обгорел на пляже</label>
+							</div>
+							<div class="form__info-wrapper">
+									<input class="input" type="checkbox" id="chuck-norris" name="chuck-norris">
+									<label class="label label-check" for="chuck-norris">Видел Чака Норриса</label>
+							</div>
+							<div class="form__info-wrapper">
+									<input class="input" type="checkbox" id="souvenirs" name="souvenirs">
+									<label class="label label-check" for="souvenirs">Накупил сувениров</label>
+							</div>
+							<div class="form__info-wrapper">
+									<input class="input" type="checkbox" id="leaning-tower" name="leaning-tower" checked>
+									<label class="label label-check" for="leaning-tower">Удержал башню</label>
+							</div>
+							<div class="form__info-wrapper">
+									<input class="input" type="checkbox" id="ruined-hotel" name="ruined-hotel">
+									<label class="label label-check" for="ruined-hotel">Разгромил отель</label>
+							</div>
+					</div>
 				</div>
 		</fieldset>
 		<fieldset class="form__info form__info--bg-grey">
-				<div class="legend">Ваши фотографии из поездки</div>
+				<div class="legend">Ваши фотографии из поездки*</div>
 				<div class="photo-action">
 						<input class="input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
 						<div class="photo-action__btn">Загрузить фото</div>
