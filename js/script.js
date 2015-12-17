@@ -53,7 +53,7 @@ function changeNumber(operation) {
 //
 
 var elem = document.querySelector('.wrapper');
-var flkty = document.querySelector('.price-table__col');
+var flkty = document.querySelector('.price-table');
 function sliderOn(){
 	 flkty = new Flickity( elem, {
 			// options

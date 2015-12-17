@@ -1,4 +1,4 @@
- .promo-box {
+.promo-box {
 		position: relative;
 		background: $color-smoke;
 		width: 100%;
@@ -99,6 +99,9 @@
 		}
 
 		&__img-promo {
+			@media($tablet) {
+				width: 155px;
+			}
 			@media($desktop) {
 				margin-top: -60px;
 			}
@@ -118,6 +121,7 @@
 				width: 158px;
 				height: 278px;
 				margin-top: -30px;
+				margin-left: 20px;
 			}
 		}
 }
