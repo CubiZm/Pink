@@ -50,29 +50,35 @@ function changeNumber(operation) {
 }
 )();
 
-//
+//table
 
-var elem = document.querySelector('.wrapper');
-var flkty  new Flickity('.price-table');
-function sliderOn(){
-	 flkty = new Flickity( elem, {
-			// options
-			cellAlign: 'left',
-			contain: true,
-			prevNextButtons: false,
-			cellSelector: '.price-table',
-			initialIndex: 2
-	});
+// var flkty = new Flickity('.wrapper');
+// flkty.next();
+// flkty.select( 3 );
 
-}
+//table off
 
-function sliderOff(){
+// var elem = document.querySelector('.wrapper');
+// var flkty  new Flickity('.price-table');
+// function sliderOn(){
+// 	 flkty = new Flickity( elem, {
+// 			// options
+// 			cellAlign: 'left',
+// 			contain: true,
+// 			prevNextButtons: false,
+// 			cellSelector: '.price-table',
+// 			initialIndex: 2
+// 	});
 
-	return flkty.destroy();
-}
+// }
 
-if (window.innerWidth < 659){
-	sliderOn();
-} else {
-	sliderOff();
-}
+// function sliderOff(){
+
+// 	return flkty.destroy();
+// }
+
+// if (window.innerWidth < 659){
+// 	sliderOn();
+// } else {
+// 	sliderOff();
+// }
