@@ -13,48 +13,58 @@ toogle.classList.add('js-menu--close');
 console.log(toggle);
 
 
+var close_btn = document.querySelectorAll('.pop-up .pop-up__btn');
+
+	for (var i = 0; i < close_btn.length; i++) {
+		var close_btns = close_btn[i];
+
+		close_btns.onclick = function() {
+			var el = this.parentNode;
+			el.parentNode.removeChild(el);
+		};
+	}
+
+
 //plus-minus block
 
 (function() {
-	var elements = document.querySelectorAll(".plus-minus");
+	var time = document.querySelector(".js-time");
+	var companions = document.querySelector(".js-companions");
 
-	for (var i = 0; i < elements.length; i++) {
-	initNumberField(elements[i]);
-	}
+	foo(time, "10");
+	foo(companions, "2");
 
-function initNumberField(parent) {
-	var input = parent.querySelector("input");
-	var minus = parent.querySelector(".js-minus");
-	var plus = parent.querySelector(".js-plus");
+	function foo(group, initVal) {
+		var minus = group.querySelector(".js-minus");
+		var plus = group.querySelector(".js-plus");
+		var amount = group.querySelector("[type=text]");
 
-	minus.addEventListener("click", function() {
-		changeNumber(false);
-	});
+		amount.value = initVal;
 
-	plus.addEventListener("click", function() {
-	changeNumber(true);
-	});
+		minus.addEventListener("click", function(event) {
+			event.preventDefault();
+			if (amount.value > 0) {
+				amount.value--;
+			};
+		});
 
-function changeNumber(operation) {
-	var value = Number(input.value);
-		if (isNaN(value)) {
-			value = 0;
-	}
-		if (operation) {
-			input.value = value + 1;
-	} else {
-			input.value = value - 1;
-			}
-		}
-	}
-}
-)();
+		plus.addEventListener("click", function(event) {
+			event.preventDefault();
+			amount.value++;
+		});
+	};
+})();
 
 //table
 
-// var flkty = new Flickity('.wrapper');
-// flkty.next();
-// flkty.select( 3 );
+var flkty = new Flickity( '.main-gallery', {
+	// Настройки плагина
+	cellAlign: 'left',
+	contain: true,
+	cellSelector: '.gallery-cell',
+	setGallerySize: true
+});
+
 
 //table off
 

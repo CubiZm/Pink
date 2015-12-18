@@ -9,6 +9,7 @@
 
 
 	&__wrap {
+		position: relative;
 		@media($tablet) {
 		display: flex;
 		}
@@ -28,7 +29,7 @@
 	}
 }
 
-		&--container {
+		&__flex-wrap {
 			@media($tablet) {
 				padding: 0 20px;
 			}
@@ -123,7 +124,7 @@
 		}
 	}
 
-	&--no-border {
+	&__info--no-border {
 		@media($tablet) {
 			border: none;
 		}

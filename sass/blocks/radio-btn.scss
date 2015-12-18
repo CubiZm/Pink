@@ -1,34 +1,3 @@
-.label-radio {
-	line-height: 30px;
-	padding-left: 50px;
-	padding-top: 30px;
-
-		@media($tablet) {
-			padding-left: 90px;
-	}
-	&:before {
-		cursor: pointer;
-		content: "";
-		position: absolute;
-		width: 35px;
-		height: 35px;
-		background-color: #fff;
-		border-radius: 50%;
-		border: 2px solid $color-smoke;
-		left: 0;
-
-		@media($tablet) {
-			left: 40px;
-		}
-	}
-	&:hover:before {
-		border: 2px solid $color-outer-space;
-	}
-	&:active:before {
-		border: 2px solid $color-pink;
-	}
-}
-
 .page-form input[type="radio"] {
 	position: relative;
 	margin: 10px;

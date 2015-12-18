@@ -1,4 +1,5 @@
 @import "../node_modules/normalize.css/normalize";
+@import "../node_modules/flickity/css/flickity";
 
 @import "./general/_variables.scss";
 @import "./general/_mixins.scss";
@@ -33,4 +34,6 @@
 @import "./blocks/copyright.scss";
 @import "./blocks/plus-minus.scss";
 @import "./blocks/photo-action.scss";
+
+@import "./blocks/pop-up.scss";
 
