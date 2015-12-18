@@ -26,10 +26,11 @@ blockquote {
 	padding: 0;
 }
 
-// img {
-// 	width: 100%;
-// 	height: auto;
-// }
+.content-wrapper {
+		max-width: 1200px;
+		margin-right: auto;
+		margin-left: auto;
+}
 
 .page {
 	background: $color-white;

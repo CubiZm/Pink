@@ -21,26 +21,28 @@
 		vertical-align: middle;
 		text-align: left;
 		background: #fff;
-
-
-	@media($mobile) {
-		width: 320px;
-	}
-	@media($tablet) {
-		width: 460px;
-	}
-
-	@media($desktop) {
-		bottom: 128px;
-		width: 783px;
-		height: 380px;
 		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		margin: auto;
+
+
+	@media($mobile) {
+		width: 320px;
+		height: 340px;
 	}
+	@media($tablet) {
+		width: 460px;
+		height: 430px;
+	}
+
+	@media($desktop) {
+		bottom: 128px;
+		width: 783px;
+		height: 380px;
+		}
 	}
 
 	&__title {
