@@ -16,3 +16,17 @@
 		border: 2px solid $color-pink;
 	}
 }
+
+input[type=file] {
+	position: absolute;
+	left: 0px;
+	top: 42px;
+	display: block;
+	opacity: 0;
+	z-index: 1000;
+	cursor: pointer;
+	@media($mobile) {
+		left: 19px;
+		top: 98px;
+	}
+}

@@ -13,24 +13,6 @@
 	@media screen and ($desktop) {
 		background: #f2f2f2;
 	}
-
-	&__inner {
-		font-size: 85px;
-		font-weight: 800;
-		height: 210px;
-		width: 189px;
-		margin: 0 auto;
-		text-align: center;
-		color: $color-pink;
-		border: 12px solid;
-		border-radius: 150px;
-		padding-left: 0px;
-		padding-top: 25px;
-		width: 210px;
-
-
-	}
-
 	&__outer {
 
 		background: url(../img/timer.svg) no-repeat center;
@@ -51,7 +33,7 @@
 		border: 12px solid;
 		border-radius: 50%;
 		width: 210px;
-		line-height: 126px;
+		line-height: 180px;
 	}
 
 	&__wrap {

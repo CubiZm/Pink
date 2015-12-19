@@ -1,65 +1,55 @@
 .photo-action {
 	position: relative;
-
 	@media($tablet) {
 		padding: 0px 35px;
 	}
-&__btn {
-	cursor: pointer;
-	@include text-style-base;
-	color: $text-color;
-	font-weight: 500;
-	font-size: $font-size-middle;
-	text-transform: uppercase;
-	background: $color-white;
-	border: 2px solid $color-smoke;
-	margin: 0 auto;
-	padding: 17px 0 12px;
-	text-align: center;
+	&__btn {
+		cursor: pointer;
+		@include text-style-base;
+		color: $text-color;
+		font-weight: 500;
+		font-size: $font-size-middle;
+		text-transform: uppercase;
+		background: $color-white;
+		border: 2px solid $color-smoke;
+		margin: 0 auto;
+		padding: 17px 0 12px;
+		text-align: center;
 	}
-
 	&__btn:hover {
 		border: 2px solid $color-outer-space;
 	}
-
 	&__btn:active {
 		background: $color-outer-space;
 		color: $color-white;
 	}
-&__photo-preview {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding-top: 30px;
-	padding-top: 30px;
-	align-content: flex-start;
-	justify-content: flex-start;
+	&__photo-preview {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-top: 30px;
+		padding-top: 30px;
+		align-content: flex-start;
+		justify-content: flex-start;
 	}
-
-&__img {
-	margin: 0 0 20px 0;
-
+	&__img {
+		margin: 0 0 20px 0;
 		@media($tablet) {
-		width: 120px;
+			width: 120px;
+		}
 	}
-
-}
-
-&__img-wrap {
-	position: relative;
-	margin-right: 25px;
-
-}
-
-&__img-wrap:after {
-	content: "";
-	position: absolute;
-	z-index: 99999;
-	right: -12px;
-	top: -12px;
-	width: 34px;
-	height: 34px;
-	background: url(../img/delete-photo-btn.png) no-repeat;
+	&__img-wrap {
+		position: relative;
+		margin-right: 25px;
 	}
-
+	&__img-wrap:after {
+		content: "";
+		position: absolute;
+		z-index: 8;
+		right: -12px;
+		top: -12px;
+		width: 34px;
+		height: 34px;
+		background: url(../img/delete-photo-btn.png) no-repeat;
+	}
 }

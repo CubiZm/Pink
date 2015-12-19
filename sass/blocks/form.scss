@@ -1,41 +1,33 @@
 .form {
-@media($tablet) {
-	@include wrapper;
-}
-
-@media($desktop) {
-	padding: 0 10px;
-}
-
-
+	@media($tablet) {
+		@include wrapper;
+	}
+	@media($desktop) {
+		padding: 0 10px;
+	}
 	&__wrap {
 		position: relative;
 		@media($tablet) {
-		display: flex;
+			display: flex;
 		}
 	}
-
-		&__container {
+	&__container {
 		@media($tablet) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	@media($desktop) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-}
-
-		&__flex-wrap {
-			@media($tablet) {
-				padding: 0 20px;
-			}
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		}
-
-
+		@media($desktop) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	&__flex-wrap {
+		@media($tablet) {
+			padding: 0 20px;
+		}
+	}
 	&__info {
 		position: relative;
 		@include wrapper;
@@ -44,24 +36,24 @@
 		justify-content: center;
 		align-content: center;
 		border: none;
-
 		@media($mobile) {
 			margin-top: 40px;
 		}
-
 		@media($tablet) {
 			border: 2px solid $color-grey;
 			margin-bottom: 60px;
 		}
-
 	}
-		&__info--bg-grey {
-			@media($mobile) {
+	&__info--bg-grey {
+		@media($mobile) {
 			background: $color-smoke;
-			}
-
 		}
-
+	}
+	&__info-wrapper--tablet {
+		@media(min-width: 660px) and (max-width: 959px) {
+			width: 45%;
+		}
+	}
 	&__btn {
 		display: block;
 		margin: 22px auto;
@@ -74,41 +66,33 @@
 		background-color: #2aab6d;
 		border: none;
 		border-radius: 3px;
-
 		@media($tablet) {
 			margin-left: 0px;
 		}
-
 		@media($desktop) {
 			font-size: $font-size-middle;
 			text-transform: uppercase
 		}
 	}
-
 	&__btn:hover {
 		background: #1c9b5e;
 	}
 	&__btn:focus {
 		color: #61b98f;
 	}
-
 	&__btn:disabled {
 		background: $color-grey;
 	}
-
 	&__desription {
 		text-align: center;
 		text-transform: uppercase;
-
 		@media($tablet) {
 			padding-top: 30px;
 		}
-
 		@media($desktop) {
 			display: none;
 		}
 	}
-
 	&__desription--desktop {
 		@media($mobile) {
 			display: none;
@@ -123,30 +107,23 @@
 			padding-top: 30px;
 		}
 	}
-
 	&__info--no-border {
 		@media($tablet) {
 			border: none;
 		}
 	}
-
-&__info-wrapper {
-	@media($tablet) {
-	width: 100%;
-	margin: 0 14px;
-
-	}
-
-	@media($desktop) {
-	width: 30%;
+	&__info-wrapper {
+		@media($tablet) {
+			width: 100%;
+			margin: 0 14px;
+		}
+		@media($desktop) {
+			width: 30%;
 		}
 	}
-
 	&__info-wrapper--numeral {
 		@media($desktop) {
 			width: 45%;
 		}
 	}
-
 }
-

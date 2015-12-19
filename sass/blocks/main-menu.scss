@@ -7,26 +7,22 @@
 		background: $color-outer-space;
 		margin: 0;
 		padding: 0;
-
 		@media screen and ($desktop) {
 			background: transparent;
 			display: inline-flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
 			width: 550px;
-
+			padding-top: 25px;
 		}
 	}
-
 	&__item {
 		list-style-type: none;
 		min-height: 64px;
-
 		@media($desktop) {
 			padding: 0 10px;
 		}
 	}
-
 	&__link {
 		@include link-decoration;
 		display: block;
@@ -38,38 +34,21 @@
 			text-transform: initial;
 		}
 	}
-@media($mobile){
-	&__link:hover {
-		color: $color-pink;
+		&__link:hover {
+			color: $color-pink;
+		}
+		&__link:focus {
+			opacity: 0.35;
+		}
+	@media($desktop) {
+		&__link:hover {
+			border-bottom: 2px solid $color-white;
+		}
+		&__link:focus {
+			color: darken(#fff, 30%);
+			border-bottom: none;
+		}
 	}
-
-	&__link:focus {
-		opacity: 0.35;
-	}
-}
-
-@media(max-width: 959px){
-	&__link:hover {
-		color: $color-pink;
-	}
-
-	&__link:focus {
-		opacity: 0.35;
-	}
-}
-
-@media($desktop){
-	&__link:hover {
-		border-bottom: 2px solid $color-white;
-	}
-
-	&__link:focus {
-		color: darken(#fff, 30%);
-		border-bottom: none;
-	}
-}
-
-
 	&__btn {
 		display: block;
 		width: 50px;
@@ -77,15 +56,13 @@
 		cursor: pointer;
 		float: right;
 		margin: 20px 20px;
-
 		@media($desktop) {
 			display: none;
 		}
 	}
-
 	&__btn svg:hover #burger {
 		fill: $color-pink;
-}
+	}
 	&__btn svg:active #burger {
 		fill: $color-pink;
 		opacity: 0.3;

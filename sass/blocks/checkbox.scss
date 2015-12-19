@@ -2,7 +2,6 @@
 	line-height: 30px;
 	padding-left: 50px;
 	padding-top: 30px;
-
 	@media($tablet) {
 		font-size: $font-size-middle;
 		padding-left: 65px;
@@ -17,7 +16,6 @@
 		border: 2px solid $color-smoke;
 		left: 0;
 	}
-
 	&:hover:before {
 		border: 2px solid $color-outer-space;
 	}
@@ -40,28 +38,13 @@
 	width: 28px;
 	height: 26px;
 	background: url(../img/yes.svg) no-repeat;
-	z-index: 100;
+	z-index: 8;
 }
 
 .form__info input[type=checkbox] {
 	position: relative;
 	margin: 10px;
 	display: none;
-}
-
-input[type=file] {
-	position: absolute;
-	left: 0px;
-	top: 42px;
-	display: block;
-	opacity: 0;
-	z-index: 1000;
-	cursor: pointer;
-
-	@media($mobile) {
-		left: 19px;
-		top: 98px;
-	}
 }
 
 .form__info input[type=checkbox]:checked + label:after {

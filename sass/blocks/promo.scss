@@ -1,6 +1,7 @@
 .promo {
 &__item {
 		overflow: hidden;
+		margin: 0 auto;
 	}
 	&__title {
 		@include text-style-base;

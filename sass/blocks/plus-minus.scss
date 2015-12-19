@@ -1,11 +1,8 @@
 .plus-minus {
 	display: flex;
-
-
 	@media($tablet) {
-		width: 40%;
+		width: 264px;
 	}
-
 	&__btn {
 		flex-shrink: 0;
 		line-height: 59px;
@@ -20,7 +17,6 @@
 			padding: 0;
 		}
 	}
-
 	&__btn:hover {
 		border: 2px solid $color-outer-space;
 	}
@@ -28,20 +24,16 @@
 		background: $color-outer-space;
 		color: $color-white;
 	}
-
 	&__input {
-		border:0;
-		height:63px;
+		border: 0;
+		height: 63px;
 		border-top: 2px solid $color-grey;
 		border-bottom: 2px solid $color-grey;
 		width: calc(100% - 126px);
-
-
 		@media($tablet) {
-			width: 120px;
+			// width: 120px;
 			height: 63px;
 		}
-
 		@media($desktop) {
 			border: none;
 		}
@@ -53,18 +45,15 @@
 // 	border-left: 2px solid $color-grey;
 // 	border-bottom: 2px solid $color-grey;
 // 	border-right: none;
-
 // 		@media($tablet) {
 // 		border-right: 2px solid $color-grey;
 // 	}
 // }
-
 // .plus {
 // 	border-top: 2px solid $color-grey;
 // 	border-right: 2px solid $color-grey;
 // 	border-bottom: 2px solid $color-grey;
 // 	border-left: none;
-
 // 	@media($tablet) {
 // 		border-left: 2px solid $color-grey;
 // 	}

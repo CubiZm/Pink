@@ -13,6 +13,9 @@
 		color: $color-white;
 	}
 	&__logo {
+		@media($desktop) {
+			float: left;
+		}
 
 		}
 
@@ -20,9 +23,7 @@
 		@media($desktop) {
 			width: 600px;
 			float: right;
-			position: relative;
-			top: -75px;
-			padding-left: 35px;
+			padding-left: 25px;
 		}
 	}
 }
