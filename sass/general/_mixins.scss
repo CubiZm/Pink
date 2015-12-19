@@ -1,29 +1,29 @@
 /*Mixins*/
+
 @mixin link-decoration ($color: $color-white, $weight:300) {
-text-decoration: none;
-color: $color-white;
-weight: $weight;
+	text-decoration: none;
+	color: $color-white;
+	weight: $weight;
 }
 
 @mixin text-style-base($size: 24px, $weight:300) {
-color: $color-white;
-font: {
-family: $font-family;
-size: $size;
-weight: $weight;
+	color: $color-white;
+	font: {
+		family: $font-family;
+		size: $size;
+		weight: $weight;
 	}
 }
 
-
 @mixin wrapper {
-padding: 0 20px;
+	padding: 0 20px;
 }
 
 @mixin clearfix() {
-&:after{
-display: table;
-content: '';
-clear: both;
+	&:after {
+		display: table;
+		content: '';
+		clear: both;
 	}
 }
 
@@ -34,9 +34,9 @@ clear: both;
 }
 
 @mixin text-null {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 @mixin glif {
@@ -46,4 +46,3 @@ overflow: hidden;
 	width: 26px;
 	height: 26px;
 }
-/**/

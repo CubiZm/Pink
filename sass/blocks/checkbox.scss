@@ -2,7 +2,6 @@
 	line-height: 30px;
 	padding-left: 50px;
 	padding-top: 30px;
-
 	@media($tablet) {
 		font-size: $font-size-middle;
 		padding-left: 65px;
@@ -17,6 +16,12 @@
 		border: 2px solid $color-smoke;
 		left: 0;
 	}
+	&:hover:before {
+		border: 2px solid $color-outer-space;
+	}
+	&:active:before {
+		border: 2px solid $color-pink;
+	}
 }
 
 .page-form input[type=checkbox] {
@@ -26,6 +31,23 @@
 }
 
 .page-form input[type=checkbox]:checked + label:after {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 37px;
+	width: 28px;
+	height: 26px;
+	background: url(../img/yes.svg) no-repeat;
+	z-index: 8;
+}
+
+.form__info input[type=checkbox] {
+	position: relative;
+	margin: 10px;
+	display: none;
+}
+
+.form__info input[type=checkbox]:checked + label:after {
 	content: "";
 	position: absolute;
 	left: 3px;

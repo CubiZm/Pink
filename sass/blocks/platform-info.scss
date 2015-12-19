@@ -1,9 +1,8 @@
 .platform-info {
-
 	@media screen and ($mobile) {
-	min-height: 271px;
-	background: $color-outer-space;
-}
+		height: 271px;
+		background: $color-outer-space;
+	}
 	@media screen and ($tablet) {
 		background: transparent;
 		width: 321px;

@@ -4,11 +4,29 @@
 	top: 0;
 	width: 100%;
 	min-height: 66px;
+	@media($desktop) {
+		min-height: 110px;
+	}
 	&__menu {
 		color: $color-white;
 	}
 	&__logo {
-
+		@media($desktop) {
+			float: left;
 		}
-	&__section {}
+	}
+	&__section {
+		@media($desktop) {
+			width: 600px;
+			float: right;
+			padding-left: 25px;
+		}
+	}
+}
+
+.logo {
+	&__js-menu--close {
+		background: $menu-color;
+		border-bottom: 1px solid #000;
+	}
 }

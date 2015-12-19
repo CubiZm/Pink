@@ -4,16 +4,10 @@
 	justify-content: center;
 	align-items: center;
 	@include wrapper;
-
-	@media($tablet) {
-		padding-right: 40px;
-	}
-
 	&__text {
 		@include text-style-base;
 		color: $text-color;
 		padding-right: 20px;
-
 		@media($tablet) {
 			font-size: $font-size-middle;
 			padding-bottom: 20px;
@@ -21,13 +15,19 @@
 	}
 	&__link {
 		display: block;
-		@include text-null;
-		background: url(../img/htmlacademy.svg) no-repeat;
 		height: 34px;
 		width: 27px;
-
 		@media($tablet) {
 			margin-bottom: 18px;
 		}
+	}
+	&__link svg #htmlacademy {
+		fill: #D22856;
+	}
+	&__link svg:hover #htmlacademy {
+		fill: #283645;
+	}
+	&__link svg:active #htmlacademy {
+		fill: #bec2c7;
 	}
 }

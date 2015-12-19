@@ -13,9 +13,10 @@ body {
 }
 
 fieldset {
-
+	padding: 0;
+	margin: 0;
 	@media($mobile) {
-			border: none;
+		border: none;
 	}
 }
 
@@ -24,28 +25,16 @@ blockquote {
 	padding: 0;
 }
 
+.content-wrapper {
+	max-width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+
+	&--flex {
+		display: flex;
+	}
+}
+
 .page {
 	background: $color-white;
-}
-
-
-.js-menu {
-	display: none;
-}
-
-.js-menu--open {
-	display: block;
-}
-
-.main-menu__btn .js-menu--open  {
-	display: block;
-	background: url(../img/no.svg) no-repeat;
-}
-
-
-.slider .flickity-page-dots {
-	@media screen and ($tablet) {
-		bottom: 30px;
-	}
-
 }

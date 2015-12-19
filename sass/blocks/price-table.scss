@@ -35,6 +35,12 @@
 		color: $text-color;
 		text-transform: uppercase;
 		font-weight: 500;
+		@media($tablet) {
+			display: none;
+		}
+		@media($desktop) {
+			display: none;
+		}
 	}
 	&__glifes {
 		@include text-null;
@@ -43,31 +49,32 @@
 	&__glifes--no {
 		background: url(/img/no.svg) no-repeat;
 		@include glif;
+		@media($tablet) {
+			right: 125px;
+		}
+		@media($desktop) {
+			right: 125px;
+		}
 	}
 	&__glifes--yes {
 		background: url(/img/yes.svg) no-repeat;
 		@include glif;
+		@media($tablet) {
+			right: 125px;
+		}
+		@media($desktop) {
+			right: 125px;
+		}
+	}
+	&__invisible {
+		@media($mobile) {
+			display: none;
+		}
+	}
+	&--invisible {
+		background: none;
+	}
+	&__text--invisible {
+		display: block;
 	}
 }
-
-// .price-table {
-// 	display: table;
-// 	border-collapse: collapse;
-// 	&__row {
-// 	display: table-row;
-// }
-// 	&__box {
-// 	display: table-cell;
-// 	text-align: left;
-// 	vertical-align: top;
-// 	border: 1px solid black;
-// 	}
-// 	&__title {
-// 		display: table-cell;
-// 		background: text-content;
-// 		@include text-style-base;
-// 		text-align: center;
-// 		border-left: 1px solid #e6e6e6;
-// 		border-right: 1px solid #e6e6e6;
-// 	}
-// }

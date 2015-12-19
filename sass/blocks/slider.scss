@@ -1,48 +1,60 @@
 .slider {
+	position: relative;
 	@media screen and ($tablet) {
-	height: 280px;
+		height: 280px;
 	}
-}
-
-.quote {
-	@include wrapper;
-
-	@media screen and ($tablet) {
-			width: 640px;
-
-		}
-
-	&__text {
-		color: $text-color;
-		line-height: 2;
-		text-align: center;
-		width: 280px;
-
-		@media screen and ($tablet) {
-			width: 590px;
-		}
-
+	@media screen and ($desktop) {
+		height: 415px;
 	}
-
-
-	&__footer {
-		text-align: center;
-
-		@media screen and ($tablet) {
-			padding-top: 5px;
-		}
-	}
-
-	&__description {}
-	@media screen and ($mobile) {
-		&__author-info {
-			display: none;
+	&:after {
+		@media($desktop) {
+			content: " ";
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 90px;
+			background: url(../img/triangle-white.svg) no-repeat;
+			bottom: -90px;
+			z-index: 99;
 		}
 	}
 }
 
-.author {
-	color: text-content;
-	font-weight: 800;
-	font-style: normal;
+.slider .flickity-page-dots {
+	@media screen and ($tablet) {
+		bottom: 30px;
+	}
+	@media screen and ($desktop) {
+		background: none;
+	}
+}
+
+.slider .flickity-page-dots .dot {
+	background: $color-white;
+	border: 3px solid $color-outer-space;
+	@media($desktop) {
+		display: none;
+	}
+}
+
+.slider .flickity-page-dots .dot:hover {
+	background: lighten(#000, 60%);
+	border: 3px solid lighten(#000, 60%);
+	@media($desktop) {
+		display: none;
+	}
+}
+
+.slider .flickity-page-dots .dot:focus {
+	background: lighten(#000, 30%);
+	border: 3px solid lighten(#000, 30%);
+	@media($desktop) {
+		display: none;
+	}
+}
+
+.flickity-prev-next-button {
+	@media($desktop) {
+		display: block;
+	}
 }
