@@ -10,7 +10,7 @@
 		function foo(group, initVal) {
 				var minus = group.querySelector(".js-minus");
 				var plus = group.querySelector(".js-plus");
-				var amount = group.querySelector("[type=text]");
+				var amount = group.querySelector("[type=number]");
 
 				amount.value = initVal;
 
