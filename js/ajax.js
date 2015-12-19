@@ -95,7 +95,7 @@
 				}
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("get", "https://echo.htmlacademy.ru/adaptive?" + (new Date()).getTime());
+				xhr.open("get", "thankyou.html", "https://echo.htmlacademy.ru/adaptive?" + (new Date()).getTime());
 
 				xhr.addEventListener("readystatechange", function() {
 						if (xhr.readyState == 4) {
