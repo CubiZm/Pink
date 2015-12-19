@@ -23,3 +23,10 @@
 		}
 	}
 }
+
+.logo {
+	&__js-menu--close {
+		background: $menu-color;
+		border-bottom: 1px solid #000;
+	}
+}

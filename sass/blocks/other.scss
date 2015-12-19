@@ -23,6 +23,18 @@
 	display: none;
 }
 
+.btn__js-menu--close {
+	background: url(../img/no.svg) no-repeat;
+	@include text-null;
+	width: 26px;
+	height: 26px;
+
+}
+
+#menu-close {
+	fill: #fff;
+}
+
 .asterisk {
 	color: $color-pink;
 	font-weight: bold;
