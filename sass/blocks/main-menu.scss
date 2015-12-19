@@ -1,5 +1,4 @@
 .main-menu {
-	// display: none;
 	&__list {
 		text-align: center;
 		font-weight: bold;
@@ -34,14 +33,15 @@
 			text-transform: initial;
 		}
 	}
-		&__link:hover {
-			color: $color-pink;
-		}
-		&__link:focus {
-			opacity: 0.35;
-		}
+	&__link:hover {
+		color: $color-pink;
+	}
+	&__link:focus {
+		opacity: 0.35;
+	}
 	@media($desktop) {
 		&__link:hover {
+			color: $color-white;
 			border-bottom: 2px solid $color-white;
 		}
 		&__link:focus {

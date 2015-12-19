@@ -28,36 +28,38 @@ for (var i = 0; i < close_btn.length; i++) {
 // //table
 
 var tableSlider = document.querySelector('.main-gallery');
-var flkty = new Flickity( tableSlider, {
-	// Настройки плагина
-	cellAlign: 'left',
-	contain: true,
-	cellSelector: '.gallery-cell',
-	setGallerySize: true
+var flkty = new Flickity(tableSlider, {
+		// Настройки плагина
+		cellAlign: 'left',
+		contain: true,
+		cellSelector: '.gallery-cell',
+		setGallerySize: true
 });
 
-// //table off
+//table off
 
 var elem = document.querySelector('.wrapper');
 var flkty = new Flickity('.price-table');
-function sliderOn(){
-	 flkty = new Flickity( elem, {
-			// options
-			cellAlign: 'left',
-			contain: true,
-			prevNextButtons: false,
-			cellSelector: '.price-table',
-			initialIndex: 3
-	});
+
+function sliderOn() {
+		flkty = new Flickity(elem, {
+				// options
+				cellAlign: 'left',
+				contain: true,
+				prevNextButtons: false,
+				cellSelector: '.price-table',
+				initialIndex: 3
+		});
 
 }
-function sliderOff(){
 
-	return flkty.destroy();
+function sliderOff() {
+
+		return flkty.destroy();
 }
 
-if (window.innerWidth < 320){
-	sliderOn();
+if (window.innerWidth < 320) {
+		sliderOn();
 } else {
-	sliderOff();
+		sliderOff();
 }

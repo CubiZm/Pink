@@ -4,11 +4,9 @@
 	top: 0;
 	width: 100%;
 	min-height: 66px;
-
 	@media($desktop) {
 		height: 110px;
 	}
-
 	&__menu {
 		color: $color-white;
 	}
@@ -16,9 +14,7 @@
 		@media($desktop) {
 			float: left;
 		}
-
-		}
-
+	}
 	&__section {
 		@media($desktop) {
 			width: 600px;
