@@ -1,18 +1,15 @@
 .page-form {
-
 	&__desription {
 		text-align: center;
 		@include wrapper;
 		color: $color-outer-space;
 		line-height: 2;
-
 		@media($tablet) {
 			padding: 100px 45px 30px;
 			font-size: $font-size-middle;
 			width: 635px;
 			margin-bottom: 0;
 		}
-
 		@media($desktop) {
 			margin: 0 auto;
 			width: 100%;
@@ -26,8 +23,6 @@
 	margin: 0 auto;
 	padding: 17px 20px 13px;
 	box-sizing: border-box;
-
-
 }
 
 .page-form input[type=file] {
@@ -38,7 +33,6 @@
 	opacity: 0;
 	z-index: 1000;
 	cursor: pointer;
-
 	@media($mobile) {
 		top: 98px;
 		left: 0;
@@ -46,7 +40,6 @@
 	@media($tablet) {
 		top: 40px;
 	}
-
 	@media($desktop) {
 		left: 0px;
 	}

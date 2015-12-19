@@ -17,43 +17,36 @@
 		padding-top: 18px;
 		padding-left: 25px;
 		margin: 0 0 3px;
-
-		// @media($tablet)  {
-		// 	padding-top: 0px;
-		// }
 	}
 	&:last-child {
 		padding-bottom: 45px;
 	}
-
 	&__radio {
-	line-height: 30px;
-	padding-left: 50px;
-	padding-top: 30px;
-
+		line-height: 30px;
+		padding-left: 50px;
+		padding-top: 30px;
 		@media($tablet) {
 			padding-left: 90px;
-	}
-	&:before {
-		cursor: pointer;
-		content: "";
-		position: absolute;
-		width: 35px;
-		height: 35px;
-		background-color: #fff;
-		border-radius: 50%;
-		border: 2px solid $color-smoke;
-		left: 0;
-
-		@media($tablet) {
-			left: 40px;
+		}
+		&:before {
+			cursor: pointer;
+			content: "";
+			position: absolute;
+			width: 35px;
+			height: 35px;
+			background-color: #fff;
+			border-radius: 50%;
+			border: 2px solid $color-smoke;
+			left: 0;
+			@media($tablet) {
+				left: 40px;
+			}
+		}
+		&:hover:before {
+			border: 2px solid $color-outer-space;
+		}
+		&:active:before {
+			border: 2px solid $color-pink;
 		}
 	}
-	&:hover:before {
-		border: 2px solid $color-outer-space;
-	}
-	&:active:before {
-		border: 2px solid $color-pink;
-	}
-}
 }

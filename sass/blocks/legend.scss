@@ -2,7 +2,6 @@
 	color: $color-pink;
 	text-align: center;
 	text-transform: uppercase;
-	// padding-top: 40px;
 	padding-bottom: 35px;
 
 	@media($mobile) {
@@ -12,7 +11,5 @@
 	@media ($tablet) {
 		margin-top: -0.5em;
 		background: $color-white;
-		// display: inline-block;
-		// padding: 0 20px
 		}
 }

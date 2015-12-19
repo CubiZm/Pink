@@ -2,13 +2,10 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
-
 	@media screen and ($tablet) {
 		justify-content: center;
 	}
-
 	&__icon {}
-
 	&__icon:nth-child(2) {
 		@media screen and ($tablet) {
 			margin: 0 30px;
