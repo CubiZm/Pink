@@ -34,6 +34,7 @@
 	}
 	&__img {
 		margin: 0 0 20px 0;
+		position: relative;
 		@media($tablet) {
 			width: 120px;
 		}
@@ -42,14 +43,38 @@
 		position: relative;
 		margin-right: 25px;
 	}
-	&__img-wrap:after {
-		content: "";
+
+	&__delete {
+		@include text-null;
 		position: absolute;
 		z-index: 8;
-		right: -12px;
-		top: -12px;
+		left: 95px;
+		top: -10px;
 		width: 34px;
 		height: 34px;
 		background: url(../img/delete-photo-btn.png) no-repeat;
+		background-size: 34px;
+	}
+		&__delete:hover {
+		position: absolute;
+		z-index: 8;
+		left: 95px;
+		top: -10px;
+		width: 34px;
+		height: 34px;
+		background: url(../img/delete-photo-btn-hover.png) no-repeat;
+		background-size: 34px;
+	}
+
+	&__delete:focus {
+		position: absolute;
+		z-index: 8;
+		left: 95px;
+		top: -10px;
+		width: 34px;
+		height: 34px;
+		background: url(../img/delete-photo-btn-focus.png) no-repeat;
+		background-size: 34px;
 	}
 }
+
