@@ -119,20 +119,26 @@
 														<input class="input plus-minus__input" type="number" id="number-companions" name="input-number" min="0" placeholder="2 чел">
 														<button class="plus-minus__btn js-plus" type="button">+</button>
 												</div>
+											<!-- 	<div class="numeral-input"> -->
+												<script id="companion-template" type="text/html">
 												<ol class="numeral-inputs">
+
 														<li class="numeral-inputs__item">
 																<div class="form__container">
 																		<div class="form__info-wrapper form__info-wrapper--numeral">
-																				<label class="label label--pink-title" for="name-1">Имя: *</label>
-																				<input class="input input--numeral" type="text" id="name-1" name="input-companion" placeholder="Введите ваше имя">
+																				<label class="label label--pink-title" for="{{name-$}}">Имя: *</label>
+																				<input class="input input--numeral" type="text" id="{{name-$}}" name="input-companion" placeholder="Введите ваше имя">
 																		</div>
 																		<div class="form__info-wrapper form__info-wrapper--numeral">
-																				<label class="label label--pink-title" for="nickname-1">Прозвище:</label>
-																				<input class="input input--numeral" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
+																				<label class="label label--pink-title" for="{{nickname-$}}">Прозвище:</label>
+																				<input class="input input--numeral" type="text" id="{{nickname-$}}" name="nickname" placeholder="Ну как же без этого!">
 																		</div>
 																</div>
+																<button class="btn btn--companions" type="button">Удалить</button>
 														</li>
-														<li class="numeral-inputs__item">
+
+													</ol></script><!-- </div> -->
+<!-- 														<li class="numeral-inputs__item">
 																<div class="form__container">
 																		<div class="form__info-wrapper form__info-wrapper--numeral">
 																				<label class="label label--pink-title" for="name-1">Имя: *</label>
@@ -143,8 +149,8 @@
 																				<input class="input input--numeral" type="text" id="nickname-1" name="nickname" placeholder="Ну как же без этого!">
 																		</div>
 																</div>
-														</li>
-												</ol>
+														</li> -->
+
 								</fieldset>
 								<fieldset class="form__info">
 										<div class="form__flex-wrap">
@@ -251,6 +257,7 @@
 						</div>
 				</footer>
 		</div>
+
 		<script src="node_modules/mustache/mustache.min.js"></script>
 		<script src="js/script.js"></script>
 		<!-- <script src="js/ajax.js"></script> -->

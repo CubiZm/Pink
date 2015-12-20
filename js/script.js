@@ -54,7 +54,55 @@ if (ymaps != null) {
 var time = document.querySelector(".js-time");
 var companions = document.querySelector(".js-companions");
 
-function foo(group, initVal) {
+	var list = document.querySelector(".numeral-inputs");
+	var template = document.querySelector("#companion-template").innerHTML;
+	var companionsAmount = document.querySelector("[name=input-number]");
+
+	var btnRemove = document.querySelectorAll(".btn--companions");
+
+	function addFuncRemove(btn) {
+		btn.addEventListener("click", function(event) {
+			event.preventDefault;
+			companionsAmount.value--;
+			var li = btn.parentNode;
+			var list = li.parentNode;
+			list.removeChild(li);
+			changeNum();
+		});
+	};
+
+	function changeNum() {
+		var numbers = document.querySelectorAll(".numeral-inputs__item");
+		for (var i = 0; i < numbers.length; i++) {
+			var num = numbers[i];
+			num.innerHTML = i + 1;
+		};
+	};
+
+	function changeDuration(group, initVal) {
+		var minus = group.querySelector(".js-minus");
+		var plus = group.querySelector(".js-plus");
+		var amount = group.querySelector("[type=number]");
+
+		amount.value = initVal;
+		setDate();
+
+		minus.addEventListener("click", function(event) {
+			event.preventDefault();
+			if (amount.value > 0) {
+				amount.value--;
+				setDate()
+			};
+		});
+
+		plus.addEventListener("click", function(event) {
+			event.preventDefault();
+			amount.value++;
+			setDate()
+		});
+	};
+
+	function changeAmount(group, initVal) {
 		var minus = group.querySelector(".js-minus");
 		var plus = group.querySelector(".js-plus");
 		var amount = group.querySelector("[type=number]");
@@ -62,20 +110,66 @@ function foo(group, initVal) {
 		amount.value = initVal;
 
 		minus.addEventListener("click", function(event) {
-				event.preventDefault();
-				if (amount.value > 0) {
-						amount.value--;
-				};
+			event.preventDefault();
+			if (amount.value > 0) {
+				amount.value--;
+			};
+
+			var item = document.querySelector(".numeral-inputs__item");
+
+			list.removeChild(item);
+			console.log(list)
 		});
 
 		plus.addEventListener("click", function(event) {
-				event.preventDefault();
-				amount.value++;
-		})
-};
+			event.preventDefault();
+			amount.value++;
+
+			var li = document.createElement("li");
+			li.classList.add("numeral-inputs__item");
+			li.innerHTML = Mustache.render(template, {
+				"number-$": companionsAmount.value,
+				"name-$": "name-" + companionsAmount.value,
+				"nickname-$": "niсkname-" + companionsAmount.value
+			});
+				console.log(list)
+	list.appendChild(li);
+
+			var btnRemove = li.querySelector(".btn--companions");
+			btnRemove.addEventListener("click", function(event) {
+				event.preventDefault;
+				var list = li.parentNode;
+				list.removeChild(li);
+				amount.value--;
+				changeNum();
+			});
+
+		});
+	};
+
+
+// function foo(group, initVal) {
+// 		var minus = group.querySelector(".js-minus");
+// 		var plus = group.querySelector(".js-plus");
+// 		var amount = group.querySelector("[type=number]");
+
+// 		amount.value = initVal;
+
+// 		minus.addEventListener("click", function(event) {
+// 				event.preventDefault();
+// 				if (amount.value > 0) {
+// 						amount.value--;
+// 				};
+// 		});
+
+// 		plus.addEventListener("click", function(event) {
+// 				event.preventDefault();
+// 				amount.value++;
+// 		})
+// };
 if (time != null && companions != null) {
-		foo(time, "10");
-		foo(companions, "2");
+		changeAmount(time, "10");
+		changeAmount(companions, "2");
 }
 
 
@@ -169,3 +263,5 @@ if (open != null && popup != null && close != null) {
 
 		}
 })();
+
+
