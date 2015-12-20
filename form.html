@@ -183,14 +183,56 @@
 												<input class="input" type="file" id="upload-images-btn" name="upload-images-btn" multiple>
 												<div class="photo-action__btn">Загрузить фото</div>
 												<div class="photo-action__photo-preview">
+<!-- 											<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
 														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
 														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
 														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
 														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
 														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
 														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
-														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
-														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div>
+														<div class="photo-action__img-wrap"><img class="photo-action__img" src="http://placehold.it/67x67" alt=""></div> -->
+<!-- 			<ul class="photo-action__photo-preview">
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67"  width="67" height="68" alt="Photo">
+							<span class="photos__name">img-1.jpg</span>
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="68" height="68" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-2.jpg</span>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="67" height="68" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-3.jpg</span>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="67" height="67" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-4.jpg</span>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="68" height="67" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-5.jpg</span>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="67" height="67" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-6.jpg</span>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="68" height="67" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-7.jpg</span>
+						</li>
+						<li class="photo-action__img-wrap">
+							<img class="photo-action__img" src="http://placehold.it/67x67" width="68" height="67" alt="Photo">
+							<button class="btn  btn--cross" type="button"><span class="btn__text-hidden">Удалить</span></button>
+							<span class="photos__name">img-8.jpg</span>
+						</li>
+					</ul> -->
 												</div>
 										</div>
 								</fieldset>
@@ -208,6 +250,13 @@
 												<div class="pop-up__wrapper pop-up__wrapper--grey">
 														<div class="pop-up__btn">Закрыть окно</div>
 												</div>
+										</div>
+										<div class="pop-up__fail">
+											<h2 class="pop-up__title">Что-то пошло не так!</h2>
+											<p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+											<div class="pop-up__wrapper">
+												<div class="pop-up__btn">Ок</div>
+											</div>
 										</div>
 								</div>
 						</form>
@@ -245,9 +294,11 @@
 						</div>
 				</footer>
 		</div>
+		<script src="node_modules/mustache/mustache.min.js"></script>
 		<script src="js/plus-minus.js"></script>
-		<script src="js/script.js"></script>
 		<script src="js/ajax.js"></script>
+		<script src="js/script.js"></script>
+
 </body>
 
 </html>

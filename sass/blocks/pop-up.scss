@@ -28,7 +28,7 @@
 		}
 		@media($tablet) {
 			width: 460px;
-			height: 430px;
+			height: 325px;
 		}
 		@media($desktop) {
 			bottom: 128px;
@@ -49,6 +49,9 @@
 		width: 460px;
 		margin: 0 auto;
 		color: $text-color;
+		@media($mobile) {
+			width: 320px;
+		}
 	}
 	&__wrapper {}
 	&__wrapper--grey {
@@ -68,5 +71,34 @@
 		border: none;
 		border-radius: 3px;
 		text-align: center;
+		cursor: pointer;
+	}
+
+	&__fail {
+		display: none;
+		white-space: normal;
+		vertical-align: middle;
+		text-align: left;
+		background: $color-white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		z-index: 999;
+		@media($mobile) {
+			width: 320px;
+			height: 340px;
+		}
+		@media($tablet) {
+			width: 460px;
+			height: 325px;
+		}
+		@media($desktop) {
+			bottom: 128px;
+			width: 783px;
+			height: 380px;
+		}
 	}
 }

@@ -34,6 +34,7 @@
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "flickity": "^1.1.2",
+    "mustache": "^2.2.1",
     "picturefill": "^3.0.1"
   }
 }

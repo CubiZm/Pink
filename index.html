@@ -77,12 +77,28 @@
 						</svg>
 						<div class="promo-box__row list__row--img">
 								<div class="promo-box__item promo-box__item--no-img">
-										<img class="promo-box__img-promo" src="img/iphone-screen-tablet-1@1x.png" alt="">
+										<picture class="promo-box__img-promo">
+											<source media="(min-resolution: 1dppx)"
+											srcset="img/iphone-screen-tablet-1@2x.png 2x,
+															img/iphone-screen-tablet-1@1x.png 1x">
+											<img class="promo-box__img-promo" src="img/iphone-screen-tablet-1@1x.png" width="292" height="302" alt="Pink">
+										</picture>
 								</div>
 								<div class="promo-box__item promo-box__item--no-img">
-										<img class="promo-box__img-promo" src="img/iphone-screen-tablet-2@1x.png " alt=""></div>
+										<picture class="promo-box__img-promo">
+											<source media="(min-resolution: 1dppx)"
+											srcset="img/iphone-screen-tablet-2@2x.png 2x,
+															img/iphone-screen-tablet-2@1x.png 1x">
+											<img class="promo-box__img-promo" src="img/iphone-screen-tablet-1@1x.png" width="292" height="302" alt="Pink">
+										</picture>
+								</div>
 								<div class="promo-box__item promo-box__item--main">
-										<img class="promo-box__img-promo promo-box__img-promo--main" src="img/iphone-screen-tablet-3@2x.png" alt="">
+										<picture class="promo-box__img-promo promo-box__img-promo--main">
+											<source media="(min-resolution: 1dppx)"
+											srcset="img/iphone-screen-tablet-3@2x.png 2x,
+															img/iphone-screen-tablet-3@1x.png 1x">
+											<img class="promo-box__img-promo promo-box__img-promo--main" src="img/iphone-screen-tablet-1@1x.png" width="292" height="302" alt="Pink">
+										</picture>
 								</div>
 						</div>
 						<div class="promo-box__row list__row--quote">
@@ -257,7 +273,7 @@
 										<picture class="logo__img">
 												<source media="(max-width: 959px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-tablet.svg">
 												<source media="(min-width: 960px) and (min-resolution: 1dppx)" srcset="img/logotype-blue-desktop.svg">
-												<img class="logo__img" src="img/logotype-blue-tablet.svg" alt="Pink">
+												<img class="logo__img" src="img/logotype-blue-tablet.svg" width="145" height="45" alt="Pink">
 										</picture>
 								</a>
 						</div>
