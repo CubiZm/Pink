@@ -1,110 +1,91 @@
 (function() {
 
-		if (!("FormData" in window)) {
-				return;
-		}
+    if (!("FormData" in window)) {
+        return;
+    }
 
-		var elements = document.querySelectorAll(".form input[type=text]");
-		var qs = "";
-		for (var i = 0; i < elements.length; i++) {
-				var element = elements[i];
-				var name = element.name;
-				var value = element.value;
-				qs = qs + encodeURIComponent(name) + "=" + encodeURIComponent(value) + "&";
-		}
-		console.log(qs);
+    var elements = document.querySelectorAll(".form input[type=text], form input:checked, .form input[type=number]");
+    var qs = "";
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var name = element.name;
+        var value = element.value;
+        qs = qs + encodeURIComponent(name) + "=" + encodeURIComponent(value) + "&";
+    }
 
-		var form = document.querySelector(".form");
-		form.addEventListener("submit", function(event) {
-				event.preventDefault();
-				var data = new FormData(form);
+    var form = document.querySelector(".form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var data = new FormData(form);
 
-				var radio = document.querySelector("[name=os]:checked");
-				var value = radio.value;
-				console.log(value);
+        //photo
+        var queue = [];
 
-				var last_name = document.querySelector("[name=last-name]");
-				var value2 = last_name.value;
-				console.log(value2);
+        console.log(data)
 
-				var middle_name = document.querySelector("[name=middle-name]");
-				var value3 = middle_name.value;
-				console.log(value3);
+        // (function() {
+        //     var form = document.querySelector(".form");
+        //     form.querySelector("#upload-images-btn").addEventListener("change", function() {
+        //         var files = this.files;
+        //         for (var i = 0; i < files.length; i++) {
+        //             preview(files[i]);
+        //         }
+        //         this.value = "";
+        //     });
 
-				var departure = document.querySelector("[name=departure-date]");
-				var value4 = departure.value;
-				console.log(value4);
+        //     function preview(file) {
+        //         if (file.type.match(/image.*/)) {
+        //             var reader = new FileReader();
+        //             reader.addEventListener("load", function(event) {
+        //                 console.log(event.target.result);
+        //             });
+        //             reader.readAsDataURL(file);
+        //         }
+        //     }
+        // })();
 
-				var number = document.querySelector("[name=input-number]");
-				var value5 = number.value;
-				console.log(value5);
+        // function preview(file) {
+        //     var area = document.querySelector(".photo-action__photo-preview");
+        //     var template = document.querySelector("#image-template").innerHTML;
+        //     if (file.type.match(/image.*/)) {
+        //         var reader = new FileReader();
+        //         reader.addEventListener("load", function(event) {
+        //             // var img = document.createElement("img");
+        //             // img.src = event.target.result;
+        //             // img.alt = file.name;
+        //             // area.appendChild(img);
+        //             // var html = template.replace("{{image}}", event.target.result);
+        //             // .html = html.replace("{{name}}", file.name);
+        //             var html = Mustache.render(template, {
+        //                 "image": event.target.result,
+        //                 "name": file.name
+        //             });
+        //             area.innerHTML = area.innerHTML + html;
 
-				var return_date = document.querySelector("[name=return-date]");
-				var value6 = return_date.value;
-				console.log(value6);
+        //             queue.push({
+        //                 file: file,
+        //                 img: img
+        //             });
+        //         });
+        //         reader.readAsDataURL(file);
+        //     }
+        // }
 
-				var companion = document.querySelector("[name=input-companion]");
-				var value7 = companion.value;
-				console.log(value6);
+        // queue.forEach(function(element) {
+        //     data.append("images", element.file);
+        // });
 
-				var nickname = document.querySelector("[name=nickname]");
-				var value8 = nickname.value;
-				console.log(value8);
+        // var xhr = new XMLHttpRequest();
+        // xhr.open("get", "thankyou.html", "https://echo.htmlacademy.ru/adaptive?" + (new Date()).getTime());
 
-				var checkbox = document.querySelectorAll("[type=checkbox]:checked");
-				var value9 = checkbox.value;
-				console.log(value9);
-
-				var upload_img = document.querySelectorAll("[type=upload-images-btn");
-				var value10 = upload_img.value;
-				console.log(value10);
-
-				//photo
-				(function() {
-						var form = document.querySelector(".form");
-						form.querySelector("#upload-images-btn").addEventListener("change", function() {
-								var files = this.files;
-								for (var i = 0; i < files.length; i++) {
-										preview(files[i]);
-								}
-						});
-
-						function preview(file) {
-								if (file.type.match(/image.*/)) {
-										var reader = new FileReader();
-										reader.addEventListener("load", function(event) {
-												console.log(event.target.result);
-										});
-										reader.readAsDataURL(file);
-								}
-						}
-				})();
-
-				function preview(file) {
-						var area = document.querySelector(".photo-action__photo-preview");
-						if (file.type.match(/image.*/)) {
-								var reader = new FileReader();
-								reader.addEventListener("load", function(event) {
-										var img = document.createElement("img");
-										img.src = event.target.result;
-										img.alt = file.name;
-										area.appendChild(img);
-								});
-								reader.readAsDataURL(file);
-						}
-				}
-
-				var xhr = new XMLHttpRequest();
-				xhr.open("get", "thankyou.html", "https://echo.htmlacademy.ru/adaptive?" + (new Date()).getTime());
-
-				xhr.addEventListener("readystatechange", function() {
-						if (xhr.readyState == 4) {
-								button.classList.add('js-menu-open');
-								button.classList.remove('js-close');
-								button.show = '.pop-up';
-								console.log(xhr.responseText);
-						}
-				});
-				xhr.send(data);
-		});
+        // xhr.addEventListener("readystatechange", function() {
+        //     if (xhr.readyState == 4) {
+        //         button.classList.add('js-menu-open');
+        //         button.classList.remove('js-close');
+        //         button.show = '.pop-up';
+        //         console.log(xhr.responseText);
+        //     }
+        // });
+        // xhr.send(data);
+    });
 })();
