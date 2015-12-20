@@ -59,6 +59,13 @@
 	width: 74px;
 	height: 74px;
 	position: absolute;
-	top: 91px;
+
 	background: url(../img/hits.png) no-repeat;
+	@media($mobile) {
+		top: 91px;
+	}
+	@media($tablet) {
+		top:0;
+		background-size: 55px;
+	}
 }

@@ -2,6 +2,7 @@
 	color: $color-outer-space;
 	display: block;
 	position: relative;
+
 	&--pink {
 		color: $color-pink;
 		text-transform: uppercase;
@@ -25,6 +26,7 @@
 		line-height: 30px;
 		padding-left: 50px;
 		padding-top: 30px;
+		cursor: pointer;
 		@media($tablet) {
 			padding-left: 90px;
 		}
