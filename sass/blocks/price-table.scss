@@ -59,7 +59,7 @@
 		display: inline-flex;
 	}
 	&__glifes--no {
-		background: url(/img/no.svg) no-repeat;
+		// background: url(/img/no.svg) no-repeat;
 		@include glif;
 		@media($tablet) {
 			right: 64px;
@@ -69,7 +69,7 @@
 		}
 	}
 	&__glifes--yes {
-		background: url(/img/yes.svg) no-repeat;
+		// background: url(/img/yes.svg) no-repeat;
 		@include glif;
 		@media($tablet) {
 			right: 64px;
