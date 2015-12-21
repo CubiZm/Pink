@@ -70,6 +70,14 @@
 	}
 }
 
-#logo:hover {
-	fill: $color-pink;
-}
+.btn--companions {
+	@media($mobile) {
+		display: none;
+	}
+		position: absolute;
+		right: -90px;
+		top: 55px;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 10px;
+	}

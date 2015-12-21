@@ -139,7 +139,7 @@ function changeAmount(group, initVal) {
 						var list = li.parentNode;
 						list.removeChild(li);
 						amount.value--;
-						changeNum();
+						// changeNum();
 				});
 
 		});
@@ -205,14 +205,6 @@ if (open != null && popup != null && close != null) {
 						}
 				}
 
-
-    function removePreview(file) {
-      area = area.filter(function(element) {
-        return element.file != file;
-      });
-
-      li.parentNode.removeChild(li);
-    };
 
 				form.querySelector("#upload-images-btn").addEventListener("change", function() {
 						var files = this.files;
