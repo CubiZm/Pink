@@ -20,7 +20,12 @@
     "gulp-plumber": "1.0.x",
     "gulp-postcss": "6.0.x",
     "gulp-sass": "2.1.x",
-    "normalize.css": "^3.0.3"
+    "normalize.css": "^3.0.3",
+		"browser-sync": "^2.10.0",
+    "flickity": "^1.1.2",
+    "gulp-rename": "^1.2.2",
+    "mustache": "^2.2.1",
+    "picturefill": "^3.0.1"
   },
   "scripts": {
     "pregosha": "npm install > /dev/null",
@@ -30,12 +35,5 @@
   },
   "engines": {
     "node": "^5.0.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.10.0",
-    "flickity": "^1.1.2",
-    "gulp-rename": "^1.2.2",
-    "mustache": "^2.2.1",
-    "picturefill": "^3.0.1"
   }
 }

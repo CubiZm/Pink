@@ -28,6 +28,10 @@
 	@include text-null;
 	width: 26px;
 	height: 26px;
+	margin-top: 40px;
+	@media($mobile) {
+		margin-top: 20px;
+	}
 
 }
 
