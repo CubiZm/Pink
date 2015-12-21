@@ -1,0 +1,58 @@
+.intro {
+	width: 100%;
+	overflow: hidden;
+	@media($desktop) {
+		@include wrapper;
+	}
+	@media screen and (max-width: 659px) and (min-resolution: 1dppx) {
+		background: url(../img/iphone-hand-mobile.png) no-repeat center 165px, url(../img/background-mobile@1x.jpg) no-repeat 50% 0;
+		background-size: 260px, cover;
+	}
+	@media screen and (max-width: 659px) and (min-resolution: 2dppx) {
+		background: url(../img/iphone-hand-mobile@2x.png) no-repeat center 165px, url(../img/background-mobile@2x.jpg) no-repeat 50% 0;
+		background-size: 265px, cover;
+	}
+	@media screen and (min-width: 660px) and (min-resolution: 1dppx) {
+		background: url(../img/iphone-hand-tablet@1x.png) no-repeat right 146px, url(../img/background-tablet@1x.jpg) no-repeat 50% 0;
+		background-size: contain, cover;
+		min-height: 660px;
+	}
+	@media screen and (min-width: 660px) and (min-resolution: 2dppx) {
+		background: url(../img/iphone-hand-tablet@2x.png) no-repeat right 146px, url(../img/background-tablet@2x.jpg) no-repeat;
+		background-size: contain, cover;
+		min-height: 660px;
+	}
+	@media screen and (min-width: 960px) and (min-resolution: 1dppx) {
+		background: url(../img/iphone-hand-desktop@1x.png) no-repeat bottom right, url(../img/background-fullsize.jpg) no-repeat 50% 0;
+		background-size: 855px, cover;
+		// min-height: 855px;
+	}
+	@media screen and (min-width: 960px) and (min-resolution: 2dppx) {
+		background: url(../img/iphone-hand-desktop@2x.png) no-repeat bottom right, url(../img/background-fullsize.jpg) no-repeat;
+		background-size: 855px, cover;
+		// min-height: 855px;
+	}
+	&__title {
+		text-align: center;
+		padding-top: 84px;
+		@include text-style-base;
+		@media screen and ($mobile) {
+			padding-bottom: 295px;
+		}
+		@media screen and ($tablet) {
+			float: left;
+			padding: 115px 60px 0 70px;
+			width: 310px;
+			font-size: 40px
+		}
+		@media($desktop) {
+			padding-top: 280px;
+		}
+	}
+	&__img {
+		display: block;
+		margin: 0px auto;
+		padding-top: 0px;
+		@include text-null;
+	}
+}

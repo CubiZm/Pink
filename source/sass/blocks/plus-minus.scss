@@ -1,0 +1,40 @@
+.plus-minus {
+	display: flex;
+	@media($tablet) {
+		width: 264px;
+	}
+	&__btn {
+		flex-shrink: 0;
+		line-height: 59px;
+		width: 63px;
+		height: 63px;
+		font-size: 27px;
+		font-weight: 700;
+		border-radius: 3px 0 0 3px;
+		background: $color-white;
+		border: 2px solid $color-grey;
+		@media($tablet) {
+			padding: 0;
+		}
+	}
+	&__btn:hover {
+		border: 2px solid $color-outer-space;
+	}
+	&__btn:focus {
+		background: $color-outer-space;
+		color: $color-white;
+	}
+	&__input {
+		border: 0;
+		height: 63px;
+		border-top: 2px solid $color-grey;
+		border-bottom: 2px solid $color-grey;
+		width: calc(100% - 126px);
+		@media($tablet) {
+			height: 63px;
+		}
+		@media($desktop) {
+			border: none;
+		}
+	}
+}

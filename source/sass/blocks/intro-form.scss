@@ -1,0 +1,42 @@
+.intro-form {
+	overflow: hidden;
+	@media($desktop) {
+		@include wrapper;
+	}
+	@media screen and (max-width: 659px) and (min-resolution: 1dppx) {
+		background: url(../img/background-mobile@1x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+	@media screen and (max-width: 659px) and (min-resolution: 2dppx) {
+		background: url(../img/background-mobile@2x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+	@media screen and (min-width: 660px) and (min-resolution: 1dppx) {
+		background: url(../img/background-tablet@1x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+	@media screen and (min-width: 660px) and (min-resolution: 2dppx) {
+		background: url(../img/background-tablet@2x.jpg) no-repeat;
+		background-size: cover;
+	}
+	@media screen and (min-width: 960px) and (min-resolution: 1dppx) {
+		background: url(../img/background-fullsize.jpg) no-repeat 50% 0;
+		background-size: cover;
+		padding-bottom: 60px;
+	}
+	@media screen and (min-width: 960px) and (min-resolution: 2dppx) {
+		background: url(../img/background-fullsize.jpg) no-repeat;
+		background-size: cover;
+		padding-bottom: 60px;
+	}
+	&__title {
+		@include text-style-base;
+		@include wrapper;
+		text-align: center;
+		padding-top: 84px;
+		@media($tablet) {
+			font-size: 50px;
+			padding-top: 120px;
+		}
+	}
+}

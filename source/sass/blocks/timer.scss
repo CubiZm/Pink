@@ -1,0 +1,57 @@
+.timer {
+	@media screen and ($mobile) {
+		display: none;
+	}
+	@media screen and ($tablet) {
+		@include wrapper;
+		min-height: 400px;
+		padding-top: 45px;
+		display: flex;
+	}
+	@media screen and ($desktop) {
+		background: #f2f2f2;
+	}
+	&__outer {
+		background: url(../img/timer.svg) no-repeat center;
+		background-size: 260px;
+		height: 346px;
+		padding: 90px 45px;
+		width: 299px;
+		margin: 0 auto
+	}
+	&__inner {
+		font-size: 85px;
+		font-weight: 800;
+		height: 210px;
+		width: 189px;
+		margin: 0 auto;
+		text-align: center;
+		color: $color-pink;
+		border: 12px solid;
+		border-radius: 50%;
+		width: 210px;
+		line-height: 180px;
+	}
+	&__wrap {
+		width: 50%;
+	}
+	&__wrap--text {
+		@media($desktop) {
+			width: 620px;
+			padding: 0 45px;
+		}
+	}
+	&__title {
+		font-size: 29px;
+		width: 180px;
+		@media($desktop) {
+			width: 290px;
+		}
+	}
+	&__text {
+		color: $text-color;
+	}
+	&__link {
+		color: $color-pink;
+	}
+}
