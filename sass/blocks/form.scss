@@ -12,6 +12,10 @@
 		}
 	}
 	&__container {
+
+		@media($mobile) {
+			padding-bottom: 30px;
+		}
 		@media($tablet) {
 			display: flex;
 			flex-wrap: wrap;

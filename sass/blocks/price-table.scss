@@ -2,8 +2,10 @@
 	overflow: hidden;
 	min-height: 476px;
 	background: $color-smoke;
+	@media($mobile) {
+	position: relative;
+	}
 }
-
 .price-table {
 	display: inline-flex;
 	justify-content: space-around;
@@ -18,13 +20,23 @@
 		padding-top: 12px;
 		padding-bottom: 12px;
 		border: 1px solid $color-smoke;
+		@media($tablet) {
+			position: relative;
+
+		}
 	}
 	&__item {
 		min-height: 59px;
-		min-width: 277px;
+
 		position: relative;
 		background: $color-white;
 		border: 1px solid $color-smoke;
+		@media($mobile) {
+			min-width: 277px;
+		}
+		@media($tablet) {
+			width: 160px;
+		}
 	}
 	&__text {
 		text-align: left;
@@ -47,23 +59,23 @@
 		display: inline-flex;
 	}
 	&__glifes--no {
-		background: url(/img/no.svg) no-repeat;
+		// background: url(/img/no.svg) no-repeat;
 		@include glif;
 		@media($tablet) {
-			right: 125px;
+			right: 64px;
 		}
 		@media($desktop) {
-			right: 125px;
+			right: 64px;
 		}
 	}
 	&__glifes--yes {
-		background: url(/img/yes.svg) no-repeat;
+		// background: url(/img/yes.svg) no-repeat;
 		@include glif;
 		@media($tablet) {
-			right: 125px;
+			right: 64px;
 		}
 		@media($desktop) {
-			right: 125px;
+			right: 64px;
 		}
 	}
 	&__invisible {
@@ -77,4 +89,17 @@
 	&__text--invisible {
 		display: block;
 	}
+}
+
+.table-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.table-svg {
+	position: absolute;
+width: 100%;
+left: -4px;
+height: 45px;
 }

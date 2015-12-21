@@ -5,10 +5,10 @@
 		color: $color-outer-space;
 		line-height: 2;
 		@media($tablet) {
-			padding: 100px 45px 30px;
+			padding: 100px 55px 30px;
 			font-size: $font-size-middle;
 			width: 635px;
-			margin-bottom: 0;
+			margin: 0 auto;
 		}
 		@media($desktop) {
 			margin: 0 auto;

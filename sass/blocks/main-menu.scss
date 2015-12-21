@@ -56,6 +56,9 @@
 		cursor: pointer;
 		float: right;
 		margin: 20px 20px;
+		@media($tablet) {
+		padding: 20px 0px;
+		}
 		@media($desktop) {
 			display: none;
 		}
@@ -68,3 +71,7 @@
 		opacity: 0.3;
 	}
 }
+
+.logo__img:hover {
+		color: $color-pink;
+	}
