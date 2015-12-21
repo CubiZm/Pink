@@ -21,6 +21,9 @@
 	}
 	&:last-child {
 		padding-bottom: 45px;
+		@media($mobile) {
+			padding-bottom: 0;
+		}
 	}
 	&__radio {
 		line-height: 30px;
