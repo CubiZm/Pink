@@ -186,25 +186,9 @@ if (open != null && popup != null && close != null) {
 						var element = elements[i];
 						var name = element.name;
 						var value = element.value;
+						var queue = [];
 						qs = qs + encodeURIComponent(name) + "=" + encodeURIComponent(value) + "&";
 				}
-
-				function preview(file) {
-						var area = document.querySelector(".photo-action__photo-preview");
-						var template = document.querySelector("#image-template").innerHTML;
-						if (file.type.match(/image.*/)) {
-								var reader = new FileReader();
-								reader.addEventListener("load", function(event) {
-										var html = Mustache.render(template, {
-												"image": event.target.result,
-												"name": file.name
-										});
-										area.innerHTML = area.innerHTML + html;
-								});
-								reader.readAsDataURL(file);
-						}
-				}
-
 
 				form.querySelector("#upload-images-btn").addEventListener("change", function() {
 						var files = this.files;
@@ -213,6 +197,50 @@ if (open != null && popup != null && close != null) {
 						}
 						this.value = "";
 				});
+
+				function preview(file) {
+						var area = document.querySelector(".photo-action__photo-preview");
+						var template = document.querySelector("#image-template").innerHTML;
+
+						if (file.type.match(/image.*/)) {
+								var reader = new FileReader();
+								reader.addEventListener("load", function(event) {
+										var html = Mustache.render(template, {
+												"image": event.target.result,
+												"name": file.name
+										});
+
+										var div = document.createElement("div");
+										div.classList.add("photo-action__img-wrap");
+										div.innerHTML = html;
+
+										area.appendChild(div);
+
+										div.querySelector(".photo-action__delete").addEventListener("click", function(event) {
+												event.preventDefault();
+												removePreview(div);
+										});
+
+										queue.push({
+												"file": file,
+												"div": div
+										});
+								});
+
+								reader.readAsDataURL(file);
+						}
+
+						// removes photo
+
+						function removePreview(div) {
+								queue = queue.filter(function(element) {
+										return element.div != div;
+								});
+								div.parentNode.removeChild(div);
+						}
+				}
+
+
 
 				form.addEventListener("submit", function(event) {
 						event.preventDefault();
