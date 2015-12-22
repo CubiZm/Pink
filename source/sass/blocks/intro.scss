@@ -5,30 +5,30 @@
 		@include wrapper;
 	}
 	@media screen and (max-width: 659px) and (min-resolution: 1dppx) {
-		background: url(../source/img/iphone-hand-mobile.png) no-repeat center 165px, url(../source/img/background-mobile@1x.jpg) no-repeat 50% 0;
+		background: url(../img/iphone-hand-mobile.png) no-repeat center 165px, url(../img/background-mobile@1x.jpg) no-repeat 50% 0;
 		background-size: 260px, cover;
 	}
 	@media screen and (max-width: 659px) and (min-resolution: 2dppx) {
-		background: url(../source/img/iphone-hand-mobile@2x.png) no-repeat center 165px, url(../source/img/background-mobile@2x.jpg) no-repeat 50% 0;
+		background: url(../img/iphone-hand-mobile@2x.png) no-repeat center 165px, url(../img/background-mobile@2x.jpg) no-repeat 50% 0;
 		background-size: 265px, cover;
 	}
 	@media screen and (min-width: 660px) and (min-resolution: 1dppx) {
-		background: url(../source/img/iphone-hand-tablet@1x.png) no-repeat right 146px, url(../source/img/background-tablet@1x.jpg) no-repeat 50% 0;
+		background: url(../img/iphone-hand-tablet@1x.png) no-repeat right 146px, url(../img/background-tablet@1x.jpg) no-repeat 50% 0;
 		background-size: contain, cover;
 		min-height: 660px;
 	}
 	@media screen and (min-width: 660px) and (min-resolution: 2dppx) {
-		background: url(../source/img/iphone-hand-tablet@2x.png) no-repeat right 146px, url(../source/img/background-tablet@2x.jpg) no-repeat;
+		background: url(../img/iphone-hand-tablet@2x.png) no-repeat right 146px, url(../img/background-tablet@2x.jpg) no-repeat;
 		background-size: contain, cover;
 		min-height: 660px;
 	}
 	@media screen and (min-width: 960px) and (min-resolution: 1dppx) {
-		background: url(../source/img/iphone-hand-desktop@1x.png) no-repeat bottom right, url(../source/img/background-fullsize.jpg) no-repeat 50% 0;
+		background: url(../img/iphone-hand-desktop@1x.png) no-repeat bottom right, url(../img/background-fullsize.jpg) no-repeat 50% 0;
 		background-size: 855px, cover;
 		// min-height: 855px;
 	}
 	@media screen and (min-width: 960px) and (min-resolution: 2dppx) {
-		background: url(../source/img/iphone-hand-desktop@2x.png) no-repeat bottom right, url(../source/img/background-fullsize.jpg) no-repeat;
+		background: url(../img/iphone-hand-desktop@2x.png) no-repeat bottom right, url(../img/background-fullsize.jpg) no-repeat;
 		background-size: 855px, cover;
 		// min-height: 855px;
 	}
