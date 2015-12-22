@@ -33,9 +33,6 @@ gulp.task("style", function() {
 		.pipe(postcss([
 			autoprefixer({browsers: "last 2 versions"})
 		]))
-		.pipe(cmq({
-			log: true
-		}))
 		.pipe(combineMq({
 			beautify: false
 		}))
