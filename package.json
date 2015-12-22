@@ -26,7 +26,7 @@
     "gulp-rename": "^1.2.2",
     "mustache": "^2.2.1",
     "picturefill": "^3.0.1",
-     "gulp-combine-media-queries": "^0.2.0",
+    "gulp-combine-media-queries": "^0.2.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-concat": "^2.6.0",
     "gulp-dest-clean": "^0.5.0",

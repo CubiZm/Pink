@@ -22,9 +22,7 @@ var scriptList = [
 	'source/js/script.js'
 ]
 
-gulp.task("build", function() {
-	["style", "images", "script", "html"];
-});
+gulp.task("build",["style", "images", "script", "html"]);
 
 gulp.task("style", function() {
 	return gulp.src("source/sass/style.{sass,scss}")
@@ -71,8 +69,9 @@ gulp.task("html", function() {
 		.pipe(gulp.dest("build"));
 });
 
-gulp.task('clean', function () {
-return rimraf('build');
+
+gulp.task('clean', function (cb) {
+return rimraf('build', cb);
 });
 
 gulp.task("start", ["style"], function() {
