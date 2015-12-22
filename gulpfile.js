@@ -16,7 +16,7 @@ var rimraf = require('rimraf');
 var browserSync = require('browser-sync').create();
 
 var scriptList = [
-	'node_modules/picturefill/dist/picturefill.js',
+	'node_modules/picturefill/dist/picturefill.min.js',
 	'node_modules/flickity/dist/flickity.pkgd.min.js',
 	'node_modules/mustache/mustache.min.js',
 	'source/js/script.js'
@@ -76,6 +76,11 @@ return rimraf('build');
 });
 
 gulp.task("start", ["style"], function() {
+	gulp.watch("source/sass/**/*.scss", ['style']);
+		gulp.watch("source/*.html", ['html']);
+		gulp.watch("js/*.js", ['js']);
+		gulp.watch("./*.html")
+
 	gulp.watch("sass/**/*.{sass,scss}", ["style"]);
 });
 
@@ -96,7 +101,9 @@ gulp.task('serve', ['style'], function() {
 				open: false
 		});
 
-		gulp.watch("sass/**/*.scss", ['style']);
+		gulp.watch("source/sass/**/*.scss", ['style']);
+		gulp.watch("source/*.html", ['html']);
+		gulp.watch("js/*.js", ['js']);
 		gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
