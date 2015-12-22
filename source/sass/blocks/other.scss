@@ -11,7 +11,7 @@
 
 .main-menu__btn .js-menu--open {
 	display: block;
-	background: url(../img/no.svg) no-repeat;
+	background: url(../source/img/no.svg) no-repeat;
 }
 
 .js-menu-open {
@@ -24,7 +24,7 @@
 }
 
 .btn__js-menu--close {
-	background: url(../img/no.svg) no-repeat;
+	background: url(../source/img/no.svg) no-repeat;
 	@include text-null;
 	width: 26px;
 	height: 26px;
@@ -64,7 +64,7 @@
 	height: 74px;
 	position: absolute;
 
-	background: url(../img/hits.png) no-repeat;
+	background: url(../source/img/hits.png) no-repeat;
 	@media($mobile) {
 		top: 91px;
 	}
