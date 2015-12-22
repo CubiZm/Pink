@@ -63,22 +63,13 @@
 			display: none;
 		}
 	}
-	&__btn svg .burger:hover {
+	&__btn svg:hover .burger {
 		fill: $color-pink;
 	}
-	&__btn svg .burger:active {
+	&__btn svg:active .burger {
 		fill: $color-pink;
 		opacity: 0.3;
 	}
-}
-
-svg .svg-menu-style:hover {
-	fill: $color-pink;
-}
-
-svg .svg-menu-style:active {
-	fill: $color-pink;
-		opacity: 0.3;
 }
 
 .logo__img:hover {
