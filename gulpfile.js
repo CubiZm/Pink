@@ -12,6 +12,7 @@ var combineMq = require("gulp-combine-mq");
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var minifyCss = require('gulp-minify-css');
+var rimraf = require('rimraf');
 var browserSync = require('browser-sync').create();
 
 var scriptList = [
