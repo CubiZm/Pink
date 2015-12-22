@@ -7,8 +7,19 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
+var cmq = require('gulp-combine-media-queries');
 var combineMq = require("gulp-combine-mq");
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var minifyCss = require('gulp-minify-css');
 var browserSync = require('browser-sync').create();
+
+var scriptList = [
+	'node_modules/picturefill/dist/picturefill.js',
+	'node_modules/flickity/dist/flickity.pkgd.min.js',
+	'node_modules/mustache/mustache.min.js',
+	'source/js/script.js'
+]
 
 gulp.task("build", function() {
 	["style", "images", "script", "html"];
@@ -23,7 +34,13 @@ gulp.task("style", function() {
 		.pipe(postcss([
 			autoprefixer({browsers: "last 2 versions"})
 		]))
-		.pipe(combineMq())
+		.pipe(cmq({
+			log: true
+		}))
+		.pipe(combineMq({
+			beautify: false
+		}))
+		.pipe(minifyCss())
 		.pipe(rename({
 				suffix: ".min"
 		}))
@@ -37,14 +54,24 @@ gulp.task("images", function() {
 		.pipe(gulp.dest("build/img"));
 });
 
-gulp.task("script", function() {
-	return gulp.src("source/js/*.js")
-		.pipe(rename("script.js"))
-		.pipe(gulp.dest("build/js"))
+gulp.task('script', function() {
+	return gulp.src(scriptList)
+		.pipe(concat('script.js'))
+		.pipe(gulp.dest('./build/js/'))
+		.pipe(uglify())
 		.pipe(rename({
-			suffix: ".min"
+			suffix: '.min'
 		}))
-		.pipe(gulp.dest("build/js"))
+		.pipe(gulp.dest('./build/js'));
+});
+
+gulp.task("html", function() {
+	return gulp.src("source/*.html")
+		.pipe(gulp.dest("build"));
+});
+
+gulp.task('clean', function () {
+return rimraf('build');
 });
 
 gulp.task("start", ["style"], function() {
