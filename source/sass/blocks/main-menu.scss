@@ -63,10 +63,10 @@
 			display: none;
 		}
 	}
-	&__btn svg:hover #burger {
+	&__btn svg:hover .burger {
 		fill: $color-pink;
 	}
-	&__btn svg:active #burger {
+	&__btn svg:active .burger {
 		fill: $color-pink;
 		opacity: 0.3;
 	}

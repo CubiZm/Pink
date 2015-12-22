@@ -79,28 +79,28 @@ function changeNum() {
 		};
 };
 
-// function changeDuration(group, initVal) {
-// 		var minus = group.querySelector(".js-minus");
-// 		var plus = group.querySelector(".js-plus");
-// 		var amount = group.querySelector("[type=number]");
+function changeDuration(group, initVal) {
+		var minus = group.querySelector(".js-minus");
+		var plus = group.querySelector(".js-plus");
+		var amount = group.querySelector("[type=number]");
 
-// 		amount.value = initVal;
-// 		setDate();
+		amount.value = initVal;
+		setDate();
 
-// 		minus.addEventListener("click", function(event) {
-// 				event.preventDefault();
-// 				if (amount.value > 0) {
-// 						amount.value--;
-// 						setDate()
-// 				};
-// 		});
+		minus.addEventListener("click", function(event) {
+				event.preventDefault();
+				if (amount.value > 0) {
+						amount.value--;
+						setDate()
+				};
+		});
 
-// 		plus.addEventListener("click", function(event) {
-// 				event.preventDefault();
-// 				amount.value++;
-// 				setDate()
-// 		});
-// };
+		plus.addEventListener("click", function(event) {
+				event.preventDefault();
+				amount.value++;
+				setDate()
+		});
+};
 
 function changeAmount(group, initVal) {
 		var minus = group.querySelector(".js-minus");
@@ -146,7 +146,7 @@ function changeAmount(group, initVal) {
 };
 
 if (time != null && companions != null) {
-		changeAmount(time, "10");
+		// changeAmount(time, "10");
 		changeAmount(companions, "0");
 }
 

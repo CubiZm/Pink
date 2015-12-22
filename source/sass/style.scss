@@ -1,0 +1,40 @@
+@import "./node_modules/normalize.css/normalize";
+@import "./node_modules/flickity/css/flickity";
+
+@import "./source/sass/general/_variables.scss";
+@import "./source/sass/general/_mixins.scss";
+@import "./source/sass/general/base.scss";
+@import "./source/sass/blocks/header.scss";
+@import "./source/sass/blocks/main-menu.scss";
+@import "./source/sass/blocks/logo.scss";
+@import "./source/sass/blocks/intro.scss";
+@import "./source/sass/blocks/platform.scss";
+@import "./source/sass/blocks/platform-info.scss";
+@import "./source/sass/blocks/btn-info.scss";
+@import "./source/sass/blocks/timer.scss";
+@import "./source/sass/blocks/promo.scss";
+@import "./source/sass/blocks/promo-box.scss";
+@import "./source/sass/blocks/price-table.scss";
+@import "./source/sass/blocks/slider.scss";
+@import "./source/sass/blocks/quote&author.scss";
+@import "./source/sass/blocks/contacts.scss";
+@import "./source/sass/blocks/map.scss";
+@import "./source/sass/blocks/footer.scss";
+
+@import "./source/sass/blocks/legend.scss";
+@import "./source/sass/blocks/label.scss";
+@import "./source/sass/blocks/input.scss";
+
+@import "./source/sass/blocks/form.scss";
+@import "./source/sass/blocks/page-form.scss";
+@import "./source/sass/blocks/intro-form.scss";
+@import "./source/sass/blocks/numeral-inputs.scss";
+@import "./source/sass/blocks/radio-btn.scss";
+@import "./source/sass/blocks/checkbox.scss";
+@import "./source/sass/blocks/social.scss";
+@import "./source/sass/blocks/copyright.scss";
+@import "./source/sass/blocks/plus-minus.scss";
+@import "./source/sass/blocks/photo-action.scss";
+
+@import "./source/sass/blocks/pop-up.scss";
+@import "./source/sass/blocks/other.scss";

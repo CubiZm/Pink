@@ -38,10 +38,11 @@
 	}
 }
 
-	svg:hover #svg-menu-style {
+	svg:hover .svg-menu-style {
 		fill: $color-pink;
 	}
 
-		svg:active #svg-menu-style {
+		svg:active .svg-menu-style {
 		fill: darken($color-white, 30%);
 	}
+
