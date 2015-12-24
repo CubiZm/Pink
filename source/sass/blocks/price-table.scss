@@ -89,6 +89,15 @@
 	&__text--invisible {
 		display: block;
 	}
+
+	&__text--invisible {
+		@media($tablet) {
+			display: block;
+		}
+		@media($desktop) {
+			display: block;
+		}
+	}
 }
 
 .table-wrapper {
