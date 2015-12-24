@@ -80,8 +80,8 @@ function changeNum() {
 };
 
 function changeDuration(group, initVal) {
-		var minus = group.querySelector(".js-minus");
-		var plus = group.querySelector(".js-plus");
+		var minus = group.querySelector(".minus");
+		var plus = group.querySelector(".plus");
 		var amount = group.querySelector("[type=number]");
 
 		amount.value = initVal;
