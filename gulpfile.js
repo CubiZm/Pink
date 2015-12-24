@@ -93,7 +93,7 @@ gulp.task("start", ["style"], function() {
 gulp.task('serve', ['style'], function() {
 
 		browserSync.init({
-				server: "./",
+				server: "./build/",
 				open: false
 		});
 
