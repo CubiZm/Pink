@@ -33,8 +33,9 @@
 		@media($tablet) {
 			height: 63px;
 		}
-		@media($desktop) {
-			border: 2px solid transparent;
-		}
+	}
+
+	&__input--no-border {
+		border: 2px solid transparent;
 	}
 }

@@ -151,6 +151,34 @@ if (time != null && companions != null) {
 }
 
 
+(function() {
+		var time = document.querySelector(".js-time");
+
+		foo(time, "10");
+
+		function foo(group, initVal) {
+				var minus = group.querySelector(".minus");
+				var plus = group.querySelector(".plus");
+				var amount = group.querySelector("[type=number]");
+
+				amount.value = initVal;
+
+				minus.addEventListener("click", function(event) {
+						event.preventDefault();
+						if (amount.value > 0) {
+								amount.value--;
+						};
+				});
+
+				plus.addEventListener("click", function(event) {
+						event.preventDefault();
+						amount.value++;
+				})
+		};
+
+})();
+
+
 //close modal window in form-page
 
 var open = document.querySelector('.form__btn');
