@@ -41,6 +41,7 @@
 	&__text {
 		text-align: left;
 		display: inline-block;
+		vertical-align: middle;
 		padding-left: 22px;
 		@include text-style-base;
 		font-size: 14px;
