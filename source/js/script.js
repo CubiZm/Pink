@@ -40,7 +40,7 @@ if (ymaps != null) {
 								hintContent: 'Pink'
 						}, {
 								iconLayout: 'default#image',
-								iconImageHref: '../img/map-marker.svg', //  путь до картинки
+								iconImageHref: './img/map-marker.svg', //  путь до картинки
 								iconImageSize: [35, 35], //размер картинки
 						});
 

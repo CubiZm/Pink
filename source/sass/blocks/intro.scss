@@ -39,6 +39,9 @@
 		@media screen and ($mobile) {
 			padding-bottom: 295px;
 		}
+		@media($mobile) {
+			padding: 60px 20px;
+		}
 		@media screen and ($tablet) {
 			float: left;
 			padding: 115px 60px 0 70px;
@@ -46,7 +49,7 @@
 			font-size: 40px
 		}
 		@media($desktop) {
-			padding-top: 280px;
+			// padding-top: 280px;
 		}
 	}
 	&__img {

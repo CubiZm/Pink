@@ -4,6 +4,9 @@
 	top: 0;
 	width: 100%;
 	min-height: 66px;
+	@media($mobile) {
+		height: 66px;
+	}
 	@media($desktop) {
 		min-height: 110px;
 	}

@@ -21,6 +21,11 @@
 }
 
 .slider .flickity-page-dots {
+
+	@media($mobile) {
+		bottom: -12px;
+		z-index: 1;
+			}
 	@media screen and ($tablet) {
 		bottom: 30px;
 	}
@@ -53,7 +58,10 @@
 	}
 }
 
-.flickity-prev-next-button {
+.slider .flickity-prev-next-button {
+	@media($mobile) {
+		display: none;
+	}
 	@media($desktop) {
 		display: block;
 	}
