@@ -10,7 +10,21 @@
 	display: inline-flex;
 	justify-content: space-around;
 	padding-top: 90px;
-	&__col {}
+			@media($tablet) {
+			width: 25%;
+		}
+		@media($desktop) {
+			width: 25%;
+		}
+
+	&__col {
+		@media($tablet) {
+			width: 100%;
+		}
+		@media($desktop) {
+			width: 100%;
+		}
+	}
 	&__title {
 		background: $text-color;
 		@include text-style-base;
@@ -22,7 +36,6 @@
 		border: 1px solid $color-smoke;
 		@media($tablet) {
 			position: relative;
-
 		}
 	}
 	&__item {
@@ -33,9 +46,6 @@
 		border: 1px solid $color-smoke;
 		@media($mobile) {
 			min-width: 277px;
-		}
-		@media($tablet) {
-			width: 160px;
 		}
 	}
 	&__text {
@@ -63,20 +73,20 @@
 		// background: url(/img/no.svg) no-repeat;
 		@include glif;
 		@media($tablet) {
-			right: 64px;
+			right: 68px;
 		}
 		@media($desktop) {
-			right: 64px;
+			right: 104px;
 		}
 	}
 	&__glifes--yes {
 		// background: url(/img/yes.svg) no-repeat;
 		@include glif;
 		@media($tablet) {
-			right: 64px;
+			right: 68px;
 		}
 		@media($desktop) {
-			right: 64px;
+			right: 104px;
 		}
 	}
 	&__invisible {
