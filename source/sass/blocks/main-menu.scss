@@ -28,6 +28,7 @@
 		padding: 20px 0;
 		border-bottom: 1px solid #000;
 		@media screen and ($desktop) {
+			padding: 20px 0 5px 0;
 			border-bottom: none;
 			font-weight: 400;
 			text-transform: initial;
