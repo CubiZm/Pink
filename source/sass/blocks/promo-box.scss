@@ -1,18 +1,8 @@
 .promo-box {
 	position: relative;
 	background: $color-smoke;
-	width: 100%;
 	padding-top: 55px;
-	display: flex;
-	flex-direction: column-reverse;
-	@media($tablet) {
-		flex-direction: row;
-		justify-content: space-around;
-		align-content: center;
-	}
-	@media($desktop) {
-		flex-direction: column;
-	}
+
 	&__row {
 		@include wrapper;
 		@media($tablet) {
@@ -103,5 +93,19 @@
 			margin-top: -30px;
 			// margin-left: 20px;
 		}
+	}
+
+	&__inner {
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	@media($tablet) {
+		flex-direction: row;
+		justify-content: space-around;
+		align-content: center;
+	}
+	@media($desktop) {
+		flex-direction: column;
+	}
 	}
 }
